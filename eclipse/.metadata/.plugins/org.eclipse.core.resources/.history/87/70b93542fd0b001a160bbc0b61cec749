@@ -1,0 +1,5 @@
+package test;
+
+public class bytetest {
+	byte a= (byte) 400;
+}

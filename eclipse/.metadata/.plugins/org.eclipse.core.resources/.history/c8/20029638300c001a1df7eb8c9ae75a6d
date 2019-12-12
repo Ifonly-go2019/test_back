@@ -1,0 +1,132 @@
+package sm3;
+import java.util.Vector;
+
+import class_type.sm3_type;
+import analysis.Correlation;
+
+public abstract class DifferentialAnalysis extends Correlation {
+    private static final long serialVersionUID = 1L;
+
+    public int max = 4;
+    public int keys = 1;
+    public int precisionDigits = 4;
+    public String bestCorrelationHeader = "Best correlation";
+    public String keyTitle = "key";
+    public String candidateTitle = "Key candidate";
+    public int keyOffset = 0;
+    public int candidates=65536;
+    public float precision = (float) Math.exp(Math.log(10) * precisionDigits);
+    public int candidateStringLength;
+    public boolean mustReport = true;
+    public boolean mustGenerate = true;
+    public int numberOfResultTraces=0;
+    
+    public static byte[] toByteArray(long x) {
+        byte result[] = new byte[8];
+        for (int i = 7; i >= 0; i--) {
+            result[i] = (byte) (x & 0xFF);
+            x >>= 8;
+        }
+        return result;
+    }
+
+    public static long toLong(byte[] ba) {
+        if (ba == null)
+            return 0;
+        return toLong(ba, 0, ba.length);
+    }
+
+    public static long toLong(byte[] ba, int offset, int length) {
+        long result = 0;
+        for (int i = 0, j = offset; i < 8 && j < ba.length && j < offset + length; i++, j++) {
+            result = (result << 8);
+            result += (ba[j] & 0xFF);
+        }
+        return result;
+    }
+
+    public static int hw(long i) {
+        int result = 0;
+        while (i > 0) {
+            if ((i & 1) != 0)
+                result++;
+            i >>>= 1;
+        }
+        return result;
+    }
+
+    public static int hw(byte[] ba) {
+        int result = 0;
+        for (int i = 0; i < ba.length; i++)
+            result += hw(ba[i] & 0xFF);
+        return result;
+    }
+
+    /**
+     * Method to compute results
+     * 
+     * @throws DataOperationException
+     */
+    // throws DataOperationException 
+    public void finishProcess(sm3_type t){
+        super.finishProcess(sm3_type t);
+        if (!mustGenerate)
+            numberOfResultTraces = 0; // suppress output traces
+        System.out.println("keys:"+keys);
+        for (int i = 0; i < keys; i++)
+            showCandidateRanking(i, 0, numberOfSamples);
+    }
+
+    /**
+     * Method to compute results
+     */
+    public void showCandidateRanking(int key, int fragmentOffset, int fragmentEnd) {
+        Vector<float[]> best = new Vector<float[]>();
+        for (int c = 0; c < candidates; c++) {
+            float[] localBest = new float[3];
+            for (int i = fragmentOffset, j = (key * candidates + c) * numberOfSamples + fragmentOffset; i < fragmentEnd; i++, j++) {
+                if (i == fragmentOffset || Math.abs(sampleDataCorrelation[j]) > Math.abs(localBest[2])) {
+                    localBest[0] = c;
+                    localBest[1] = i;
+                    localBest[2] = (float) sampleDataCorrelation[j];
+                }
+            }
+            int i = 0;
+            while (i < max && i < best.size() && Math.abs(localBest[2]) < Math.abs(best.get(i)[2]))
+                i++;
+            if (i < max)
+                best.add(i, localBest);
+        }
+        report(key, best, fragmentOffset, fragmentEnd);
+    }
+
+    /**
+     * Report function
+     */
+    public void report(int key, Vector<float[]> best, int fragmentOffset, int fragmentEnd) {
+        if (keys == 1)
+            System.out.println(bestCorrelationHeader + ":");
+        else
+            System.out.println(bestCorrelationHeader + " " + keyTitle + " " + (keyOffset + key) + ":");
+        for (int i = 0; i < max && i < best.size(); i++) {
+            double roundedValue = best.get(i)[2];
+            roundedValue *= precision;
+            roundedValue = Math.floor(roundedValue + 0.5d);
+            roundedValue /= precision;
+            String value = String.valueOf(roundedValue);
+            if (value.charAt(0) != '-')
+                value = " " + value;
+            while (value.length() < precisionDigits + 3)
+                value += "0";
+            String candidate = String.valueOf((int) best.get(i)[0]);
+            while (candidate.length() < candidateStringLength)
+                candidate = " " + candidate;
+            String candidateHexString = Integer.toHexString((int) best.get(i)[0]).toUpperCase();
+            if ((candidateHexString.length() & 1) == 1)
+                candidateHexString = "0" + candidateHexString;
+            candidate += " (0x" + candidateHexString + ")";
+           // System.out.println(String.valueOf(i) + ", " + candidateTitle + ": " + candidate + ", value: " + value + ", at position: " + ((int) best.get(i)[1] + xOffset));
+        }
+    }
+
+}

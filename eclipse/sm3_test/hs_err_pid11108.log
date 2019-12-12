@@ -1,0 +1,203 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaCalls.cpp:51), pid=11108, tid=0x0000000000003634
+#  guarantee(thread->is_Java_thread()) failed: crucial check - the VM thread cannot and must not escape to Java code
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_202-b08) (build 1.8.0_202-b08)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.202-b08 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000001cdb7000):  VMThread [stack: 0x000000001de50000,0x000000001df50000] [id=13876]
+
+Stack: [0x000000001de50000,0x000000001df50000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+VM_Operation (0x000000001e84f5b0): GetOrSetLocal, mode: safepoint, requested by thread 0x000000001ce1d000
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x000000001e1ff800 JavaThread "Service Thread" daemon [_thread_blocked, id=15872, stack(0x000000001ed50000,0x000000001ee50000)]
+  0x000000001ce40800 JavaThread "C1 CompilerThread2" daemon [_thread_blocked, id=17036, stack(0x000000001ec50000,0x000000001ed50000)]
+  0x000000001ce3e800 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=20392, stack(0x000000001eb50000,0x000000001ec50000)]
+  0x000000001ce3a800 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=14256, stack(0x000000001ea50000,0x000000001eb50000)]
+  0x000000001ce2b800 JavaThread "JDWP Command Reader" daemon [_thread_in_native, id=9096, stack(0x000000001e950000,0x000000001ea50000)]
+  0x000000001ce28000 JavaThread "JDWP Event Helper Thread" daemon [_thread_blocked, id=20156, stack(0x000000001e850000,0x000000001e950000)]
+  0x000000001ce1d000 JavaThread "JDWP Transport Listener: dt_socket" daemon [_thread_blocked, id=11812, stack(0x000000001e750000,0x000000001e850000)]
+  0x000000001e192800 JavaThread "Attach Listener" daemon [_thread_blocked, id=17540, stack(0x000000001e650000,0x000000001e750000)]
+  0x000000001ce05800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=13296, stack(0x000000001e550000,0x000000001e650000)]
+  0x000000000382e000 JavaThread "Finalizer" daemon [_thread_blocked, id=10408, stack(0x000000001e050000,0x000000001e150000)]
+  0x000000001cdda000 JavaThread "Reference Handler" daemon [_thread_blocked, id=1756, stack(0x000000001df50000,0x000000001e050000)]
+  0x0000000003733800 JavaThread "main" [_thread_blocked, id=5764, stack(0x0000000003630000,0x0000000003730000)]
+
+Other Threads:
+=>0x000000001cdb7000 VMThread [stack: 0x000000001de50000,0x000000001df50000] [id=13876]
+  0x000000001e231800 WatcherThread [stack: 0x000000001ee50000,0x000000001ef50000] [id=17832]
+
+VM state:at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x0000000003730dd0] Threads_lock - owner thread: 0x000000001cdb7000
+
+heap address: 0x00000006c1e00000, size: 4066 MB, Compressed Oops mode: Zero based, Oop shift amount: 3
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 3
+Compressed class space size: 1073741824 Address: 0x00000007c0000000
+
+Heap:
+ PSYoungGen      total 76288K, used 3932K [0x000000076b500000, 0x0000000770a00000, 0x00000007c0000000)
+  eden space 65536K, 6% used [0x000000076b500000,0x000000076b8d71c0,0x000000076f500000)
+  from space 10752K, 0% used [0x000000076ff80000,0x000000076ff80000,0x0000000770a00000)
+  to   space 10752K, 0% used [0x000000076f500000,0x000000076f500000,0x000000076ff80000)
+ ParOldGen       total 175104K, used 0K [0x00000006c1e00000, 0x00000006cc900000, 0x000000076b500000)
+  object space 175104K, 0% used [0x00000006c1e00000,0x00000006c1e00000,0x00000006cc900000)
+ Metaspace       used 2719K, capacity 4600K, committed 4864K, reserved 1056768K
+  class space    used 294K, capacity 424K, committed 512K, reserved 1048576K
+
+Card table byte_map: [0x0000000012bf0000,0x00000000133f0000] byte_map_base: 0x000000000f5e1000
+
+Marking Bits: (ParMarkBitMap*) 0x0000000055a35ce0
+ Begin Bits: [0x0000000013d40000, 0x0000000017cc8000)
+ End Bits:   [0x0000000017cc8000, 0x000000001bc50000)
+
+Polling page: 0x00000000018b0000
+
+CodeCache: size=245760Kb used=1100Kb max_used=1100Kb free=244660Kb
+ bounds [0x0000000003830000, 0x0000000003aa0000, 0x0000000012830000]
+ total_blobs=249 nmethods=22 adapters=149
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 0.204 Thread 0x000000001ce3e800 nmethod 18 0x000000000393b390 code [0x000000000393b4c0, 0x000000000393b558]
+Event: 0.204 Thread 0x000000001ce40800 nmethod 19 0x0000000003941710 code [0x00000000039418e0, 0x0000000003941d98]
+Event: 0.204 Thread 0x000000001ce40800   20       3       java.lang.String::equals (81 bytes)
+Event: 0.205 Thread 0x000000001ce40800 nmethod 20 0x0000000003940e10 code [0x0000000003940fa0, 0x0000000003941510]
+Event: 0.205 Thread 0x000000001ce40800   16  s    3       java.lang.StringBuffer::append (13 bytes)
+Event: 0.205 Thread 0x000000001ce40800 nmethod 16 0x0000000003940110 code [0x00000000039402c0, 0x00000000039409f8]
+Event: 0.207 Thread 0x000000001ce40800   21       1       java.io.File::getPath (5 bytes)
+Event: 0.208 Thread 0x000000001ce40800 nmethod 21 0x000000000393f650 code [0x000000000393f7a0, 0x000000000393f8b0]
+Event: 0.214 Thread 0x000000001ce40800   22       3       java.util.Arrays::copyOfRange (63 bytes)
+Event: 0.215 Thread 0x000000001ce40800 nmethod 22 0x0000000003942050 code [0x0000000003942260, 0x0000000003942dd8]
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (3 events):
+Event: 1377.711 Thread 0x000000001cdb7000 redefined class name=test.read_csv, count=1
+Event: 2394.611 Thread 0x000000001cdb7000 redefined class name=test.read_csv, count=2
+Event: 2444.208 Thread 0x000000001cdb7000 redefined class name=test.read_csv, count=3
+
+Internal exceptions (2 events):
+Event: 0.046 Thread 0x0000000003733800 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.defineClass(Ljava/lang/String;[BII)Ljava/lang/Class; name or signature does not match> (0x000000076b507cb0) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u202\12323\hotspot
+Event: 0.046 Thread 0x0000000003733800 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.prefetchRead(Ljava/lang/Object;J)V name or signature does not match> (0x000000076b507f98) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u202\12323\hotspot\src\share\vm\prim
+
+Events (10 events):
+Event: 2444.208 Executing VM operation: RedefineClasses done
+Event: 2444.213 Executing VM operation: ChangeBreakpoints
+Event: 2444.213 Executing VM operation: ChangeBreakpoints done
+Event: 2444.213 Executing VM operation: ChangeBreakpoints
+Event: 2444.213 Executing VM operation: ChangeBreakpoints done
+Event: 2444.243 Executing VM operation: GetOwnedMonitorInfo
+Event: 2444.243 Executing VM operation: GetOwnedMonitorInfo done
+Event: 2444.243 Executing VM operation: GetCurrentContendedMonitor
+Event: 2444.243 Executing VM operation: GetCurrentContendedMonitor done
+Event: 2455.481 Executing VM operation: GetOrSetLocal
+
+
+Dynamic libraries:
+0x00007ff7a6560000 - 0x00007ff7a6597000 	D:\use\java\jdk\bin\javaw.exe
+0x00007ffe3c2c0000 - 0x00007ffe3c4a1000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffe3bdc0000 - 0x00007ffe3be71000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffe394b0000 - 0x00007ffe39723000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffe39890000 - 0x00007ffe39931000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffe3b760000 - 0x00007ffe3b7fe000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffe3be80000 - 0x00007ffe3bedb000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffe3b800000 - 0x00007ffe3b924000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffe39c00000 - 0x00007ffe39d91000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffe38c00000 - 0x00007ffe38c20000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffe3b940000 - 0x00007ffe3b968000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffe38670000 - 0x00007ffe38801000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffe38a60000 - 0x00007ffe38aff000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffe38b00000 - 0x00007ffe38bf8000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffe29240000 - 0x00007ffe294a9000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.17134.1130_none_d3ff42617c90becf\COMCTL32.dll
+0x00007ffe3bee0000 - 0x00007ffe3c201000 	C:\WINDOWS\System32\combase.dll
+0x00007ffe38c20000 - 0x00007ffe38c99000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffe39860000 - 0x00007ffe3988d000 	C:\WINDOWS\System32\IMM32.DLL
+0x0000000055130000 - 0x0000000055202000 	D:\use\java\jdk\jre\bin\msvcr100.dll
+0x0000000055210000 - 0x0000000055ab5000 	D:\use\java\jdk\jre\bin\server\jvm.dll
+0x00007ffe3b930000 - 0x00007ffe3b938000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffe328b0000 - 0x00007ffe328ba000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffe33800000 - 0x00007ffe33823000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffe33e40000 - 0x00007ffe33e49000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffe337d0000 - 0x00007ffe337fa000 	C:\WINDOWS\SYSTEM32\winmmbase.dll
+0x00007ffe39b90000 - 0x00007ffe39bfc000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffe39460000 - 0x00007ffe394a9000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x00007ffe33b20000 - 0x00007ffe33b2f000 	D:\use\java\jdk\jre\bin\verify.dll
+0x00007ffe261c0000 - 0x00007ffe261e9000 	D:\use\java\jdk\jre\bin\java.dll
+0x00007ffe34d70000 - 0x00007ffe34da5000 	D:\use\java\jdk\jre\bin\jdwp.dll
+0x00007ffe361f0000 - 0x00007ffe361f8000 	D:\use\java\jdk\jre\bin\npt.dll
+0x00007ffe33b00000 - 0x00007ffe33b16000 	D:\use\java\jdk\jre\bin\zip.dll
+0x00007ffe3a0b0000 - 0x00007ffe3b4f5000 	C:\WINDOWS\System32\SHELL32.dll
+0x00007ffe39e70000 - 0x00007ffe39f19000 	C:\WINDOWS\System32\shcore.dll
+0x00007ffe38ca0000 - 0x00007ffe393b0000 	C:\WINDOWS\System32\windows.storage.dll
+0x00007ffe39800000 - 0x00007ffe39851000 	C:\WINDOWS\System32\shlwapi.dll
+0x00007ffe38620000 - 0x00007ffe38631000 	C:\WINDOWS\System32\kernel.appcore.dll
+0x00007ffe38640000 - 0x00007ffe3865f000 	C:\WINDOWS\System32\profapi.dll
+0x00007ffe385d0000 - 0x00007ffe3861c000 	C:\WINDOWS\System32\powrprof.dll
+0x00007ffe38660000 - 0x00007ffe3866a000 	C:\WINDOWS\System32\FLTLIB.DLL
+0x00007ffe361d0000 - 0x00007ffe361d9000 	D:\use\java\jdk\jre\bin\dt_socket.dll
+0x00007ffe17ab0000 - 0x00007ffe17ac6000 	C:\WINDOWS\system32\napinsp.dll
+0x00007ffe17a90000 - 0x00007ffe17aaa000 	C:\WINDOWS\system32\pnrpnsp.dll
+0x00007ffe353c0000 - 0x00007ffe353d9000 	C:\WINDOWS\system32\NLAapi.dll
+0x00007ffe37e30000 - 0x00007ffe37e96000 	C:\WINDOWS\System32\mswsock.dll
+0x00007ffe37bc0000 - 0x00007ffe37c7e000 	C:\WINDOWS\SYSTEM32\DNSAPI.dll
+0x00007ffe39750000 - 0x00007ffe39758000 	C:\WINDOWS\System32\NSI.dll
+0x00007ffe37b80000 - 0x00007ffe37bb8000 	C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL
+0x00007ffe17780000 - 0x00007ffe1778e000 	C:\WINDOWS\System32\winrnr.dll
+0x00007ffe17600000 - 0x00007ffe17615000 	C:\WINDOWS\System32\wshbth.dll
+0x00007ffe2ed00000 - 0x00007ffe2ed72000 	C:\WINDOWS\System32\fwpuclnt.dll
+0x00007ffe38110000 - 0x00007ffe38135000 	C:\WINDOWS\SYSTEM32\bcrypt.dll
+0x00007ffe33160000 - 0x00007ffe3316a000 	C:\Windows\System32\rasadhlp.dll
+
+VM Arguments:
+jvm_args: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:53521 -Dfile.encoding=GBK 
+java_command: test.read_csv
+java_class_path (initial): C:\Users\admin\Desktop\CODE\eclipse\sm3_test\build\classes;E:\tools\myeclipse\eclipse-jee-luna-SR2-win32-x86_64\Apache\apache-tomcat-7.0.94\lib\annotations-api.jar;E:\tools\myeclipse\eclipse-jee-luna-SR2-win32-x86_64\Apache\apache-tomcat-7.0.94\lib\catalina-ant.jar;E:\tools\myeclipse\eclipse-jee-luna-SR2-win32-x86_64\Apache\apache-tomcat-7.0.94\lib\catalina-ha.jar;E:\tools\myeclipse\eclipse-jee-luna-SR2-win32-x86_64\Apache\apache-tomcat-7.0.94\lib\catalina-tribes.jar;E:\tools\myeclipse\eclipse-jee-luna-SR2-win32-x86_64\Apache\apache-tomcat-7.0.94\lib\catalina.jar;E:\tools\myeclipse\eclipse-jee-luna-SR2-win32-x86_64\Apache\apache-tomcat-7.0.94\lib\ecj-4.4.2.jar;E:\tools\myeclipse\eclipse-jee-luna-SR2-win32-x86_64\Apache\apache-tomcat-7.0.94\lib\el-api.jar;E:\tools\myeclipse\eclipse-jee-luna-SR2-win32-x86_64\Apache\apache-tomcat-7.0.94\lib\jasper-el.jar;E:\tools\myeclipse\eclipse-jee-luna-SR2-win32-x86_64\Apache\apache-tomcat-7.0.94\lib\jasper.jar;E:\tools\myeclipse\eclipse-jee-luna-SR2-win32-x86_64\Apache\apache-tomcat-7.0.94\lib\jsp-api.jar;E:\tools\myeclipse\eclipse-jee-luna-SR2-win32-x86_64\Apache\apache-tomcat-7.0.94\lib\servlet-api.jar;E:\tools\myeclipse\eclipse-jee-luna-SR2-win32-x86_64\Apache\apache-tomcat-7.0.94\lib\tomcat-api.jar;E:\tools\myeclipse\eclipse-jee-luna-SR2-win32-x86_64\Apache\apache-tomcat-7.0.94\lib\tomcat-coyote.jar;E:\tools\myeclipse\eclipse-jee-luna-SR2-win32-x86_64\Apache\apache-tomcat-7.0.94\lib\tomcat-dbcp.jar;E:\tools\myeclipse\eclipse-jee-luna-SR2-win32-x86_64\Apache\apache-tomcat-7.0.94\lib\tomcat-i18n-es.jar;E:\tools\myeclipse\eclipse-jee-luna-SR2-win32-x86_64\Apache\apache-tomcat-7.0.94\lib\tomcat-i18n-fr.jar;E:\tools\myeclipse\eclipse-jee-luna-SR2-win32-x86_64\Apache\apache-tomcat-7.0.94\lib\tomcat-i18n-ja.jar;E:\tools\myeclipse\eclipse-jee-luna-SR2-win32-x86_64\Apache\apache-tomcat-7.0.94\lib\tomcat-i18n-ru.jar;E:\tools\myeclipse\eclipse-jee-luna-SR2-win32-x86_64\Apache\apache-tomcat-7.0.94\lib\tomcat-j
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=D:\use\java\jdk
+CLASSPATH=.;D:\use\java\jdk\lib;D:\use\java\jdk\lib\dt.jar;D:\use\java\jdk\lib\tools.jar
+PATH=D:\use\java\jdk\jre\bin;D:/use/java/jdk/bin/../jre/bin/server;D:/use/java/jdk/bin/../jre/bin;D:/use/java/jdk/bin/../jre/lib/amd64;D:\use\java\jdk\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\use\Ruby25-x64\bin;D:\use\mysql\mysql\bin;E:\tools\Git\cmd;E:\System\Node\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;E:\tools\myeclipse\eclipse-jee-luna-SR2-win32-x86_64\Apache\apache-tomcat-7.0.94\bin;D:\use\python\Scripts\;D:\use\python\;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;C:\Users\admin\AppData\Local\GitHubDesktop\bin;E:\System\Node\node_global;;D:\use\python\IDE\bin;;E:\tools\myeclipse\eclipse-jee-luna-SR2-win32-x86_64\eclipse;
+USERNAME=admin
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 17134 (10.0.17134.753)
+
+CPU:total 4 (initial active 4) (4 cores per cpu, 1 threads per core) family 6 model 158 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, tsc, tscinvbit, bmi1, bmi2, adx
+
+Memory: 4k page, physical 16649380k(10690124k free), swap 17697956k(9585788k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.202-b08) for windows-amd64 JRE (1.8.0_202-b08), built on Dec 15 2018 19:54:30 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Tue Nov 19 23:45:27 2019
+timezone: 中国标准时间
+elapsed time: 2455 seconds (0d 0h 40m 55s)
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="String"/>
+			<item value="&quot;&quot;"/>
+			<item value="public static"/>
+			<item value="&#x09;public static String sm3x1 = &quot;&quot;;"/>
+			<item value="value"/>
+			<item value="Best correlation"/>
+			<item value="Best correlation:"/>
+			<item value="round1TT1"/>
+		</list>
+		<list key="replacehistory">
+			<item value=""/>
+			<item value="int"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="325" key="DIALOG_WIDTH"/>
+		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
+		<item value="413" key="DIALOG_HEIGHT"/>
+		<item value="1251" key="DIALOG_X_ORIGIN"/>
+		<item value="95" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>
