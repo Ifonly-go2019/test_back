@@ -1,0 +1,60 @@
+div {
+	width: 150px;
+	height: 150px;
+	margin: 50px;
+	background-color: orangered;
+}
+
+.leftshadow {
+	box-shadow: -20px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.rightshadow {
+	box-shadow: 20px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.topshadow {
+	box-shadow: 0 -20px 10px rgba(0, 0, 0, 0.5);
+}
+
+.bottomshadow {
+	box-shadow: 0 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+.blur1 {
+	box-shadow: 10px 0 0 rgba(0, 0, 0, 0.5);
+}
+
+.blur2 {
+	box-shadow: 10px 0 -20px rgba(0, 0, 0, 0.5);
+}
+
+.blur3 {
+	box-shadow: 10px 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.blur4 {
+	box-shadow: 10px 0 50px rgba(0, 0, 0, 0.5);
+}
+
+.nospread {
+	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+.positivespread {
+	box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.5);
+}
+.inset{
+	box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.5) inset;
+}
+.step6{
+	box-shadow: 20px -20px 10px 0 rgba(0, 0, 0, 0.5);
+}
+.step7{
+	box-shadow: 0 17px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.step9{
+	box-shadow: 20px 20px 10px 0px rgba(0, 0, 0, 0.5) inset,/* 不同阴影用逗号隔开*/
+	 20px 20px 10px 0px green;
+}

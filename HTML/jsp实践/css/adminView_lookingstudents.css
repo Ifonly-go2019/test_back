@@ -1,0 +1,147 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+a {
+	color: rgba(60, 60, 60, 0.8);
+}
+
+li {
+	list-style: none;
+	display: block;
+
+}
+
+.main {
+	background-image: url(../img/home.png);
+	width: 100%;
+}
+
+.top {
+	width: 100%;
+	height: 50px;
+	/* outline: 1px solid deeppink; */
+}
+
+.left {
+	width: 10%;
+	height: 840px;
+	/* outline: 1px solid deeppink; */
+	float: left;
+	/* color: #FFFFFF; */
+
+}
+.clear{
+	clear: both;
+}
+.show {
+	width: 90%;
+	height: 840px;
+	margin-top: -840px;
+	/* outline: 1px solid darkblue; */
+	margin-left: 10%;
+}
+
+.bottom {
+	width: 100%;
+	height: 20px;
+	
+	outline: 1px solid darkgoldenrod;
+	margin-top: -20px;
+}
+
+.leftMenue {
+	background-color: rgba(60, 210, 209, .6);
+	border-radius: 10px 10px 40px 0;
+	padding-top: 5px;
+}
+
+.leftMenue_show {
+	width: 100%;
+	margin-top: 20px;
+	/* outline: 1px solid darkgrey; */
+	font-family:YouYuan ;
+
+}
+
+.leftMenue_show li {
+	margin: 10px auto;
+}
+.leftMenue_show a{
+	font-size: 14px;
+	font-family: STXihei ;
+}
+
+.leftMenue_show li:hover {
+	cursor: pointer;
+	text-align: center;
+	background: rgba(255, 255, 255, .5);
+}
+
+.topMenue {
+	width: 100%;
+	height: 50px;
+	background: #666666;
+	color: #FFFFFF;
+	font-family: 黑体;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 0 30px 30px 0px;
+}
+
+.topMenue_show {
+	width: 50%;
+	height: 50px;
+	margin-left: 30%;
+}
+
+.topMenue_show ul {
+	display: flex;
+}
+
+.topMenue_show li {
+	justify-content: flex-start;
+	width: 25%;
+	margin: 10px auto;
+}
+.show_continent{
+	height: 840px;
+}
+.show_continent table{
+	width: 100%;
+	margin-top: -800px;
+	table-layout: fixed;
+}
+
+.show_continent table  th{
+	margin-left: 50px;
+	margin-top: 5px;
+	text-align: center;
+}
+.show_continent table td {
+	height: 50px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	text-align: center;
+	border:1px solid #ccd;
+}
+.first_th{
+	width: 80px;
+	height: 30px;
+}
+.second_th{
+	width: 150px;
+	height: 30px;
+}
+.third_th{
+	width: 100px;
+	height: 30px;
+}
+.frouth_th{
+	width: 50px;
+	height: 30px;
+}

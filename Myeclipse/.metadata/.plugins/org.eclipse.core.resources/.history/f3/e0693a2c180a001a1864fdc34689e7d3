@@ -1,0 +1,146 @@
+package class_type;
+import java.nio.DoubleBuffer;
+import java.nio.FloatBuffer;
+import java.io.BufferedReader;
+
+import com.riscure.signalanalysis.Data;
+import com.riscure.signalanalysis.Trace;
+import com.riscure.signalanalysis.TraceSet;
+import com.riscure.signalanalysis.inspector.HostData;
+import com.riscure.functions.Strings;
+
+
+
+
+public class sm3_type {
+	 	public static final int HIGH = 1;
+	    public static final int HIGH_AND_LOW = 0;
+	    public static final int LOW = 2;
+	    private boolean aggregatesValid;
+	    public byte[] data;
+	    public String dataString;
+	    private Trace fastHigh;
+	    private Trace fastLow;
+	    private boolean hasIllegalValues;
+	    private boolean isReal;
+	    private float max;
+	    private float min;
+	    @Deprecated
+	    public float[] sample;
+	    public float sampleFrequency;
+	    private Data samples;
+	    public int shifted;
+	    public String title;
+	    public TraceSet ts;
+	    
+         
+	    
+	    
+	    
+	    private String sm3x1 = "";
+	    private String sm3y1 = "";
+		private String sm3x2 = "";
+		private String sm3d2 = "";
+		private String sm3y2 = "";
+		private String sm3h2 = "";
+		private String sm3c3 = "";
+		private String sm3d3 = "";
+		private String sm3g3 = "";
+		private String sm3h3 = "";
+		
+		
+		private String sm3round = "";
+		private String Sm3step = "";
+		private int firstSampleIndex ;
+		private int  lastSampleIndex;
+	    public int tracefirst;
+	    public int tracenumber;
+	  
+		
+	    public void setSample(int i, float f) {
+	        forceSample();
+	        this.sample[i] = f;
+	    }
+	    public float[] getSample() {
+	        return this.samples.getFloatData();
+	    }
+
+	    public float getSample(int i) {
+	        float[] sample = getSample();
+	        int i2 = this.shifted + i;
+	        if (i2 < 0 || i2 >= sample.length) {
+	            return 0.0f;
+	        }
+	        return sample[i2];
+	    }
+	    public Data getSampleData() {
+	        return this.samples;
+	    }
+	    public String getDataString() {
+	        return this.dataString;
+	    }
+	    public byte[] getData() {
+	        return this.data;
+	    }
+	    public int getNumberOfSamples() {
+	        return this.samples.getN();
+	    }
+
+	    
+	    public void forceSample() {
+	        if (this.samples.getN() > 0) {
+	            this.sample = getSample();
+	            if (!TraceSet.a) {
+	                return;
+	            }
+	        }
+	        this.sample = null;
+	    }
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	  
+	    
+	    
+	    
+	    
+
+	    
+	    
+	    
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+}

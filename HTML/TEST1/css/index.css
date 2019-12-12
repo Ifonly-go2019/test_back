@@ -1,0 +1,47 @@
+.d01{	
+	/*background-color:red;*/
+	width: 800px;
+	margin: 0 auto;
+	position:relative;/*定位*/
+	animation: a linear 5s infinite;
+	
+}
+/** a是动画名字*/
+@keyframes a{
+	from{
+		 transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(1800deg);
+	}
+}
+img:nth-of-type(2){/** 第二张图片*/
+	position:absolute;
+	top:80px;
+	left:400px;
+	animation: b 35s;
+	transform-origin: top center;	
+}
+img:nth-of-type(3){
+	position:absolute;
+	top:650px;
+	left:500px;
+	animation: b 35s;
+	transform-origin: top center;
+	
+}
+img:nth-of-type(4){
+	position:absolute;
+	top:400px;
+	left:10px;
+	animation: b 35s;
+	transform-origin: top center;
+}
+@keyframes b{
+	from{
+		 transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(-7200deg);
+	}
+}

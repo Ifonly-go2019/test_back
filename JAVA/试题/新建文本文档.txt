@@ -1,0 +1,39 @@
+class QuadraticEquation{
+	private double a,b,c;
+	double getA() {
+		return this.a;
+	}
+	double getB() {
+		return this.b;
+	}
+	double getC() {
+		return this.c;
+	}
+	
+	public QuadraticEquation(double a,double b,double c){
+		this.a = a;
+		this.b = b;
+		this.c = c;
+		
+	}
+	
+	public double getDiscriminant() {
+		return this.b*this.b - 4*a*c;
+	}
+	
+	public double getRoot1(){
+		if(b*b>=4*a*c) {
+			return (double)(-b+Math.sqrt(b*b-4*a*c))/(2*a);
+		}else {
+			return 0;
+		}
+	}
+	
+	public double getRoot2(){
+		if(b*b>=4*a*c) {
+			return (double)(-b-Math.sqrt(b*b-4*a*c))/(2*a);
+		}else {
+			return 0;
+		}
+	}
+}

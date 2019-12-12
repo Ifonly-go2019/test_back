@@ -1,0 +1,29 @@
+.container{
+	background-color: #eee;
+}
+.container div{
+	width: 200px;
+	height: 100px;
+	background-color: orange;
+}
+
+em{
+	font-size: 20xp;
+	font-weight: bold;
+	display: inline-block;
+	width: 400px;
+	height: 100px;
+	background-color: orangered;
+	
+}
+.container:hover span{
+	font-size: 20px;
+}
+.container div:hover + p{
+	font-size: 20px;
+	color: red;
+}/*+号选择器选择临近的 **/
+.container div:hover ~i{
+	font-size: 36px;
+	font-style: normal;
+}/** ~号选择器匹配后面出现的*/

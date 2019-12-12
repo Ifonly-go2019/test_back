@@ -1,0 +1,1057 @@
+﻿<form method="post" action="List.aspx" id="ctl00">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+</div>
+<div>
+	<table cellspacing="0" rules="all" border="1" id="GVForExport" style="border-collapse:collapse;">
+		<tr>
+			<th scope="col">自定义题号</th><th scope="col">题目名称</th><th scope="col">所属阶段</th><th scope="col">知识点</th><th scope="col">题目难度</th><th scope="col">题目描述</th><th scope="col">源代码</th><th scope="col">测试输入</th><th scope="col">测试输出</th><th scope="col">分值比重</th><th scope="col">备注</th>
+		</tr><tr>
+			<td>LB1108p   </td><td>保持数列有序：有n(</td><td>
+                         阶段一
+                    </td><td>
+                     顺序表 
+                    </td><td>
+                         普通
+                    </td><td>
+                     保持数列有序：有n(约定n&lt;=100)个整数，已经按照从小到大顺序排列好，现在另外给一个整数x，请将该数插入到序列中，并使新的序列仍然有序。程序输入：输入数据包含多组测试实例，每组数据由两行组成，第一行是n和x，第二行是已经有序的n个数的数列。n和x同时为0表示输入数据的结束，本行不做处理。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;程序输出：对于每个测试实例，输出插入新的元素后的数列。程序的运行效果应类似地如图所示，图中的3&nbsp;3、1&nbsp;2&nbsp;4、5&nbsp;6、1&nbsp;7&nbsp;8&nbsp;9&nbsp;10、2&nbsp;5、1&nbsp;3和0&nbsp;0是从键盘输入内容。
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.c&quot;,&quot;code&quot;:&quot;#include &lt;stdio.h&gt;\nint main(void)\n{\n\tint i, j, n, x;\n\tint arr[101];\n\tprintf(\&quot;Input:\\n\&quot;);\n\tscanf(\&quot;%d%d\&quot;, &amp;n, &amp;x);\n\twhile (n != 0 || x != 0)\n\t{\n\t\tfor (i = 0; i &lt; n; i++)\n\t\t{\n\t\t\tscanf(\&quot;%d\&quot;, &amp;arr[i]);\n\t\t} \n\t\tfor (j = n - 1; j &gt;= 0 &amp;&amp; x &lt; arr[j]; j--)\n\t\t{\n\t\t\tarr[j + 1] = arr[j];\n\t\t} \n\t\tarr[j + 1] = x;\n\t\tprintf(\&quot;Output: \&quot;);\n\t\tfor (i = 0; i &lt;= n; i++)\n\t\t{\n\t\t\tprintf(\&quot;%d \&quot;, arr[i]);\n\t\t} \n\t\tprintf(\&quot;\\n\&quot;);\n\t\tscanf(\&quot;%d%d\&quot;, &amp;n, &amp;x);\n\t}\n\treturn 0;\n}\n&quot;}]}</td><td>
+                     3 3
+1 2 4
+5 6
+1 7 8 9 10
+2 5
+1 3
+0 0々3 0
+2 3 5
+1 3
+1
+0 0々18 702
+33 87 264 276 353 362 400 504 707 790 806 927 1195 1382 1428 1495 1534 1585
+12 3253
+1980 2113 2182 2386 2961 3038 3052 3186 3899 4081 4094 4323
+0 0々19 213
+362 400 504 1428 1495 2182 2386 3052 3186 4094 4323 5529 5540 6643 6760 7463 7545 8526 8549
+26 5423
+264 276 353 362 400 504 827 1195 1382 1428 1495 1849 1980 2113 2182 2386 2931 2961 3038 3052 3186 3894 3899 4081 4094 4323
+0 0
+                    </td><td>
+                     Input:
+Output: 1 2 3 4 
+Output: 1 6 7 8 9 10 
+Output: 1 3 5 
+々Input:
+Output: 0 2 3 5 
+Output: 1 3 
+々Input:
+Output: 33 87 264 276 353 362 400 504 702 707 790 806 927 1195 1382 1428 1495 1534 1585 
+Output: 1980 2113 2182 2386 2961 3038 3052 3186 3253 3899 4081 4094 4323 
+々Input:
+Output: 213 362 400 504 1428 1495 2182 2386 3052 3186 4094 4323 5529 5540 6643 6760 7463 7545 8526 8549 
+Output: 264 276 353 362 400 504 827 1195 1382 1428 1495 1849 1980 2113 2182 2386 2931 2961 3038 3052 3186 3894 3899 4081 4094 4323 5423 
+
+                    </td><td>
+                     10.00々10.00々40.00々40.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>wang-3-1p </td><td>编写一个程序，判断输</td><td>
+                         阶段一
+                    </td><td>
+                     顺序表 
+                    </td><td>
+                         普通
+                    </td><td>
+                     编写一个程序，判断输入的字符串是否为回文；所谓“回文”指字符串从左向右读取的结果与从右向左读取的结果相同。程序结果中第一行“Enter&nbsp;a&nbsp;number:”为固定输入，后接输入的字符串；第二行：“output:”为固定输出，后接判断结果；若为回文，则输出&quot;It&#39;s&nbsp;a&nbsp;huiwen&nbsp;number&quot;；若不为回文，则输出&quot;It&#39;s&nbsp;not&nbsp;a&nbsp;huiwen&nbsp;number&quot;&nbsp;
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.c&quot;,&quot;code&quot;:&quot;#include&lt;stdio.h&gt; \n#include&lt;string.h&gt; \n#define MAX 20 \n\nstruct stack \n{char str[MAX]; \n int top; \n}; \n\nvoid Initstack(struct stack *sp) /*初始化栈*/ \n{strcpy(sp-&gt;str,\&quot; \&quot;); \n sp-&gt;top=-1; \n} \n\nvoid push(struct stack *sp,char c) /*压栈函数*/ \n{sp-&gt;str[++sp-&gt;top]=c;} \n\nchar pop(struct stack *sp) /*退栈函数*/ \n{return sp-&gt;str[sp-&gt;top--];} \n\nint main() \n{struct stack sk,*sp; /*定义一个栈sk和一个指向栈的指针sp*/ \n int len,k,i; \n char num[MAX],*p; \n sp=&amp;sk; \n Initstack(sp); \n printf(\&quot;Enter a number:\&quot;);  \n scanf(\&quot;%s\&quot;,num); \n len=strlen(num); \n k=len/2;  \n p=num; \n for(i=0;i&lt;k;i++) /*将num的前k位压入栈内*/ \n {push(sp,*p); \n p++; \n } \n if(len-2*k==1) p++; /*如果这个数为奇数位则要让p前进一位*/ \n for(i=0;i&lt;k;i++)  \n {if(sp-&gt;str[sp-&gt;top]==*p) /*若是和对称的数位的值相同,则进行出栈的处理*/ \n {pop(sp); p++;} \n else break; /*若是和对称的数位的值不相同,则退出循环*/ \n } \n if(sp-&gt;top==-1) /*如果栈为空则表示为回文数,否则为是回文数*/ \n {printf(\&quot;output:\&quot;);\n printf(\&quot;It&#39;s a huiwen number\\n\&quot;); }\n else  \n {printf(\&quot;output:\&quot;);\n printf(\&quot;It&#39;s not a huiwen number\\n\&quot;);} \n return 0; \n} &quot;}]}</td><td>
+                     a々ceec々abcded々werew
+                    </td><td>
+                     Enter a number:output:It's a huiwen number
+々Enter a number:output:It's a huiwen number
+々Enter a number:output:It's not a huiwen number
+々Enter a number:output:It's a huiwen number
+
+                    </td><td>
+                     20.00々30.00々20.00々30.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>LB1106p   </td><td>从顺序结构（n个元素</td><td>
+                         阶段一
+                    </td><td>
+                     顺序表 
+                    </td><td>
+                         普通
+                    </td><td>
+                     从顺序结构（n个元素）中第i个（1&nbsp;&lt;=&nbsp;i&nbsp;&lt;=&nbsp;n）位置连续删除k个（k&nbsp;&gt;&nbsp;0）元素，第1,3,5行为输入提示，第2,4,6行需要用户输入，第8行为输出。&nbsp;
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.c&quot;,&quot;code&quot;:&quot;#include &lt;stdio.h&gt;\n\n#define Maxsize 40\n\nint DelArray(int array[], int *last, int i, int k) \n{ \n\tint j;  \n\tif (i &gt; *last || i &lt;= 0) \n\t{\n\t\tprintf(\&quot;Output: \\n\&quot;); \n\t\tprintf(\&quot;给出的起始位置不合法\\n\&quot;); \n\t\treturn 1;\n\t}   \n\tif (i + k - 1 &gt; *last || k &lt;= 0)  \n\t{\n\t\tprintf(\&quot;Output: \\n\&quot;);    \n\t\tprintf(\&quot;删除个数值不合法!\\n\&quot;);  \n\t\treturn 1; \n\t}  \n\tfor (j = i - 1; j + k &lt; *last; j++)  \n\t{\n\t\tarray[j] = array[j + k];\n\t}\n\t*last -= k;  \n\treturn 0;\n}  \nint main() \n{ \n\tint array[Maxsize], last, i, j, k;  //array:数组，last：数组最大下标,j:循环变量  \n    printf(\&quot;请输入数组元素个数:\\n\&quot;);   \n\tscanf(\&quot;%d\&quot;, &amp;last);  \n\tprintf(\&quot;请输入数组:\\n\&quot;); \n\tfor (j = 0; j &lt; last; j++)    \n\t{\n\t\tscanf(\&quot;%d\&quot;, &amp;array[j]);   \n\t}\n    printf(\&quot;请输入删除起始位置及个数:\\n\&quot;); \n\tscanf(\&quot;%d%d\&quot;, &amp;i, &amp;k); \n\tif (DelArray(array, &amp;last, i, k) == 1)\n\t{\n\t\treturn 0;\n\t}\n\t//printf(\&quot;输出删除处理后的数组\\n\&quot;); \n\tprintf(\&quot;Output:\\n\&quot;); \n\tfor(j = 0; j &lt; last; j++) \n\t{\n\t\tprintf(\&quot;%d \&quot;, array[j]);  \n\t}\n\tprintf(\&quot;\\n\&quot;);    \n\treturn 0;\n}  \n&quot;}]}</td><td>
+                     5
+1 2 3 4 5
+2 3々5
+1 2 3 4 5
+6 2々5
+1 2 3 4 5
+2 4々5
+1 2 3 4 5
+0 2々5
+1 2 3 4 5
+1 4々5
+1 2 3 4 5
+3 2々5
+1 2 3 4 5
+5 1々5
+1 2 3 4 5
+2 0々5
+1 2 3 4 5
+3 4々5
+1 2 3 4 5
+4 1
+                    </td><td>
+                     请输入数组元素个数:
+请输入数组:
+请输入删除起始位置及个数:
+Output:
+1 5 
+々请输入数组元素个数:
+请输入数组:
+请输入删除起始位置及个数:
+Output: 
+给出的起始位置不合法
+々请输入数组元素个数:
+请输入数组:
+请输入删除起始位置及个数:
+Output:
+1 
+々请输入数组元素个数:
+请输入数组:
+请输入删除起始位置及个数:
+Output: 
+给出的起始位置不合法
+々请输入数组元素个数:
+请输入数组:
+请输入删除起始位置及个数:
+Output:
+5 
+々请输入数组元素个数:
+请输入数组:
+请输入删除起始位置及个数:
+Output:
+1 2 5 
+々请输入数组元素个数:
+请输入数组:
+请输入删除起始位置及个数:
+Output:
+1 2 3 4 
+々请输入数组元素个数:
+请输入数组:
+请输入删除起始位置及个数:
+Output: 
+删除个数值不合法!
+々请输入数组元素个数:
+请输入数组:
+请输入删除起始位置及个数:
+Output: 
+删除个数值不合法!
+々请输入数组元素个数:
+请输入数组:
+请输入删除起始位置及个数:
+Output:
+1 2 3 5 
+
+                    </td><td>
+                     5.00々5.00々20.00々5.00々5.00々20.00々10.00々5.00々5.00々20.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>LB1107p   </td><td>将两个顺序存储的有序</td><td>
+                         阶段一
+                    </td><td>
+                     顺序表 
+                    </td><td>
+                         普通
+                    </td><td>
+                     将两个顺序存储的有序（升序）表合并成一个有序表（设用户输入的是有序表，忽略检测用户有序状况的检查），合并后输出。第1,3,5,7行为用户输入提示，2,4,6,8行为用户输入，第10行为输出的结果。
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.c&quot;,&quot;code&quot;:&quot;#include &lt;stdio.h&gt;\n\nvoid step(int a[], int m, int k)\n{\n\tint i;\n\tfor (i = m - 1; i &gt;= k; i--)\n\t{\n\t\ta[i + 1] = a[i];\n\t}\n}\n\nint main(void)\n{\n\tint a[80];\n\tint b[10];\n\tint m, n;\n\tint i, j;\n\tint count;\n\tint ina=0, inb=0;\n\tprintf(\&quot;请输入第一个序列的元素个数:\\n\&quot;);\n\tscanf(\&quot;%d\&quot;, &amp;m);\n\tprintf(\&quot;请依次输入第一个序列的所有元素:\\n\&quot;);\n\tfor (i = 0; i &lt;= m - 1; i++)\n\t{\n\t\tscanf(\&quot;%d\&quot;, &amp;a[i]);\n\t}\n\tprintf(\&quot;请输入第二个序列的元素个数:\\n\&quot;);\n\tscanf(\&quot;%d\&quot;, &amp;n);\n\tprintf(\&quot;请依次输入第二个序列的所有元素:\\n\&quot;);\n\tfor (j = 0; j &lt;= n - 1; j++)\n\t{\n\t\tscanf(\&quot;%d\&quot;, &amp;b[j]);\n\t}\n\t//int a[80]={2,3,6,9,13},m=5;\n\t//int b[6]={4,7,14,15},n=4;\n\ti = 0;\n\tj = 0;\n\tcount = m;\n\twhile (ina &lt; m &amp;&amp; inb &lt; n)\n\t{\n\t\tif (b[j] &lt; a[i] )\n\t\t{\n\t\t\tstep(a, count, i);\n\t\t\ta[i] = b[j++];\n\t\t\tcount++;\n\t\t\tinb++;\n\t\t}\n\t\telse \n\t\t\tina++;\n\t\ti++;\n\t}\n\tif (inb &lt; n)\n\t{\n\t\twhile (j&lt;n)\n\t\t{\n\t\t\ta[i++]=b[j++];\n\t\t}\n\t}\n\tprintf(\&quot;output:\\n\&quot;);\n\tfor (i = 0; i &lt; m + n; i++)\n\t{\n\t\tprintf(\&quot;%d \&quot;, a[i]);\n\t}\n\tprintf(\&quot;\\n\&quot;);\n\treturn 0;\n}\n&quot;}]}</td><td>
+                     5
+22 25 27 29 32
+6
+1 3 5 8 10 13々5
+2 3 6 9 13
+4
+4 7 14 15々5
+1 3 5 7 8
+4
+10 12 13 18々9
+1 3 5 7 22 25 27 29 32
+8
+2 3 6 8 10 13 22 30
+                    </td><td>
+                     请输入第一个序列的元素个数:
+请依次输入第一个序列的所有元素:
+请输入第二个序列的元素个数:
+请依次输入第二个序列的所有元素:
+output:
+1 3 5 8 10 13 22 25 27 29 32 
+々请输入第一个序列的元素个数:
+请依次输入第一个序列的所有元素:
+请输入第二个序列的元素个数:
+请依次输入第二个序列的所有元素:
+output:
+2 3 4 6 7 9 13 14 15 
+々请输入第一个序列的元素个数:
+请依次输入第一个序列的所有元素:
+请输入第二个序列的元素个数:
+请依次输入第二个序列的所有元素:
+output:
+1 3 5 7 8 10 12 13 18 
+々请输入第一个序列的元素个数:
+请依次输入第一个序列的所有元素:
+请输入第二个序列的元素个数:
+请依次输入第二个序列的所有元素:
+output:
+1 2 3 3 5 6 7 8 10 13 22 22 25 27 29 30 32 
+
+                    </td><td>
+                     30.00々10.00々30.00々30.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>Diao_1_1p </td><td>一个旅行社要从n名旅</td><td>
+                         阶段一
+                    </td><td>
+                     顺序表 
+                    </td><td>
+                         普通
+                    </td><td>
+                     一个旅行社要从n名旅客中选出一名幸运旅客，为他提供免费环球旅行服务。方法是，大家站成圈，然后选定一个m，从第1个人开始报数，报到m时，这个人OUT，然后从下一个人开始重新从1报数，重复这个过程，直到最后剩下一个人就是幸运之星。问题就是谁是幸运者呢？图示中10&nbsp;3是键盘输入的，表示10名旅客，报到3时OUT。
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.c&quot;,&quot;code&quot;:&quot;#include &lt;stdio.h&gt;\n\n#define N 1000\nint main(void)\n{\n\tint i, j, x;\n\tint a[N];\n\n\tint n = 3, m;\n\tint xb = 0;\n\n\tprintf(\&quot;Input: \&quot;);\n\tscanf(\&quot;%d%d\&quot;, &amp;m, &amp;n); \n\tfor (i = 0; i &lt; N; i++)\n\t\ta[i] = i+1;\n\n\tfor (i = m; i &gt; 1; i--)\n\t{\n\t\txb = (xb + n - 1) % i;\n\t\tx = a[xb];\n\t\tfor (j = xb; j &lt; i-1; j++)\n\t\t{\n\t\t\ta[j]=a[j+1];\n\t\t}\n\t\ta[j]=x;\n\t}\n\n\tprintf(\&quot;Output: %d\\n\&quot;, a[0]);\n\t\n\treturn 0;\n\n}&quot;}]}</td><td>
+                     10 3々100 3々10 5々100 17
+                    </td><td>
+                     Input: Output: 4
+々Input: Output: 91
+々Input: Output: 3々Input: Output: 53
+
+                    </td><td>
+                     10.00々30.00々30.00々30.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>Diao_1_2j</td><td>在已知的顺序表中某个</td><td>
+                         阶段一
+                    </td><td>
+                     顺序表 
+                    </td><td>
+                         简单
+                    </td><td>
+                     在已知的顺序表中某个位置加入一个元素。图示中第二至四行是键盘输入的，最后一行是输出。第二行表示初始元素的个数。第三行是输入相应元素。第四行是输入需要加入的位置和元素的值（图示合法位置是1到6）。请在/******start******/和/******end******/注释之间添加代码完成插入元素操作。
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.c&quot;,&quot;code&quot;:&quot;#include &lt;stdio.h&gt;\n\nint insert(int a[], int n, int pos, int value);\n\nint main(void)\n{\n\tint i, n, pos, value, flag;\n\tint a[100];\n\t\n\tprintf(\&quot;Input: \\n\&quot;);\n\tscanf(\&quot;%d\&quot;, &amp;n);\t\t\t//初始元素个数\n\tfor (i = 0; i &lt; n; i++)\n\t{\n\t\tscanf(\&quot;%d\&quot;, &amp;a[i]);\n\t}\n\n\tscanf(\&quot;%d%d\&quot;, &amp;pos, &amp;value);\t\t\t//需要插入元素的位置和值\n\n\tflag = insert(a, n, pos, value);\n\n\tprintf(\&quot;Output: \&quot;);\n\tif (flag == 0)\n\t{\n\t\tprintf(\&quot;position is wrong!\\n\&quot;);\n\t}\n\telse if (flag == -1)\n\t{\n\t\tprintf(\&quot;table is already full!\\n\&quot;);\n\t}\n\telse\n\t{\n\t\tfor (i = 0; i &lt;= n; i++)\n\t\t{\n\t\t\tprintf(\&quot;%d \&quot;, a[i]);\n\t\t}\n\t\tprintf(\&quot;\\n\&quot;);\n\t}\n\treturn 0;\n}\n\n/******start******/\n\n/******end******/&quot;}]}</td><td>
+                     5
+1 2 3 4 5
+7 10々5
+1 2 3 4 5
+3 12々6
+1 2 3 4 5 6
+0 13々11
+1 2 3 4 5 6 11 10 9 8 7
+2 33々7
+1 2 3 4 5 6 7
+1 15々8
+1 2 3 4 5 6 7 8
+9 19
+                    </td><td>
+                     Input: 
+Output: position is wrong!
+々Input: 
+Output: 1 2 12 3 4 5 
+々Input: 
+Output: position is wrong!
+々Input: 
+Output: 1 33 2 3 4 5 6 11 10 9 8 7 
+々Input: 
+Output: 15 1 2 3 4 5 6 7 
+々Input: 
+Output: 1 2 3 4 5 6 7 8 19 
+
+                    </td><td>
+                     10.00々10.00々20.00々20.00々20.00々20.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>Diao_2_1p </td><td>写出创建链表的程序</td><td>
+                         阶段二
+                    </td><td>
+                     链表 
+                    </td><td>
+                         普通
+                    </td><td>
+                     写出创建带头结点链表的程序（要求使用头插方法）。图示中1&nbsp;2&nbsp;3&nbsp;4&nbsp;5&nbsp;0是由键盘输入的。0表示链表结束，并不在链表内。请在/******start******/和/******end******/注释之间添加创建链表代码。
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.c&quot;,&quot;code&quot;:&quot;#include &lt;stdio.h&gt;\n#include &lt;malloc.h&gt;\n\ntypedef struct _node\n{\n\tint data;\n\tstruct _node *next;\n} node;\n\nnode *create();\nvoid print(node *head);\n\nint main(void)\n{\n\tnode *head;\n\n\thead = create();\n\n\tprintf(\&quot;Output: \&quot;);\n\tprint(head);\n\treturn 0;\n}\n\nvoid print(node *head)\n{\n\tnode *p = head-&gt;next;\n\n\twhile (p != NULL)\n\t{\n\t\tprintf(\&quot;%d \&quot;, p-&gt;data);\n\t\tp = p-&gt;next;\n\t}\n\tprintf(\&quot;\\n\&quot;);\n}\n\n/******start******/\n\n/******end******/&quot;}]}</td><td>
+                     1 3 5 7 9 10 8 6 4 2 0々1 2 3 4 5 0々10 9 8 7 6 5 4 3 2 1 0々1 5 8 3 9 7 6 10 4 0
+                    </td><td>
+                     Input: Output: 2 4 6 8 10 9 7 5 3 1 
+々Input: Output: 5 4 3 2 1 
+々Input: Output: 1 2 3 4 5 6 7 8 9 10 
+々Input: Output: 4 10 6 7 9 3 8 5 1 
+
+                    </td><td>
+                     30.00々10.00々30.00々30.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>Diao_2_2p </td><td>尾插法建立链表</td><td>
+                         阶段二
+                    </td><td>
+                     链表 
+                    </td><td>
+                         普通
+                    </td><td>
+                     使用尾插法建立带头结点链表。输入以0表示输入结束。图示中1&nbsp;2&nbsp;3&nbsp;4&nbsp;5&nbsp;0是由键盘输入的。请在/******start******/和/******end******/注释之间添加创建链表的代码。&nbsp;
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.c&quot;,&quot;code&quot;:&quot;#include &lt;stdio.h&gt;\n#include &lt;malloc.h&gt;\n\ntypedef struct _node\n{\n\tint data;\n\tstruct _node *next;\n} node;\n\nnode *create();\nvoid print(node *head);\n\nint main(void)\n{\n\tnode *head;\n\n\thead = create();\n\n\tprintf(\&quot;Output: \&quot;);\n\tprint(head);\n\treturn 0;\n}\n\nvoid print(node *head)\n{\n\tnode *p = head-&gt;next;\n\n\twhile (p != NULL)\n\t{\n\t\tprintf(\&quot;%d \&quot;, p-&gt;data);\n\t\tp = p-&gt;next;\n\t}\n\tprintf(\&quot;\\n\&quot;);\n}\n\n/******start******/\n\n\n/******end******/&quot;}]}</td><td>
+                     2 5 8 7 3 4 9 10 6 0々1 2 3 4 5 0々1 3 5 7 9 4 0々100 99 98 95 96 0
+                    </td><td>
+                     Input: Output: 2 5 8 7 3 4 9 10 6 
+々Input: Output: 1 2 3 4 5 
+々Input: Output: 1 3 5 7 9 4 
+々Input: Output: 100 99 98 95 96 
+
+                    </td><td>
+                     30.00々10.00々30.00々30.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>Diao_2_3j</td><td>求链表表长</td><td>
+                         阶段二
+                    </td><td>
+                     链表 
+                    </td><td>
+                         简单
+                    </td><td>
+                     已知带头结点的单向链表，求该表表长。图示中1&nbsp;2&nbsp;3&nbsp;4&nbsp;5&nbsp;6&nbsp;7&nbsp;8&nbsp;9&nbsp;10&nbsp;0由键盘输入，0表示建立链表结束（不存入链表）。第二行输出该链表的长度。请在/******start******/和/******end******/注释行中间完成求链表表长的代码。
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.c&quot;,&quot;code&quot;:&quot;#include &lt;stdio.h&gt;\n#include &lt;malloc.h&gt;\n\ntypedef struct _node\n{\n\tint data;\n\tstruct _node *next;\n} node;\n\nnode *create();\t\t\t//建立带头结点的链表\nint len(node *head);\t//求带头结点的链表元素个数\n\nint main(void)\n{\n\tint lenth;\n\tnode *head;\n\n\thead = create();\n\tlenth = len(head);\n\n\tprintf(\&quot;Output: %d\\n\&quot;, lenth);\n\treturn 0;\n}\n\nnode *create()\n{\n\tint n, i;\n\tnode *head, *p, *q;\n\n\thead = (node*)malloc(sizeof(node));\n\thead-&gt;next = NULL;\n\tq = head;\n\n\ti = 0;\n\tprintf(\&quot;Input: \&quot;);\n\tscanf(\&quot;%d\&quot;, &amp;n);\n\twhile (n != 0)\n\t{\n\t\tp = (node*)malloc(sizeof(node));\n\t\tp-&gt;data = n;\n\t\tif (i % 2)\n\t\t{\n\t\t\tp-&gt;next = head-&gt;next;\n\t\t\thead-&gt;next = p;\n\t\t}\n\t\telse\n\t\t{\n\t\t\tp-&gt;next = q-&gt;next;\n\t\t\tq-&gt;next = p;\n\t\t\tq = q-&gt;next;\n\t\t}\n\t\ti++;\n\t\tscanf(\&quot;%d\&quot;, &amp;n);\n\t}\n\treturn head;\n}\n\n/******start******/\n\n/******end******/&quot;}]}</td><td>
+                     1 2 3 4 5 6 0々1 23 4 5 12 5 3 23 5 1 432 2 3 4 1 0々0々1 2 3 4 5 6 7 8 9 10 0
+                    </td><td>
+                     Input: Output: 6
+々Input: Output: 15
+々Input: Output: 0々Input: Output: 10
+
+                    </td><td>
+                     30.00々30.00々30.00々10.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>Diao_2_4j</td><td>链表中插入结点</td><td>
+                         阶段二
+                    </td><td>
+                     链表 
+                    </td><td>
+                         简单
+                    </td><td>
+                     已知带头结点的单向链表，在该链表第n个结点位置插入值为m的结点。如图示：第一行、第二行的数字是由键盘输入的。第三行、第四行是输出。第一行是建立链表，0表示链表结束（不存于链表）。第二行3&nbsp;20表示将值为20的结点插入到该链表的第三个位置（当位置值小于等于1时均插入在表头，当位置值大于结点个数时均插入在表尾）。请在/******start******/和/******end******/注释行中间完成相关代码。
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.c&quot;,&quot;code&quot;:&quot;#include &lt;stdio.h&gt;\n#include &lt;malloc.h&gt;\n\ntypedef struct _node\n{\n\tint data;\n\tstruct _node *next;\n} node;\n\nnode *create();\t\t\t//建立带头结点的链表\nvoid out(node *head);\t//输出链表\nvoid insert(node *head, int pos, int value);\t//将值为value的结点插入到第pos个位置上\n\nint main(void)\n{\n\tint pos, value;\n\tnode *head;\n\n\tprintf(\&quot;Input: \&quot;);\n\thead = create();\n\tscanf(\&quot;%d%d\&quot;, &amp;pos, &amp;value);\t\n\n\tprintf(\&quot;Output: \&quot;);\n\tout(head);\t\t//输出原链表\n\tinsert(head, pos, value);\n\tout(head);\t\t//输出插入元素后的链表\n\treturn 0;\n}\n\nnode *create()\n{\n\tint n, i;\n\tnode *head, *p, *q;\n\n\thead = (node*)malloc(sizeof(node));\n\thead-&gt;next = NULL;\n\tq = head;\n\n\ti = 0;\n\tscanf(\&quot;%d\&quot;, &amp;n);\n\twhile (n != 0)\n\t{\n\t\tp = (node*)malloc(sizeof(node));\n\t\tp-&gt;data = n;\n\t\tif (i % 2)\n\t\t{\n\t\t\tp-&gt;next = head-&gt;next;\n\t\t\thead-&gt;next = p;\n\t\t}\n\t\telse\n\t\t{\n\t\t\tp-&gt;next = q-&gt;next;\n\t\t\tq-&gt;next = p;\n\t\t\tq = q-&gt;next;\n\t\t}\n\t\ti++;\n\t\tscanf(\&quot;%d\&quot;, &amp;n);\n\t}\n\treturn head;\n}\n\nvoid out(node *head)\n{\n\tnode *p = head-&gt;next;\n\twhile (p != NULL)\n\t{\n\t\tprintf(\&quot;%d \&quot;, p-&gt;data);\n\t\tp = p-&gt;next;\n\t}\n\tprintf(\&quot;\\n\&quot;);\n}\n\n/******start******/\n\n/******end******/&quot;}]}</td><td>
+                     1 2 3 4 5 0
+3 20々1 2 3 4 5 6 7 9 10 11 12 13 14 15 0
+9 232々1 2 3 4 5 6 7 9 10 0
+23 54々1 2 3 4 5 6 7 0
+1 189々1 2 3 4 5 6 7 9 10 0
+9 234々1 2 3 4 5 6 7 9 10 0
+0 78
+                    </td><td>
+                     Input: Output: 4 2 1 3 5 
+4 2 20 1 3 5々Input: Output: 15 13 11 9 6 4 2 1 3 5 7 10 12 14 
+15 13 11 9 6 4 2 1 232 3 5 7 10 12 14 
+々Input: Output: 9 6 4 2 1 3 5 7 10 
+9 6 4 2 1 3 5 7 10 54 
+々Input: Output: 6 4 2 1 3 5 7 
+189 6 4 2 1 3 5 7 
+々Input: Output: 9 6 4 2 1 3 5 7 10 
+9 6 4 2 1 3 5 7 234 10 
+々Input: Output: 9 6 4 2 1 3 5 7 10 
+78 9 6 4 2 1 3 5 7 10
+                    </td><td>
+                     10.00々10.00々20.00々20.00々20.00々20.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>Diao_2_6p </td><td>有序链表合并</td><td>
+                         阶段二
+                    </td><td>
+                     链表 
+                    </td><td>
+                         普通
+                    </td><td>
+                     已知带头结点的有序链表head_a，head_b。合并两个链表到head_a，要求依然有序。图示第一、二行为输入，表示建立链表（0表示结束，不包含在链表）。第三行为输出。如果输入序列不能使链表为有序，则输出链表无序（注：当输入5&nbsp;3&nbsp;7&nbsp;1&nbsp;9&nbsp;0时，建立的链表为1&nbsp;3&nbsp;5&nbsp;7&nbsp;9）。请在/******start******/和/******end******/注释行中间完成相关代码。
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.c&quot;,&quot;code&quot;:&quot;#include &lt;stdio.h&gt;\n#include &lt;malloc.h&gt;\n\ntypedef struct _node\n{\n\tint data;\n\tstruct _node *next;\n} node;\n\nnode *create();\t\t\t//建立带头结点的链表\nvoid out(node *head);\t//输出链表\nint merge(node *la, node *lb);\t//将la，lb链表合并到la，依然保证升序\n\nint main(void)\n{\n\tint result;\n\tnode *head_a, *head_b;\n\n\tprintf(\&quot;Input: \&quot;);\n\thead_a = create();\n\thead_b = create();\n\n\tresult = merge(head_a, head_b);\n\n\tprintf(\&quot;Output: \&quot;);\n\tif (result == 0)\n\t{\n\t\tprintf(\&quot;One link is disorder!\\n\&quot;);\n\t}\n\telse\n\t{\n\t\tout(head_a);\n\t}\n\treturn 0;\n}\n\nnode *create()\n{\n\tint n, i;\n\tnode *head, *p, *q;\n\n\thead = (node*)malloc(sizeof(node));\n\thead-&gt;next = NULL;\n\tq = head;\n\n\ti = 0;\n\tscanf(\&quot;%d\&quot;, &amp;n);\n\twhile (n != 0)\n\t{\n\t\tp = (node*)malloc(sizeof(node));\n\t\tp-&gt;data = n;\n\t\tif (i % 2)\n\t\t{\n\t\t\tp-&gt;next = head-&gt;next;\n\t\t\thead-&gt;next = p;\n\t\t}\n\t\telse\n\t\t{\n\t\t\tp-&gt;next = q-&gt;next;\n\t\t\tq-&gt;next = p;\n\t\t\tq = q-&gt;next;\n\t\t}\n\t\ti++;\n\t\tscanf(\&quot;%d\&quot;, &amp;n);\n\t}\n\treturn head;\n}\n\nvoid out(node *head)\n{\n\tnode *p = head-&gt;next;\n\twhile (p != NULL)\n\t{\n\t\tprintf(\&quot;%d \&quot;, p-&gt;data);\n\t\tp = p-&gt;next;\n\t}\n\tprintf(\&quot;\\n\&quot;);\n}\n\n/******start******/\n\n\n/******end******/&quot;}]}</td><td>
+                     6 4 10 3 12 2 14 0
+7 5 10 1 0々2 0
+3 1 0々1 2 3 0
+5 6 0々5 3 7 1 9 0
+8 6 10 4 12 2 0
+                    </td><td>
+                     Input: Output: 1 2 3 4 5 6 7 10 10 12 14 
+々Input: Output: 1 2 3 
+々Input: Output: One link is disorder!
+々Input: Output: 1 2 3 4 5 6 7 8 9 10 12 
+
+                    </td><td>
+                     30.00々30.00々20.00々20.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>LB2101p</td><td>已知带头结点的链表l</td><td>
+                         阶段二
+                    </td><td>
+                     链表 
+                    </td><td>
+                         普通
+                    </td><td>
+                     已知带头结点的链表la，lb，将lb链表连接至la后。图示第1、3行是输入，建立链表（0表示建立结束，不包含在链表里），第2、4行是原始链表la和lb的输出。请在/******start******/和/******end******/注释行中间完成相关代码。
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.c&quot;,&quot;code&quot;:&quot;#include &lt;stdio.h&gt;\n#include &lt;malloc.h&gt;\ntypedef struct _node\n{\n\tint data;\n\tstruct _node *next;\n} node;\n\nnode *create();   //建立带头结点的链表\nvoid out(node *head); //输出链表\nvoid concat(node *la, node *lb);\t//将lb连接到la之后\nint main(void)\n{\n\tnode *head_a, *head_b;\n\tprintf(\&quot;Input Link a:\&quot;);\n\thead_a = create();\n\tout(head_a);\n\tprintf(\&quot;Input Link b:\&quot;);\n\thead_b = create();\n\tout(head_b);\n\tconcat(head_a, head_b);\n\tprintf(\&quot;Output: \&quot;);\n\tout(head_a);\n\treturn 0;\n}\n\nnode *create()\n{\n\tint n, i;\n\tnode *head, *p, *q;\n\thead = (node*)malloc(sizeof(node));\n\thead-&gt;next = NULL;\n\tq = head;\n\ti = 0;\n\tscanf(\&quot;%d\&quot;, &amp;n);\n\twhile (n != 0)\n\t{\n\t\tp = (node*)malloc(sizeof(node));\n\t\tp-&gt;data = n;\n\t\tif (i % 2)\n\t\t{\n\t\t\tp-&gt;next = head-&gt;next;\n\t\t\thead-&gt;next = p;\n\t\t}\n\t\telse\n\t\t{\n\t\t\tp-&gt;next = q-&gt;next;\n\t\t\tq-&gt;next = p;\n\t\t\tq = q-&gt;next;\n\t\t} \n\t\ti++;\n\t\tscanf(\&quot;%d\&quot;, &amp;n);\n\t}\n\treturn head;\n}\n\nvoid out(node *head)\n{\n\tnode *p = head-&gt;next;\n\twhile (p != NULL)\n\t{\n\t\tprintf(\&quot;%d \&quot;, p-&gt;data);\n\t\tp = p-&gt;next;\n\t}\n\tprintf(\&quot;\\n\&quot;);\n}\n\n/******start******/ \n\n/******end******/\n&quot;}]}</td><td>
+                     2 1 3 0
+5 4 6 0々0
+5 4 6 0々2 1 3 0
+0々3536 1191 221 9790 2161 4853 1855 6818 4663 1850 0
+2299 8702 2482 7999 6390 6838 2780 4460 4898 6002 0々1 2 3 4 5 6 0
+7 8 9 10 11 12 0
+                    </td><td>
+                     Input Link a:1 2 3 
+Input Link b:4 5 6 
+Output: 1 2 3 4 5 6 
+々Input Link a:
+Input Link b:4 5 6 
+Output: 4 5 6 
+々Input Link a:1 2 3 
+Input Link b:
+Output: 1 2 3 
+々Input Link a:1850 6818 4853 9790 1191 3536 221 2161 1855 4663 
+Input Link b:6002 4460 6838 7999 8702 2299 2482 6390 2780 4898 
+Output: 1850 6818 4853 9790 1191 3536 221 2161 1855 4663 6002 4460 6838 7999 8702 2299 2482 6390 2780 4898 
+々Input Link a:6 4 2 1 3 5 
+Input Link b:12 10 8 7 9 11 
+Output: 6 4 2 1 3 5 12 10 8 7 9 11 
+
+                    </td><td>
+                     10.00々20.00々20.00々25.00々25.00
+                    </td><td>void concat(node *la, node *lb)
+{
+	node *p = la;
+	while (p-&gt;next != NULL)
+	{
+		p = p-&gt;next;
+	}
+	p-&gt;next = lb-&gt;next;
+}
+</td>
+		</tr><tr>
+			<td>LB2102j</td><td>已知带头结点链表，删除给定位置的第n个结点。</td><td>
+                         阶段二
+                    </td><td>
+                     链表 
+                    </td><td>
+                         简单
+                    </td><td>
+                     已知带头结点链表，删除给定位置的第n个结点。图示第1、3行为输入。第1行数据建立链表（0表示结束，不包含在链表），第2行输出原始链表，第3行输入删除的结点位置，第4行输出删除第n个位置后的链表。如链表中没有该位置结点，则报错。请在/******start******/和/******end******/注释行中间完成相关代码。&nbsp;
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.c&quot;,&quot;code&quot;:&quot;#include &lt;stdio.h&gt;\n#include &lt;malloc.h&gt;\n\ntypedef struct _node\n{\n\tint data;\n\tstruct _node *next;\n} node;\n\nnode *create();   //建立带头结点的链表\nvoid out(node *head); //输出链表  \nint erase(node *head, int pos);\t//删除链表head中第pos个位置的节点\n\nint main(void)\n{\n\tint result, pos;\n\tnode *head;\n\tprintf(\&quot;Input Link: \&quot;);\n\thead = create();\n\tout(head);    //输出原始链表\n\tprintf(\&quot;Input position: \&quot;);\n\tscanf(\&quot;%d\&quot;, &amp;pos);  //输入位置\n\tprintf(\&quot;Output: \&quot;);\n\n\tresult = erase(head, pos);\n\tif (result == 0)\n\t{\n\t\tprintf(\&quot;Error!\\n\&quot;);\n\t}\n\telse\n\t{\n\t\tout(head);\n\t}\n\treturn 0;\n}\n\nnode *create()\n{\n\tint n, i;\n\tnode *head, *p, *q;\n\thead = (node*)malloc(sizeof(node));\n\thead-&gt;next = NULL;\n\tq = head;\n\ti = 0;\n\tscanf(\&quot;%d\&quot;, &amp;n);\n\twhile (n != 0)\n\t{\n\t\tp = (node*)malloc(sizeof(node));\n\t\tp-&gt;data = n;\n\t\tif (i % 2)\n\t\t{\n\t\t\tp-&gt;next = head-&gt;next;\n\t\t\thead-&gt;next = p;\n\t\t}\n\t\telse\n\t\t{\n\t\t\tp-&gt;next = q-&gt;next;\n\t\t\tq-&gt;next = p;\n\t\t\tq = q-&gt;next;\n\t\t}\n\t\ti++;\n\t\tscanf(\&quot;%d\&quot;, &amp;n);\n\t}\n\treturn head;\n}\n\nvoid out(node *head)\n{\n\tnode *p = head-&gt;next;\n\twhile (p != NULL)\n\t{\n\t\tprintf(\&quot;%d \&quot;, p-&gt;data);\n\t\tp = p-&gt;next;\n\t}\n\tprintf(\&quot;\\n\&quot;);\n}\n\n/******start******/\n\n/******end******/\n&quot;}]}</td><td>
+                     1435 4449 1835 5532 9373 879 6791 6034 632 0
+9々4 3 5 2 6 1 0
+3々9 8 7 6 5 4 3 2 1 0
+10々1 2 3 4 5 6 7 0
+-1々1435 4449 1835 5532 9373 879 6791 6034 632 0
+1々3536 1191 221 9790 2161 4853 1855 6818 4663 1850 0
+8
+                    </td><td>
+                     Input Link: 6034 879 5532 4449 1435 1835 9373 6791 632 
+Input position: Output: 6034 879 5532 4449 1435 1835 9373 6791 
+々Input Link: 1 2 3 4 5 6 
+Input position: Output: 1 2 4 5 6 
+々Input Link: 2 4 6 8 9 7 5 3 1 
+Input position: Output: Error!
+々Input Link: 6 4 2 1 3 5 7 
+Input position: Output: Error!
+々Input Link: 6034 879 5532 4449 1435 1835 9373 6791 632 
+Input position: Output: 879 5532 4449 1435 1835 9373 6791 632 
+々Input Link: 1850 6818 4853 9790 1191 3536 221 2161 1855 4663 
+Input position: Output: 1850 6818 4853 9790 1191 3536 221 1855 4663 
+
+                    </td><td>
+                     20.00々10.00々10.00々10.00々20.00々30.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>Diao_2_5p </td><td>有序链表插入结点</td><td>
+                         阶段二
+                    </td><td>
+                     链表 
+                    </td><td>
+                         普通
+                    </td><td>
+                     已知有序（非递减）带头结点的链表。现需要插入一个值为n的结点，保证该链表依然有序。如图示，第一、二行是键盘输入，第三、四行是输出。第一行是建立链表，0表示结束链表建立（0不存入链表）。第二行3表示插入值为3的结点，保证链表依然有序。当输入的链表无序时，输出链表无序（不做插入操作）。请在/******start******/和/******end******/注释行中间完成相关代码。
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.c&quot;,&quot;code&quot;:&quot;#include &lt;stdio.h&gt;\n#include &lt;malloc.h&gt;\n\ntypedef struct _node\n{\n\tint data;\n\tstruct _node *next;\n} node;\n\nnode *create();\t\t\t//建立带头结点的链表\nvoid out(node *head);\t//输出链表\nint insert(node *head, int value);\t//将值为value的结点插入到链表中，依然保证升序\n\nint main(void)\n{\n\tint value, result;\n\tnode *head;\n\n\tprintf(\&quot;Input: \&quot;);\n\thead = create();\n\tscanf(\&quot;%d\&quot;, &amp;value);\n\t\n\tprintf(\&quot;Output: \&quot;);\n\tout(head);\t\t\t//输出原链表\n\tresult = insert(head, value);\n\tif (result == 0)\n\t{\n\t\tprintf(\&quot;The link is disorder!\\n\&quot;);\n\t}\n\telse\n\t{\n\t\tout(head);\n\t}\n\treturn 0;\n}\n\nnode *create()\n{\n\tint n, i;\n\tnode *head, *p, *q;\n\n\thead = (node*)malloc(sizeof(node));\n\thead-&gt;next = NULL;\n\tq = head;\n\n\ti = 0;\n\tscanf(\&quot;%d\&quot;, &amp;n);\n\twhile (n != 0)\n\t{\n\t\tp = (node*)malloc(sizeof(node));\n\t\tp-&gt;data = n;\n\t\tif (i % 2)\n\t\t{\n\t\t\tp-&gt;next = head-&gt;next;\n\t\t\thead-&gt;next = p;\n\t\t}\n\t\telse\n\t\t{\n\t\t\tp-&gt;next = q-&gt;next;\n\t\t\tq-&gt;next = p;\n\t\t\tq = q-&gt;next;\n\t\t}\n\t\ti++;\n\t\tscanf(\&quot;%d\&quot;, &amp;n);\n\t}\n\treturn head;\n}\n\nvoid out(node *head)\n{\n\tnode *p = head-&gt;next;\n\twhile (p != NULL)\n\t{\n\t\tprintf(\&quot;%d \&quot;, p-&gt;data);\n\t\tp = p-&gt;next;\n\t}\n\tprintf(\&quot;\\n\&quot;);\n}\n\n/******start******/\n\n/******end******/&quot;}]}</td><td>
+                     3 1 0
+2々1 3 5 7 9 0
+4々9 9 12 6 15 3 16 0
+17々9 9 12 6 15 3 16 0
+2々5 4 7 2 9 0
+3々2 0
+1
+                    </td><td>
+                     Input: Output: 1 3 
+1 2 3 
+々Input: Output: 7 3 1 5 9 
+The link is disorder!
+
+々Input: Output: 3 6 9 9 12 15 16 
+3 6 9 9 12 15 16 17 
+々Input: Output: 3 6 9 9 12 15 16 
+2 3 6 9 9 12 15 16 
+々Input: Output: 2 4 5 7 9 
+2 3 4 5 7 9 
+々Input: Output: 2 
+1 2 
+
+                    </td><td>
+                     10.00々20.00々20.00々20.00々20.00々10.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>wang-lb-p </td><td>循环链表实现约瑟夫环</td><td>
+                         阶段二
+                    </td><td>
+                     链表 
+                    </td><td>
+                         普通
+                    </td><td>
+                     使用循环链表实现约瑟夫环的操作；输入总人数n，每计数到m时该人出列，得到最后一个出列人的号数，请在/******start******/和/******end******/注释之间添加操作代码，实现该操作。输入输出格式如图：第一行为用户输入总人数，&quot;input&nbsp;the&nbsp;count&quot;:为固定输入，第二行输入每次出列的计数值m（3表示每数到3的人出列），input&nbsp;key为固定输入；第三行为输出，表示最后一个留下的人的号数，“output:the&nbsp;last&nbsp;one&nbsp;is”为固定输出。
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.c&quot;,&quot;code&quot;:&quot;# include&lt;stdio.h&gt;\n# include&lt;stdlib.h&gt;\nstruct list\n{\n\tint data;\n\tstruct list *next;\n};\nstruct list *create(void)\n{int i,n;\nstruct list *s,*h,*r;\nprintf(\&quot;input the count:\&quot;);\nscanf(\&quot;%d\&quot;,&amp;n);\nfor(i=1;i&lt;=n;i++)\n{\ns=(struct list *)malloc(sizeof(struct list));\n\ts-&gt;data=i;\n\ts-&gt;next=NULL;\n\tif(i==1){h=s;r=s;}\n\telse\n\t{r-&gt;next=s;\n\tr=s;\n\t}\n\tr-&gt;next=h;\n}\nreturn(h);\n }\nvoid main()\n{\n\tstruct list *p,*q,*h;\n\tint i,m;\nh=create();\n\tp=h;\nprintf(\&quot;input key\&quot;);\nscanf(\&quot;%d\&quot;,&amp;m);\n/******start******/\n\n/******end******/\n\t\n}\n\n\n\n\n&quot;}]}</td><td>
+                     10
+3々20
+3々100
+4
+                    </td><td>
+                     input the count:input keyoutput:the last one is 4
+々input the count:input keyoutput:the last one is 20
+々input the count:input keyoutput:the last one is 34
+
+                    </td><td>
+                     30.00々30.00々40.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>LB5201    </td><td>计算赫夫曼树的带权路径长度WPL</td><td>
+                         阶段五
+                    </td><td>
+                     赫夫曼树
+                    </td><td>
+                         普通
+                    </td><td>
+                     赫夫曼编码：给出n个有权值的结点，构造赫夫曼树，输出所有这n个结点的权值与其赫曼编码长度(即该结点在所构造的赫曼树中的深度)的乘积的总和。　　程序输入：第一行是一个正整数n，表示一共有n个结点。第二行为n个整数，分别表示这n个结点的权值。　　程序输出：输出所有这n个结点的权值与其赫曼编码长度的乘积的总和。　　程序的运行效果应类似地如图1所示，图1中的5和1&nbsp;2&nbsp;2&nbsp;5&nbsp;9是从键盘输入内容。&nbsp;
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.c&quot;,&quot;code&quot;:&quot;#include &lt;stdio.h&gt;\n\nvoid sort(int arr[], int low, int high);\n\nint main(void)\n{\n\tint i, j, n, sum = 0;\n\tint arr[101];\n\t\n\tprintf(\&quot;Input:\&quot;);\n\tscanf(\&quot;%d\&quot;, &amp;n);\n\tfor (i = 0; i &lt; n; i++)\n\t{\n\t\tscanf(\&quot;%d\&quot;, &amp;arr[i]);\n\t}\n\t\n\tfor (i = 0; i &lt; n - 1; i++)\n\t{\n\t\tsort(arr, i, n);\n\t\t/*for (j = 0; j &lt; n; j++)\n\t\t{\n\t\t\tprintf(\&quot;%d \&quot;, arr[j]);\n\t\t}\n\t\tprintf(\&quot;sum=%d\\n\&quot;, sum);\n\t\t*/\n\t\tarr[i + 1] = arr[i] + arr[i + 1];\n\t\tsum = sum + arr[i + 1];\n\t}\n\tprintf(\&quot;Output: %d\\n\&quot;, sum);\n\t\n\treturn 0;\n}\n\nvoid sort(int arr[], int low, int high)\n{\n\tint i, j, te;\n\n\tfor (i = low; i &lt; high; i++)\n\t{\n\t\tfor (j = low; j &lt; high + low - i - 1; j++)\n\t\t{\n\t\t\tif (arr[j] &gt; arr[j+1])\n\t\t\t{\n\t\t\t\tte = arr[j];\n\t\t\t\tarr[j] = arr[j + 1];\n\t\t\t\tarr[j + 1] = te;\n\t\t\t}\n\t\t}\n\t}\n}&quot;}]}</td><td>
+                     8
+1 5 8 4 14 13 18 9々7
+9 17 16 10 16 20 11々13
+12 8 6 17 10 18 7 6 7 2 9 5 12々5
+1 2 2 5 9
+                    </td><td>
+                     Input:Output: 199
+々Input:Output: 277
+々Input:Output: 424
+々Input:Output: 37
+
+                    </td><td>
+                     30.00々30.00々30.00々10.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>LB7101p</td><td>输入一组数（不多于1</td><td>
+                         阶段七
+                    </td><td>
+                     哈希表
+                    </td><td>
+                         普通
+                    </td><td>
+                     输入一组数（不多于11个），组织一个哈希表，哈希函数是H（K）=Kmod7，哈希表长度为11个单元，起始地址为0，要求用线性探测方法解决冲突。其中，第1、3、5行是提示信息，第2行输入总元素个数，第4行输入各元素值，第6行为输出结果。
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.c&quot;,&quot;code&quot;:&quot;#include &lt;stdio.h&gt;\n#include &lt;stdlib.h&gt;\n\nint main()\n{\n\tint i, j;\n\tint a[11] = {0}, num, m;\n\n\tprintf(\&quot;Input Number:\\n\&quot;);\n\tscanf(\&quot;%d\&quot;, &amp;num);\n\ti = 0;\n\tprintf(\&quot;Input Values:\\n\&quot;);\n\twhile (i &lt; num)\n\t{\n\t\tscanf(\&quot;%d\&quot;, &amp;m);\n\t\tj = m % 7;\n\t\twhile (a[j] != 0)\n\t\t{\n\t\t\tj = (j + 1) % 11;\n\t\t}\n\t\ta[j] = m;\n\t\ti++;\n\t}\n\tprintf(\&quot;Output:\\n\&quot;);\n\tfor\t(j = 0; j &lt; 11; j++)\n\t{\n\t\tprintf(\&quot;%d \&quot;, a[j]);\n\t}\n\tprintf(\&quot;\\n\&quot;);\n\treturn 0;\n}\n&quot;}]}</td><td>
+                     8
+41 55 65 60 60 39 35 82々9
+64 81 75 44 41 46 63 65 75々4
+65 36 81 71々5
+64 67 60 56 65々11
+36 66 42 39 71 63 67 35 77 43 24
+                    </td><td>
+                     Input Number:
+Input Values:
+Output:
+35 0 65 0 60 60 41 55 39 82 0 
+々Input Number:
+Input Values:
+Output:
+63 64 44 65 81 75 41 46 75 0 0 
+々Input Number:
+Input Values:
+Output:
+0 36 65 71 81 0 0 0 0 0 0 
+々Input Number:
+Input Values:
+Output:
+56 64 65 0 67 60 0 0 0 0 0 
+々Input Number:
+Input Values:
+Output:
+42 36 71 66 39 63 67 35 77 43 24 
+
+                    </td><td>
+                     30.00々10.00々25.00々30.00々5.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>LB7202p</td><td>输入一组数（不超过2</td><td>
+                         阶段七
+                    </td><td>
+                     静态查找表
+                    </td><td>
+                         普通
+                    </td><td>
+                     输入一组数（不超过20个数），完成折半查找，并计算查找该数所花费的比较次数，第1、3、5、7行为提示信息，第2行输入总元素个数，第4行输入各元素的值，第6行输入需要查找的数据，第8行为输出（标点使用半角逗号）。
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.c&quot;,&quot;code&quot;:&quot;#include &lt;stdio.h&gt;\n#define max 20\n\nint binary(int x, int list[], int n)\t/*从list[]中查找x*/\n{\n\tint low, high, mid, time;\n\ttime = 0;\n\tlow = 0;\n\thigh = n - 1;\n\twhile (low &lt;= high)\n\t{\n\t\tmid = (low + high) / 2;\t\t\t/*折半*/\n\t\tif (x &lt; list[mid])\t\t\t\t/*在前半部分查找*/\n\t\t{\n\t\t\thigh = mid - 1;\n\t\t\ttime = time + 1;\n\t\t}\n\t\telse if (x &gt; list[mid])\t\t\t/*在后半部分查找*/\n\t\t{\n\t\t\tlow = mid + 1;\n\t\t\ttime = time + 1;\n\t\t}\n\t\telse\n\t\t{\n\t\t\ttime = time + 1;\n\t\t\tprintf(\&quot;Output:\\n\&quot;);\n\t\t\tprintf(\&quot;找到了,在data[%d]上,比较了%d次\\n\&quot;, mid, time);\n\t\t\treturn (0);\n\t\t}\n\t}\n\treturn (time);\n}\nint main()\n{\n\tint list[max], index, x, num, i;\n\tprintf(\&quot;Input Number:\\n\&quot;);\n\tscanf(\&quot;%d\&quot;, &amp;num);\n\tprintf(\&quot;Input Values:\\n\&quot;);\n\tfor (i = 0; i &lt; num; i++)\n\t{\n\t\t//printf(\&quot;data[%d]=\&quot;, i);\n\t\tscanf(\&quot;%d\&quot;, &amp;list[i]);\n\t}\n\tprintf(\&quot;Search Value:\\n\&quot;);\n\t/*输入待查找数据*/\n\tscanf(\&quot;%d\&quot;, &amp;x);\n\tindex = binary(x, list, num);\n\tif (index != 0)\n\t{ \n\t\tprintf(\&quot;Output:\\n\&quot;);\n\t\tprintf(\&quot;没找到,比较了%d次\\n\&quot;, index);\n\t}\n\treturn 0;\n}\n&quot;}]}</td><td>
+                     10
+33 34 40 41 51 52 59 63 66 69
+42
+々20
+3 32 35 36 37 38 39 40 41 46 48 49 52 54 54 62 69 73 76 79
+3
+々5
+1 3 5 7 9
+5
+々16
+3 32 35 36 37 38 39 40 41 46 48 49 52 54 54 62
+61
+々10
+33 34 40 41 51 52 59 63 66 69
+40
+々12
+39 40 41 46 48 49 52 54 55 62 69 73
+40
+
+                    </td><td>
+                     Input Number:
+Input Values:
+Search Value:
+Output:
+没找到,比较了4次
+々Input Number:
+Input Values:
+Search Value:
+Output:
+找到了,在data[0]上,比较了4次
+々Input Number:
+Input Values:
+Search Value:
+Output:
+找到了,在data[2]上,比较了1次
+々Input Number:
+Input Values:
+Search Value:
+Output:
+没找到,比较了5次
+々Input Number:
+Input Values:
+Search Value:
+Output:
+找到了,在data[2]上,比较了3次
+々Input Number:
+Input Values:
+Search Value:
+Output:
+找到了,在data[1]上,比较了4次
+
+                    </td><td>
+                     10.00々20.00々20.00々20.00々10.00々20.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>LB7204p</td><td>试补充完成一个折半查</td><td>
+                         阶段七
+                    </td><td>
+                     静态查找表
+                    </td><td>
+                         普通
+                    </td><td>
+                     试补充完成一个折半查找的程序，需要对输入序列是否有序（升序）进行判断，若输入序列无序，错误提示。若查找的数存在，则返回其为位置，不存在则错误提示。请在/******start******/和/******end******/之间补充完程序。图1-3行为输入，第5行为输出。（注：标点符号均是半角）&nbsp;
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.c&quot;,&quot;code&quot;:&quot;#include &lt;stdio.h&gt;\n#define N 51\n\nint main(void)\n{\n\tint a[N];\n\tint i,n,num;\n\tint top,bottom,mid;\n\tint flag=1; //如果在表列中找到数字，则值为1，否则为0\n\tint loc=-1;//要查找的数在表列中的位置，如果loca=-1表示表列中没有这个数;如果有这个数,则它的值为所在的位置\n\n\tprintf(\&quot;请输入查找元素个数(1-50): \&quot;);\n\tscanf(\&quot;%d\&quot;,&amp;n);\n\twhile(n&lt;1 || n&gt;50)\n\t{\n\t\tprintf(\&quot;个数不正确,请重新输入!/n\&quot;);\n\t\tprintf(\&quot;请输入查找元素个数(1-50): \&quot;);\n\t\tscanf(\&quot;%d\&quot;,&amp;n);\n\t}\n\tprintf(\&quot;请输入表列元素: \&quot;);\n\tscanf(\&quot;%d\&quot;,&amp;a[1]);\n\t/******start******/\n\n\t/******end******/\n\tprintf(\&quot;请你输入要查找的数: \&quot;);\n\tscanf(\&quot;%d\&quot;,&amp;num);\n\tflag=1; //假设输入的数在表列中\n\ttop=n;\n\tbottom=1;\n\tmid=(top+bottom)/2;\n\twhile(flag)\n\t{\n\t\t/******start******/\n\t\t\n\t\t/******end******/\n\t}\n\treturn 0;\n}\n&quot;}]}</td><td>
+                     50
+6 13 23 48 69 75 87 98 152 214
+231 249 252 253 266 281 300 305 307 310
+327 347 364 372 378 392 407 440 449 453
+481 515 518 545 577 595 615 641 645 646
+708 810 815 819 853 876 890 902 909 917
+815々50
+6 13 23 48 69 75 87 98 152 214
+231 249 252 253 266 281 300 305 307 310
+327 347 364 372 378 392 407 440 449 453
+481 515 518 545 577 595 615 641 645 646
+708 810 815 819 853 876 890 902 909 917
+6々29
+231 249 252 253 266 281 300 305 307 310
+327 347 364 372 378 392 407 440 449 453
+810 815 819 853 876 890 902 909 917
+917々50
+6 13 23 48 69 75 87 98 152 214
+231 249 252 253 266 281 300 305 307 310
+327 347 364 372 378 392 407 440 449 453
+481 515 518 545 577 595 615 641 645 646
+708 810 815 819 853 876 890 902 909 917
+917々5
+1 2 3 4 5
+4々29
+231 230 252 253 266 281 300 305 307 310
+327 347 364 372 378 392 407 440 449 453
+810 815 819 853 876 890 902 909 917
+917々5
+1 2 3 4 5
+6々5
+1 3 5 2 4
+6
+                    </td><td>
+                     请输入查找元素个数(1-50): 请输入表列元素: 请你输入要查找的数: Output:
+查找的数在第43位!
+々请输入查找元素个数(1-50): 请输入表列元素: 请你输入要查找的数: Output:
+查找的数在第1位!
+々请输入查找元素个数(1-50): 请输入表列元素: 请你输入要查找的数: Output:
+查找的数在第29位!
+々请输入查找元素个数(1-50): 请输入表列元素: 请你输入要查找的数: Output:
+查找的数在第50位!
+々请输入查找元素个数(1-50): 请输入表列元素: 请你输入要查找的数: Output:
+查找的数在第4位!
+々请输入查找元素个数(1-50): 请输入表列元素: Output:
+输入元素无序!
+々请输入查找元素个数(1-50): 请输入表列元素: 请你输入要查找的数: Output:
+查找的数不存在!
+々请输入查找元素个数(1-50): 请输入表列元素: Output:
+输入元素无序!
+
+                    </td><td>
+                     20.00々15.00々20.00々10.00々5.00々20.00々5.00々5.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>LB7205p</td><td>根据给出的代码段，补</td><td>
+                         阶段七
+                    </td><td>
+                     哈希表
+                    </td><td>
+                         普通
+                    </td><td>
+                     根据给出的代码段，补充一个哈希查找的程序，在该段程序中冲突解决方法为：双散列函数探查法哈希函数关键字为：人名字母ASCII相加哈希函数为：关键字%M，从而映射到哈希表中的位置。**请注意看注释！！再补充完成查找的过程**。图中第1行为输入，第3行为输出（标点为半角符号）。
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.c&quot;,&quot;code&quot;:&quot;#include&lt;stdio.h&gt;\n#include&lt;conio.h&gt;\n\n#define HASH_LEN 50 //哈希表的长度\n#define M 47 //随机数\n#define NAME_NO 30 //人名的个数\n\ntypedef struct\n{\n\tchar *name_py; //名字的拼音\n\tint value; //拼音所对应的整数\n} NAME;\n\nNAME NameList[HASH_LEN]; //全局变量NAME\n\ntypedef struct //哈希表\n{\n\tchar *name_py; //名字的拼音\n\tint value; //拼音所对应的整数\n\tint SearchLength; //查找长度\n} HASH;\n\nHASH HashList[HASH_LEN]; //全局变量HASH\n\nvoid InitNameList() //姓名（结构体数组）初始化\n{\n\tchar *ch_temp;\n\tint i, j;\n\tint sl_temp;\n\n\tNameList[0].name_py = \&quot;wanghui\&quot;;\n\tNameList[1].name_py = \&quot;mayuelong\&quot;;\n\tNameList[2].name_py = \&quot;chenzhicheng\&quot;;\n\tNameList[3].name_py = \&quot;sunpeng\&quot;;\n\tNameList[4].name_py = \&quot;zengqinghui\&quot;;\n\tNameList[5].name_py = \&quot;liqingbo\&quot;;\n\tNameList[6].name_py = \&quot;liujunpeng\&quot;;\n\tNameList[7].name_py = \&quot;jiangquanlei\&quot;;\n\tNameList[8].name_py = \&quot;xingzhengchuan\&quot;;\n\tNameList[9].name_py = \&quot;luzhaoqian\&quot;;\n\tNameList[10].name_py = \&quot;gaowenhu\&quot;;\n\tNameList[11].name_py = \&quot;zhuhaoyin\&quot;;\n\tNameList[12].name_py = \&quot;chenlili\&quot;;\n\tNameList[13].name_py = \&quot;wuyunyun\&quot;;\n\tNameList[14].name_py = \&quot;huangjuanxia\&quot;;\n\tNameList[15].name_py = \&quot;wangyan\&quot;;\n\tNameList[16].name_py = \&quot;zhoutao\&quot;;\n\tNameList[17].name_py = \&quot;jiangzhenyu\&quot;;\n\tNameList[18].name_py = \&quot;liuxiaolong\&quot;;\n\tNameList[19].name_py = \&quot;wangziming\&quot;;\n\tNameList[20].name_py = \&quot;fengjunbo\&quot;;\n\tNameList[21].name_py = \&quot;lilei\&quot;;\n\tNameList[22].name_py = \&quot;wangjia\&quot;;\n\tNameList[23].name_py = \&quot;zhangjianguo\&quot;;\n\tNameList[24].name_py = \&quot;zhuqingqing\&quot;;\n\tNameList[25].name_py = \&quot;huangmin\&quot;;\n\tNameList[26].name_py = \&quot;haoyuhan\&quot;;\n\tNameList[27].name_py = \&quot;zhoutao\&quot;;\n\tNameList[28].name_py = \&quot;zhujiang\&quot;;\n\tNameList[29].name_py = \&quot;lixiaojun\&quot;;\n\n\tfor (i = 0; i &lt; NAME_NO; i++)\n\t{\n\t\tsl_temp = 0;\n\t\tch_temp = NameList[i].name_py;\n\t\tfor (j = 0; *(ch_temp + j) != &#39;\\0&#39;; j++)\n\t\t{\n\t\t\tsl_temp = sl_temp + *(ch_temp + j);\n\t\t}\n\t\tNameList[i].value = sl_temp;\n\t}\n}\n\nvoid CreateHashList() //建立哈希表\n{\n\tint i, sum, address, readdress;\n\n\tfor (i = 0; i &lt; HASH_LEN; i++)\n\t{\n\t\tHashList[i].name_py = \&quot;\&quot;;\n\t\tHashList[i].value = 0;\n\t\tHashList[i].SearchLength = 0;\n\t}\n\n\tfor (i = 0; i &lt; NAME_NO; i++)\n\t{\n\t\tsum = 0;\n\t\taddress = (NameList[i].value) % M; //哈希函数\n\t\treaddress = address;\n\t\tif (HashList[address].SearchLength == 0) //如果不冲突\n\t\t{\n\t\t\tHashList[address].value = NameList[i].value;\n\t\t\tHashList[address].name_py=NameList[i].name_py;\n\t\t\tHashList[address].SearchLength=1;\n\t\t}\n\t\telse //冲突\n\t\t{\n\t\t\tdo\n\t\t\t{\n\t\t\t\treaddress =(readdress + NameList[i].value % 10 + 1) % M; //伪随机探测再散列法处理冲突\n\t\t\t\tsum = sum + 1; \t\t\t\t//查找次数加1\n\t\t\t} while (HashList[readdress].value != 0);\n\t\t\tHashList[readdress].value = NameList[i].value;\n\t\t\tHashList[readdress].name_py = NameList[i].name_py;\n\t\t\tHashList[readdress].SearchLength = sum + 1;\n\t\t}\n\t}\n}\n\nvoid FindList() //查找\n{\n\tchar name[20] = {0};\n\tint i, value = 0, sum=1, address;\n\n\tprintf(\&quot;请输入姓名的拼音:\&quot;);\n\tscanf(\&quot;%s\&quot;, name);\n\tprintf(\&quot;Output:\\n\&quot;);\n\tfor (i = 0; name[i] != &#39;\\0&#39;; i++) //求出姓名的拼音所对应的整数(关键字)\n\t{\n\t\tvalue += name[i];\n\t}\n\t/******start******/\n\t\n\t/******end******/\n}\n\nvoid Display() //显示哈希表\n{\n\tint i;\n\tfloat average = 0;\n\tprintf(\&quot;\\n地址\\t关键字\\t\\t搜索长度\\tH(key)\\t姓名\\n\&quot;); //显示的格式\n\tfor (i = 0; i &lt; HASH_LEN; i++)\n\t{\n\t\tprintf(\&quot;%d\&quot;,i);\n\t\tprintf(\&quot;\\t%d\&quot;, HashList[i].value);\n\t\tprintf(\&quot;\\t\\t%d\&quot;,HashList[i].SearchLength);\n\t\tprintf(\&quot;\\t\\t%d\&quot;,HashList[i].value % M);\n\t\tprintf(\&quot;\\t%s\&quot;,HashList[i].name_py);\n\t\tprintf(\&quot;\\n\&quot;);\n\t}\n\tfor (i = 0; i &lt; HASH_LEN; i++)\n\t{\n\t\taverage += HashList[i].SearchLength;\n\t}\n\taverage /= NAME_NO;\n\tprintf(\&quot;\\n平均查找长度：ASL(%d)=%f\\n\&quot;, NAME_NO, average);\n}\n\nint main()\n{\n\tInitNameList();\n\tCreateHashList();\n\n\tFindList();\n\t\n\treturn 0;\n}\n&quot;}]}</td><td>
+                     zhoutao々wangzuli々lixiaojun々wangjuan々lixiao々chenzhicheng
+                    </td><td>
+                     请输入姓名的拼音:Output:
+查找了1次,该姓名在哈希表的第26的位置!
+々请输入姓名的拼音:Output:
+查找了5次,该姓名不在哈希表中!
+々请输入姓名的拼音:Output:
+查找了3次,该姓名在哈希表的第12的位置!
+々请输入姓名的拼音:Output:
+查找了3次,该姓名不在哈希表中!
+々请输入姓名的拼音:Output:
+查找了2次,该姓名不在哈希表中!
+々请输入姓名的拼音:Output:
+查找了1次,该姓名在哈希表的第40的位置!
+
+                    </td><td>
+                     20.00々20.00々10.00々20.00々10.00々20.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>LB7103p</td><td>已知带头结点的链表h</td><td>
+                         阶段七
+                    </td><td>
+                     静态查找表
+                    </td><td>
+                         普通
+                    </td><td>
+                     已知带头结点的链表head，删除其中值为n的结点。第一行输入用于建立链表的数据（0表示建立结束，不包含在链表），第二行为原始链表输出，第三行为输入需要删除的n值，若n值存在于链表则删除，若不存在则显示错误。请在/******start******/和/******end******/注释之间完成删除操作的函数。&nbsp;
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.c&quot;,&quot;code&quot;:&quot;#include &lt;stdio.h&gt;\n#include &lt;malloc.h&gt;\n\ntypedef struct _node\n{\n\tint data;\n\tstruct _node *next;\n} node;\n\nnode *create(); //建立带头结点的链表\nvoid out(node *head); //输出链表\nint erase(node *head, int value); //删除链表head中值为value的结点\n\nint main(void)\n{\n\tint result, value;\n\tnode *head;\n\n\tprintf(\&quot;Input:\&quot;);\n\thead = create();\n\tprintf(\&quot;Original:\&quot;);\n\tout(head); //输出原始链表\n\tprintf(\&quot;Input Erase Value:\&quot;);\n\tscanf(\&quot;%d\&quot;, &amp;value); //输入需要删除的元素值\n\t\n\tprintf(\&quot;Output:\\n\&quot;);\n\tresult = erase(head, value);\n\tif (result == 0)\n\t{\n\t\tprintf(\&quot;Erase error!\\n\&quot;);\n\t}\n\telse\n\t{\n\t\tout(head);\n\t}\n\treturn 0;\n}\n\nnode *create()\n{\n\tint n, i;\n\tnode *head, *p, *q;\n\thead = (node*)malloc(sizeof(node));\n\thead-&gt;next = NULL;\n\tq = head;\n\ti = 0;\n\tscanf(\&quot;%d\&quot;, &amp;n);\n\twhile (n != 0)\n\t{\n\t\tp = (node*)malloc(sizeof(node));\n\t\tp-&gt;data = n;\n\t\tif (i % 2)\n\t\t{\n\t\t\tp-&gt;next = head-&gt;next;\n\t\t\thead-&gt;next = p;\n\t\t}\n\t\telse\n\t\t{\n\t\t\tp-&gt;next = q-&gt;next;\n\t\t\tq-&gt;next = p;\n\t\t\tq = q-&gt;next;\n\t\t}\n\t\ti++;\n\t\tscanf(\&quot;%d\&quot;, &amp;n);\n\t}\n\treturn head;\n}\n\nvoid out(node *head)\n{\n\tnode *p = head-&gt;next;\n\twhile (p != NULL)\n\t{\n\t\tprintf(\&quot;%d \&quot;, p-&gt;data);\n\t\tp = p-&gt;next;\n\t}\n\tprintf(\&quot;\\n\&quot;);\n}\n\n/******start******/\n\n/******end******/\n&quot;}]}</td><td>
+                     325 887 738 247 987 354 308 449 231 600 488 0
+213々887 738 247 987 354 308 449 492 559 625 213 633 121 674 941 963 884 0
+963々887 738 247 987 354 308 449 492 559 625 213 633 121 674 941 963 884 0
+884々887 738 247 987 354 308 449 492 559 625 213 633 121 674 941 963 884 0
+449々1 2 3 4 5 6 0
+7々1 2 3 4 5 6 0
+4々887 738 247 987 354 308 449 492 559 625 213 633 121 674 941 963 884 0
+448々325 887 738 247 987 354 308 449 492 559 625 213 633 121 674 941 963 884 957 663 248 271 37 867 478 424 1000 231 600 488 0
+213
+                    </td><td>
+                     Input:Original:600 449 354 247 887 325 738 987 308 231 488 
+Input Erase Value:Output:
+Erase error!
+々Input:Original:963 674 633 625 492 308 987 738 887 247 354 449 559 213 121 941 884 
+Input Erase Value:Output:
+674 633 625 492 308 987 738 887 247 354 449 559 213 121 941 884 
+々Input:Original:963 674 633 625 492 308 987 738 887 247 354 449 559 213 121 941 884 
+Input Erase Value:Output:
+963 674 633 625 492 308 987 738 887 247 354 449 559 213 121 941 
+々Input:Original:963 674 633 625 492 308 987 738 887 247 354 449 559 213 121 941 884 
+Input Erase Value:Output:
+963 674 633 625 492 308 987 738 887 247 354 559 213 121 941 884 
+々Input:Original:6 4 2 1 3 5 
+Input Erase Value:Output:
+Erase error!
+々Input:Original:6 4 2 1 3 5 
+Input Erase Value:Output:
+6 2 1 3 5 
+々Input:Original:963 674 633 625 492 308 987 738 887 247 354 449 559 213 121 941 884 
+Input Erase Value:Output:
+Erase error!
+々Input:Original:488 231 424 867 271 663 884 941 121 213 559 449 354 247 887 325 738 987 308 492 625 633 674 963 957 248 37 478 1000 600 
+Input Erase Value:Output:
+488 231 424 867 271 663 884 941 121 559 449 354 247 887 325 738 987 308 492 625 633 674 963 957 248 37 478 1000 600 
+
+                    </td><td>
+                     20.00々10.00々10.00々10.00々10.00々10.00々10.00々20.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>LB8204p</td><td>使用希尔排序算法（升</td><td>
+                         阶段八
+                    </td><td>
+                     
+                    </td><td>
+                         普通
+                    </td><td>
+                     使用希尔排序算法（升序）完善此程序。（注：截图为希尔排序两趟后的结果，详见源代码）。请在/******start******/和/******end******/之间添加代码。
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.c&quot;,&quot;code&quot;:&quot;#include &lt;stdio.h&gt;\n#define N 10\n\nvoid input(int a[], int n);\nvoid output(int a[], int n);\nvoid sort(int a[], int n);\nint incre[3] = {5, 3, 1};\t/* 增量序列 */\n\nint main(void)\n{\n\tint a[N];\n\tinput(a, N);\n\tsort(a, N);\n\toutput(a, N);\n\treturn 0;\n}\n\nvoid input(int a[], int n)\n{\n\tint i;\n\tprintf(\&quot;Input:\\n\&quot;);\n\tfor (i = 0; i &lt; n; i++)\n\t{\n\t\tscanf(\&quot;%d\&quot;, &amp;a[i]);\n\t}\n}\n\nvoid output(int a[], int n)\n{\n\tint i;\n\tprintf(\&quot;Output:\\n\&quot;);\n\tfor (i = 0; i &lt; n; i++)\n\t{\n\t\tprintf(\&quot;%d \&quot;, a[i]);\n\t}\n\tprintf(\&quot;\\n\&quot;);\n}\n\nvoid sort(int a[], int n)\n{\n\tint i, j, k, d, temp;\n\tfor (k = 0; k &lt; 2; k++) /*注：该排序算法跑两趟，将2改为3即为完全排序算法*/ \n\t{\n\t\td = incre[k]; //d为增量值\n\t\t/******start******/\n\t\t\n\t\t/******end******/ \n\t}\n}\n\n&quot;}]}</td><td>
+                     951 109 739 731 272 148 496 327 708 784々849 618 538 238 194 667 787 758 760 522々5 9 2 8 3 7 6 4 10 1々441 215 365 213 864 122 89 850 485 121々296 482 399 855 661 32 164 664 483 110々1 948 422 740 263 312 94 782 903 736々17 638 263 648 838 308 163 566 766 477
+                    </td><td>
+                     Input:
+Output:
+148 109 327 496 272 731 708 739 951 784 
+々Input:
+Output:
+238 194 538 522 618 760 667 758 849 787 
+々Input:
+Output:
+3 1 2 5 4 7 8 6 10 9 
+々Input:
+Output:
+122 89 365 213 121 441 215 850 485 864 
+々Input:
+Output:
+32 110 296 482 164 399 483 664 855 661 
+々Input:
+Output:
+1 94 312 736 263 422 740 782 903 948 
+々Input:
+Output:
+17 163 263 638 477 308 648 566 766 838 
+
+                    </td><td>
+                     15.00々15.00々10.00々15.00々15.00々15.00々15.00
+                    </td><td>for (i = d; i &lt; n; i++)
+		{
+			temp = a[i];
+			for (j = i - d; j &gt;= 0 &amp;&amp; a[j] &gt; temp; j -= d)
+			{
+				a[j+d] = a[j];
+			}
+			a[j+d] = temp;
+		}
+</td>
+		</tr><tr>
+			<td>LB8205p</td><td>使用快速排序算法（升</td><td>
+                         阶段八
+                    </td><td>
+                     
+                    </td><td>
+                         普通
+                    </td><td>
+                     使用快速排序算法（升序）完善此程序。（注：截图为快速排序一趟后的结果，详见源代码）。请在/******start******/和/******end******/之间添加代码。
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.c&quot;,&quot;code&quot;:&quot;#include &lt;stdio.h&gt;\n#define N 10\n\nvoid input(int a[], int n);\nvoid output(int a[], int n);\nint sort(int a[], int low, int high);\nvoid quicksort(int a[], int low, int high);\n\nint main(void)\n{\n\tint a[N];\n\tinput(a, N);\n\tquicksort(a, 0, N);\n\toutput(a, N);\n\treturn 0;\n}\n\nvoid input(int a[], int n)\n{\n\tint i;\n\tprintf(\&quot;Input:\\n\&quot;);\n\tfor (i = 0; i &lt; n; i++)\n\t{\n\t\tscanf(\&quot;%d\&quot;, &amp;a[i]);\n\t}\n}\n\nvoid output(int a[], int n)\n{\n\tint i;\n\tprintf(\&quot;Output:\\n\&quot;);\n\tfor (i = 0; i &lt; n; i++)\n\t{\n\t\tprintf(\&quot;%d \&quot;, a[i]);\n\t}\n\tprintf(\&quot;\\n\&quot;);\n}\n\nvoid quicksort(int a[], int low, int high)\n{\n\tint pivotloc;\t\t/*枢轴下标*/\n\t\n\t/*注：该排序算法跑一趟。如果将下面3行注释取消，即为完全排序算法*/\n\t//if (low &lt; high)\n\t{\n\t\tpivotloc = sort(a, low, high);\n\t\t//quicksort(a, low, pivotloc - 1);\t\t/*递归将前半部分元素继续快速排序*/\n\t\t//quicksort(a, pivotloc + 1, high);\n\t}\n}\n\nint sort(int a[], int low, int high)\n{\n\tint pivotkey; \n\n\tpivotkey = a[low];\n\t/******start******/\n\t\n\t/******end******/ \n}&quot;}]}</td><td>
+                     296 482 399 855 661 32 164 664 483 110々1 948 422 740 263 312 94 782 903 736々17 638 263 648 838 308 163 566 766 477々5 9 2 8 3 7 6 4 10 1々441 215 365 213 864 122 89 850 485 121々849 618 538 238 194 667 787 758 760 522々951 109 739 731 272 148 496 327 708 784
+                    </td><td>
+                     Input:
+Output:
+110 164 32 296 661 855 399 664 483 482 
+々Input:
+Output:
+1 948 422 740 263 312 94 782 903 736 
+々Input:
+Output:
+17 638 263 648 838 308 163 566 766 477 
+々Input:
+Output:
+1 4 2 3 5 7 6 8 10 9 
+々Input:
+Output:
+121 215 365 213 89 122 441 850 485 864 
+々Input:
+Output:
+522 618 538 238 194 667 787 758 760 849 
+々Input:
+Output:
+784 109 739 731 272 148 496 327 708 951 
+
+                    </td><td>
+                     15.00々15.00々15.00々10.00々15.00々15.00々15.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>LB8101p</td><td>使用起泡排序算法（升</td><td>
+                         阶段八
+                    </td><td>
+                     
+                    </td><td>
+                         普通
+                    </td><td>
+                     使用起泡排序算法（升序）完善此程序。（注：截图为起泡排序三趟后的结果，详见源代码）。请在/******start******/和/******end******/之间添加代码。
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.c&quot;,&quot;code&quot;:&quot;#include &lt;stdio.h&gt;\n#define N 10\n\nvoid input(int a[], int n);\nvoid output(int a[], int n);\nvoid sort(int a[], int n);\n\nint main(void)\n{\n\tint a[N];\n\tinput(a, N);\n\tsort(a, N);\n\toutput(a, N);\n\treturn 0;\n}\n\nvoid input(int a[], int n)\n{\n\tint i;\n\tprintf(\&quot;Input:\\n\&quot;);\n\tfor (i = 0; i &lt; n; i++)\n\t{\n\t\tscanf(\&quot;%d\&quot;, &amp;a[i]);\n\t}\n}\n\nvoid output(int a[], int n)\n{\n\tint i;\n\tprintf(\&quot;Output:\\n\&quot;);\n\tfor (i = 0; i &lt; n; i++)\n\t{\n\t\tprintf(\&quot;%d \&quot;, a[i]);\n\t}\n\tprintf(\&quot;\\n\&quot;);\n}\n\nvoid sort(int a[], int n)\n{\n\tint i, j, temp;\n\tfor (i = 0; i &lt; 3; i++)\t/*注：该排序算法跑三趟，将3改为n即为完全排序算法*/\n\t{\n\t\t/******start******/\n\t\t\n\t\t/******end******/ \n\t}\n} \n&quot;}]}</td><td>
+                     849 618 538 238 194 667 787 758 760 522々5 9 2 8 3 7 6 4 10 1々1 948 422 740 263 312 94 782 903 736々17 638 263 648 838 308 163 566 766 477々951 109 739 731 272 148 496 327 708 784々296 482 399 855 661 32 164 664 483 110々441 215 365 213 864 122 89 850 485 121
+                    </td><td>
+                     Input:
+Output:
+238 194 538 618 667 758 522 760 787 849 
+々Input:
+Output:
+2 3 5 6 4 7 1 8 9 10 
+々Input:
+Output:
+1 263 312 94 422 740 736 782 903 948 
+々Input:
+Output:
+17 263 308 163 566 638 477 648 766 838 
+々Input:
+Output:
+109 272 148 496 327 708 731 739 784 951 
+々Input:
+Output:
+296 399 32 164 482 483 110 661 664 855 
+々Input:
+Output:
+213 215 122 89 365 441 121 485 850 864 
+
+                    </td><td>
+                     15.00々10.00々15.00々15.00々15.00々15.00々15.00
+                    </td><td>for (j = 0; j &lt; n - i - 1; j++)
+		{
+			if (a[j + 1] &lt; a[j])
+			{
+				temp = a[j+1];
+				a[j+1] = a[j];
+				a[j] = temp;
+			}
+		}
+</td>
+		</tr><tr>
+			<td>LB8102p</td><td>使用选择排序（升序）</td><td>
+                         阶段八
+                    </td><td>
+                     
+                    </td><td>
+                         普通
+                    </td><td>
+                     使用选择排序（升序）算法完善此程序。（注：截图为选择排序三趟后的结果，详见源代码）。请在/******start******/和/******end******/之间添加代码。
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.c&quot;,&quot;code&quot;:&quot;#include &lt;stdio.h&gt;\n#define N 10\n\nvoid input(int a[], int n);\nvoid output(int a[], int n);\nvoid sort(int a[], int n);\n\nint main(void)\n{\n\tint a[N];\n\tinput(a, N);\n\tsort(a, N);\n\toutput(a, N);\n\treturn 0;\n}\n\nvoid input(int a[], int n)\n{\n\tint i;\n\tprintf(\&quot;Input:\\n\&quot;);\n\tfor (i = 0; i &lt; n; i++)\n\t{\n\t\tscanf(\&quot;%d\&quot;, &amp;a[i]);\n\t}\n}\n\nvoid output(int a[], int n)\n{\n\tint i;\n\tprintf(\&quot;Output:\\n\&quot;);\n\tfor (i = 0; i &lt; n; i++)\n\t{\n\t\tprintf(\&quot;%d \&quot;, a[i]);\n\t}\n\tprintf(\&quot;\\n\&quot;);\n}\n\nvoid sort(int a[], int n)\n{\n\tint i, j, k, temp;\n\tfor (i = 0; i &lt; 3; i++)\t/*注：该排序算法跑三趟，将3改为n即为完全排序算法*/\n\t{\n\t\tk = i;\n\t\t/******start******/\n\t\t\n\t\t/******end******/ \n\t}\n} \n&quot;}]}</td><td>
+                     5 9 2 8 3 7 6 4 10 1々296 482 399 855 661 32 164 664 483 110々849 618 538 238 194 667 787 758 760 522々1 948 422 740 263 312 94 782 903 736々951 109 739 731 272 148 496 327 708 784々17 638 263 648 838 308 163 566 766 477々441 215 365 213 864 122 89 850 485 121
+                    </td><td>
+                     Input:
+Output:
+1 2 3 8 9 7 6 4 10 5 
+々Input:
+Output:
+32 110 164 855 661 296 399 664 483 482 
+々Input:
+Output:
+194 238 522 618 849 667 787 758 760 538 
+々Input:
+Output:
+1 94 263 740 422 312 948 782 903 736 
+々Input:
+Output:
+109 148 272 731 739 951 496 327 708 784 
+々Input:
+Output:
+17 163 263 648 838 308 638 566 766 477 
+々Input:
+Output:
+89 121 122 213 864 365 441 850 485 215 
+
+                    </td><td>
+                     10.00々15.00々15.00々15.00々15.00々15.00々15.00
+                    </td><td>for (j = i + 1; j &lt; n; j++)
+		{
+			if (a[k] &gt; a[j])
+			{
+				k = j;
+			}
+		}
+		if (i != k)
+		{
+			temp = a[i];
+			a[i] = a[k];
+			a[k] = temp;
+		}</td>
+		</tr><tr>
+			<td>LB8203p</td><td>使用直接插入排序算法</td><td>
+                         阶段八
+                    </td><td>
+                     
+                    </td><td>
+                         普通
+                    </td><td>
+                     使用直接插入排序算法（升序）完善此程序。（注：截图为直接插入排序三趟后（前四个有序）的结果，详见源代码）。请在/******start******/和/******end******/之间添加代码。
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.c&quot;,&quot;code&quot;:&quot;#include &lt;stdio.h&gt;\n#define N 10\n\nvoid input(int a[], int n);\nvoid output(int a[], int n);\nvoid sort(int a[], int n);\n\nint main(void)\n{\n\tint a[N];\n\tinput(a, N);\n\tsort(a, N);\n\toutput(a, N);\n\treturn 0;\n}\n\nvoid input(int a[], int n)\n{\n\tint i;\n\tprintf(\&quot;Input:\\n\&quot;);\n\tfor (i = 0; i &lt; n; i++)\n\t{\n\t\tscanf(\&quot;%d\&quot;, &amp;a[i]);\n\t}\n}\n\nvoid output(int a[], int n)\n{\n\tint i;\n\tprintf(\&quot;Output:\\n\&quot;);\n\tfor (i = 0; i &lt; n; i++)\n\t{\n\t\tprintf(\&quot;%d \&quot;, a[i]);\n\t}\n\tprintf(\&quot;\\n\&quot;);\n}\n\nvoid sort(int a[], int n)\n{\n\tint i, j, temp;\n\tfor (i = 1; i &lt; 4; i++)\t/*注：该排序算法跑三趟，将4改为n即为完全排序算法*/\n\t{\n\t\t/******start******/\n\t\t\n\t\t/******end******/ \n\t\ta[j+1] = temp;\n\t}\n} \n&quot;}]}</td><td>
+                     5 9 2 8 3 7 6 4 10 1々296 482 399 855 661 32 164 664 483 110々441 215 365 213 864 122 89 850 485 121々849 618 538 238 194 667 787 758 760 522々951 109 739 731 272 148 496 327 708 784々17 638 263 648 838 308 163 566 766 477々1 948 422 740 263 312 94 782 903 736
+                    </td><td>
+                     Input:
+Output:
+2 5 8 9 3 7 6 4 10 1 
+々Input:
+Output:
+296 399 482 855 661 32 164 664 483 110 
+々Input:
+Output:
+213 215 365 441 864 122 89 850 485 121 
+々Input:
+Output:
+238 538 618 849 194 667 787 758 760 522 
+々Input:
+Output:
+109 731 739 951 272 148 496 327 708 784 
+々Input:
+Output:
+17 263 638 648 838 308 163 566 766 477 
+々Input:
+Output:
+1 422 740 948 263 312 94 782 903 736 
+
+                    </td><td>
+                     10.00々15.00々15.00々15.00々15.00々15.00々15.00
+                    </td><td>temp = a[i];
+		for (j = i - 1; j &gt;= 0; j--)
+		{
+			if (a[j] &gt; temp)
+			{
+				a[j+1] = a[j];
+			}
+			else
+			{
+				break;
+			}
+		}
+		a[j+1] = temp;
+</td>
+		</tr><tr>
+			<td>LB8206p</td><td>使用堆排序算法（升序</td><td>
+                         阶段八
+                    </td><td>
+                     
+                    </td><td>
+                         普通
+                    </td><td>
+                     使用堆排序算法（升序，建大堆顶）完善此程序。（注：截图为堆排序初始化后的大堆顶结果，详见源代码）
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.c&quot;,&quot;code&quot;:&quot;#include &lt;stdio.h&gt;\n#define N 10\n\nvoid input(int a[], int n);\nvoid output(int a[], int n);\nvoid sort(int a[], int n);\nvoid heapadjust(int a[], int loc, int n);\n\nint main(void)\n{\n\tint a[N];\n\tinput(a, N);\n\tsort(a, N);\n\toutput(a, N);\n\treturn 0;\n}\n\nvoid input(int a[], int n)\n{\n\tint i;\n\tprintf(\&quot;Input:\\n\&quot;);\n\tfor (i = 0; i &lt; n; i++)\n\t{\n\t\tscanf(\&quot;%d\&quot;, &amp;a[i]);\n\t}\n}\n\nvoid output(int a[], int n)\n{\n\tint i;\n\tprintf(\&quot;Output:\\n\&quot;);\n\tfor (i = 0; i &lt; n; i++)\n\t{\n\t\tprintf(\&quot;%d \&quot;, a[i]);\n\t}\n\tprintf(\&quot;\\n\&quot;);\n}\n\nvoid sort(int a[], int n)\n{\n\tint i;\n\t//int temp; \n\t\n\t//将原始序列初始化为大堆顶 \n\tfor (i = (n-1)/2; i &gt;= 0; i--)\n\t{\n\t\theapadjust(a, i, n-1); \n\t} \n\t/* \n\t//本段程序是交换第一个和当前最后一个，然后再调整为堆，取消注释则是完整排序算法\n\tfor (i = n - 1; i &gt;= 1; i--)\n\t{\n\ttemp = a[0];\n\ta[0] = a[i];\n\ta[i] = temp;\n\theapadjust(a, 0, i-1); \n\t} \n\t*/ \n}\n\nvoid heapadjust(int a[], int loc, int n)\n{\n\t/******start******/\n\t\n\t/******end******/\n}\n\n&quot;}]}</td><td>
+                     5 9 2 8 3 7 6 4 10 1々951 109 739 731 272 148 496 327 708 784々296 482 399 855 661 32 164 664 483 110々1 948 422 740 263 312 94 782 903 736々849 618 538 238 194 667 787 758 760 522々441 215 365 213 864 122 89 850 485 121
+                    </td><td>
+                     Input:
+Output:
+10 9 7 8 3 2 6 4 5 1 
+々Input:
+Output:
+951 731 739 708 272 148 496 327 109 784 
+々Input:
+Output:
+855 664 399 483 661 32 164 482 296 110 
+々Input:
+Output:
+948 903 422 782 263 312 94 1 740 736 
+々Input:
+Output:
+849 760 787 758 194 667 538 618 238 522 
+々Input:
+Output:
+864 850 365 485 215 122 89 213 441 121 
+
+                    </td><td>
+                     10.00々20.00々20.00々20.00々10.00々20.00
+                    </td><td>&nbsp;</td>
+		</tr>
+	</table>
+</div></form>

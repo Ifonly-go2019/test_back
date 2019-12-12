@@ -1,0 +1,44 @@
+*{/** 清除间距*/
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+	
+}
+.box{
+	width: 700px;
+	height:450px;
+	margin: 50px auto;
+	outline: 1px solid white;
+	/* background: rgb(89,72,139); */
+	background:-webkit-linear-gradient(top,#FFF,#cb1919);
+}
+
+.box ul{
+	outline: 1px solid white;
+	/* float: left; */
+}
+ .box li{
+ 	width:200px;
+ 	height: 200px;
+ 	 outline:1px solid azure;
+	 float: left;
+	 margin-left: 25px;
+	 margin-top: 15px;
+	position: relative;
+}
+.face{
+	 width:200px;
+	 height: 200px;
+	position: absolute;
+	
+}
+.second{
+	background: rgb(60,60,60);
+	opacity: 0;	
+}
+.first:hover .second{
+	opacity: 1;
+	
+}

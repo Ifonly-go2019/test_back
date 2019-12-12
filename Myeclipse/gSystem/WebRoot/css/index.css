@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	
+}
+li {
+	list-style: none;
+	display: block;
+
+}
+a{
+	color: rgba(60,60,60,0.9);
+}
+#home{
+	width: 100%;
+	height: 1000px;
+	background-image:url(../img/home.png) ;
+}
+.top{
+	width: 100%;
+	height: 100px;
+	font-size: 20px;
+ 
+	
+}
+	
+.navbox_firstul{
+    width: 60%;
+	height: 100px;
+	display: flex;
+	/* margin-left:900px ; */
+	background-color: rgba(60,210,209,.6);
+	/* border: 1px solid rgba(60,210,209,.6); */
+	border-radius: 0px 0px 10px 10px;
+	
+}
+.navbox_firstul li{
+	width: 22%;
+	justify-content:space-between;
+	align-items: center;
+	padding-top: 30px;
+	padding-left:30px;
+	 display:inline-block;
+}
+.navbox_firstul li:nth-child(1){
+	margin-left: 40px;
+}
+
+.navbox_firstul a{
+	text-align: center;
+	padding-left: 50px;
+	margin-right: 40px;
+}
+.navbox_firstul li:hover{
+	color: #F3C258;
+	background: rgba(255,255,255,0.15);
+}
+
+.dropdown{
+	display: none ;
+	width: 217px;
+	height: 120px;
+	margin-left: 40px;
+	font-size: 12px;
+	background-color: rgba(60,210,209,.6) ;
+	position: absolute;
+	margin-top: 100px;
+	border-radius: 0 0 20px 20px;
+	
+}
+#dropdown_2{
+	
+	margin-left: 45px;
+	
+}
+#dropdown_3{
+	
+	margin-left: 275px;
+	
+}
+#dropdown_4{
+	
+	margin-left: 505px;
+	border-radius: 0 0px 20px 20px;
+}
+
+ .dropdown ul {
+	 width: 217px;
+	display: inline-block;
+	
+}
+.dropdown ul li{
+	width: 100%;
+	height: 21px;
+}
+.dropdown li:nth-child(1){
+	margin-left:-1px;
+}
+ .dropdown ul li a{
+	 width: 52px;
+	 padding: 10px auto;
+	 position: absolute;
+	
+ }
+
+
+.navbox_firstul li:hover +.dropdown{
+	display: block;
+}
+.navbox_firstul li:hover +#dropdown_2{
+	display: block;
+}
+.navbox_firstul li:hover +#dropdown_3{
+	display: block;
+}
+.navbox_firstul li:hover +#dropdown_4{
+	display: block;
+	border-radius: 0 0 10px 10px ;
+}
+
+.dropdown:hover {
+	display: block;
+}
+.main{
+	left:600px;
+	top: 200px;
+	width: 600px;
+	height: 100px;
+	position: relative;
+	
+}
+.main p{
+	float: left;
+	padding-left: 50px;
+	letter-spacing:20px;
+	font-family: "monospace ";
+	font-size: 40px;
+	display: inline-block;
+	
+}
+
+.bottom{
+	top: 750px;
+	width: 100%;
+	height: 50px;
+	outline: 1px solid rgba(60,60,60,.5);
+	position: relative;
+}
+.bottom p{
+	padding-left: 600px;
+	font-size: 10px;
+	letter-spacing: 5px;
+	color: rgba(60,59,59,0.4);
+}

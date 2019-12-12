@@ -1,0 +1,1621 @@
+﻿<form method="post" action="ChoiceQuestionList.aspx" id="ctl00">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+</div>
+<div>
+	<table cellspacing="0" rules="all" border="1" id="GVForExport" style="border-collapse:collapse;">
+		<tr>
+			<th scope="col">自定义题号</th><th scope="col">题目难度</th><th scope="col">所属阶段</th><th scope="col">知识点</th><th scope="col">题目名称</th><th scope="col">题目描述</th><th scope="col">答案</th><th scope="col">答案描述</th><th scope="col">备注</th>
+		</tr><tr>
+			<td>zdd-01-08p</td><td>
+                         简单
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     顺序表 
+                    </td><td>对于顺序存储的线性表，访问结点和增加结点的时间复杂度为（   ）。</td><td>
+                     对于顺序存储的线性表，访问结点和增加结点的时间复杂度为（）。A．O(n)&nbsp;O(n)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B．O(n)&nbsp;O(1)C．O(1)&nbsp;O(n)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D．O(1)&nbsp;O(1)&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-01-03j</td><td>
+                         简单
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     
+                    </td><td>算法分析的两个主要方面是（  ）。</td><td>
+                     算法分析的两个主要方面是（）。(A)&nbsp;空间复杂度和时间复杂度(B)&nbsp;正确性和简明性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(C)&nbsp;可读性和文档性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(D)&nbsp;数据复杂性和程序复杂性&nbsp;&nbsp;
+                    </td><td>A         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-01-09p</td><td>
+                         简单
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     顺序表 
+                    </td><td>1.	下面（  ）时间复杂性最好，即执行时间最短的。</td><td>
+                     下面（）时间复杂性最好，即执行时间最短的。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;O(n)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B&nbsp;O(logn)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;O(nlogn)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D&nbsp;O(n2)&nbsp;
+                    </td><td>B</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>cxy_x_05p </td><td>
+                         普通
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     顺序表 
+                    </td><td>线性表若采用链式存储结构时，要求内存中可用存储单元的地址: （ ）</td><td>
+                     线性表若采用链式存储结构时，要求内存中可用存储单元的地址:&nbsp;（&nbsp;）（A）必须是连续的&nbsp;（B）部分地址必须是连续的（C）一定是不连续的&nbsp;（D）连续或不连续都可以
+                    </td><td>D         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>cxy_x_06j </td><td>
+                         简单
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     
+                    </td><td>在数据结构中，从逻辑上可以把数据结构分成（   ）</td><td>
+                     在数据结构中，从逻辑上可以把数据结构分成（）A．动态结构和静态结构&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B．紧凑结构和非紧凑结构&nbsp;c．线性结构和非线性结构&nbsp;&nbsp;&nbsp;D．内部结构和外部结构
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>cxy_x_07p </td><td>
+                         普通
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     
+                    </td><td>与数据元素本身的形式、内容、相对位置、个数无关的是数据的（   ）</td><td>
+                     与数据元素本身的形式、内容、相对位置、个数无关的是数据的（）A．存储结构&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B．存储实现C．逻辑结构&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D．运算实现
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>cxy_x_08p </td><td>
+                         普通
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     
+                    </td><td>以下与数据的存储结构无关的术语是（   ）</td><td>
+                     以下与数据的存储结构无关的术语是（）A．顺序队列&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B.链表&nbsp;c.&nbsp;有序表&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D.&nbsp;链栈
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>cxy_x_09j </td><td>
+                         简单
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     顺序表 
+                    </td><td>线性表的顺序储存结构是一种（）的存储结构</td><td>
+                     线性表的顺序储存结构是一种（）的存储结构A.随机存取&nbsp;&nbsp;B.顺序存取&nbsp;&nbsp;C.索引存取&nbsp;&nbsp;D.散列存取
+                    </td><td>A         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-01-02p</td><td>
+                         简单
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     
+                    </td><td>下面程序段的时间复杂度为（  ）。</td><td>
+                     下面程序段的时间复杂度为（）。i=1;while(i&lt;=n)i=i*3;(A)&nbsp;O(n)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(B)&nbsp;O(3n)(C)&nbsp;O(log3n)&nbsp;&nbsp;&nbsp;(D)&nbsp;O(n3)&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-01-04p</td><td>
+                         普通
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     
+                    </td><td>下列程序段的时间复杂度为（  ）。</td><td>
+                     下列程序段的时间复杂度为（）。s=0;for(i=0;i&lt;n;i++)for(j=0;j&lt;n;j++)s+=B[i][j];sum=s;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(A)&nbsp;O(n)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(B)&nbsp;O(n1/2)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(C)&nbsp;O(n2)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(D)&nbsp;O(n1/3)&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-01-07p</td><td>
+                         普通
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     顺序表 
+                    </td><td>若长度为n的线性表采用顺序存储结构，在其第i个位置插入一个新元素的算法的时间复杂度为（   ）。</td><td>
+                     若长度为n的线性表采用顺序存储结构，在其第i个位置插入一个新元素的算法的时间复杂度为（）。&nbsp;&nbsp;&nbsp;&nbsp;A．O(0)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B．O(1)&nbsp;&nbsp;&nbsp;&nbsp;C．O(n)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D．O(n2)&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-01-12p</td><td>
+                         简单
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     顺序表 
+                    </td><td>顺序表----插入操作算法描述:  请选择正确的选项填在空中。</td><td>
+                     顺序表----插入操作算法描述:请选择正确的选项填在空中。Status&nbsp;ListInsert_Sq(SqList&nbsp;&amp;L&nbsp;,&nbsp;int&nbsp;i&nbsp;,&nbsp;ET&nbsp;e){if&nbsp;(&nbsp;i&lt;1&nbsp;||&nbsp;i&gt;L.length+1)&nbsp;return&nbsp;ERROR;if(L.length&nbsp;&gt;=&nbsp;L.listsize){p=(ET*)realloc(L.elem,(L.listsize+10)*sizeof(ET));if&nbsp;(p==NULL)exit(OVERFLOW);L.elem=p;L.listsize+=10;}for(j=L.length&nbsp;;&nbsp;j&gt;=i&nbsp;;&nbsp;--j)L.elem[j]=L.elem[j-1];L.elem[j]=e&nbsp;;++L.length&nbsp;;return&nbsp;OK;}//此算法的时间复杂度是：_______(A)&nbsp;O(n)(B)&nbsp;O(n/2)(C)&nbsp;O(2n)(D)&nbsp;O(1)
+                    </td><td>A         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-01-05j</td><td>
+                         简单
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     顺序表 
+                    </td><td>下列关于线性表的叙述中，错误的是（  ）。</td><td>
+                     下列关于线性表的叙述中，错误的是（）。(A)&nbsp;线性表采用顺序存储，必须占用一片连续的存储单元(B)&nbsp;线性表采用顺序存储，便于进行插入和删除操作(C)&nbsp;线性表采用链式存储，不必占用一片连续的存储单元(D)&nbsp;线性表采用链式存储，便于进行插入和删除操作&nbsp;
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-01-10p</td><td>
+                         简单
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     顺序表 
+                    </td><td>从一个长度为n的顺序表中，删除值为x的元素时需要比较元素和移动元素的总次数为（   ）。</td><td>
+                     从一个长度为n的顺序表中，删除值为x的元素时需要比较元素和移动元素的总次数为（&nbsp;）。A（n+1）/2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B&nbsp;n/2&nbsp;&nbsp;C&nbsp;n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D&nbsp;n+1&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-01-11p</td><td>
+                         普通
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     顺序表 
+                    </td><td>顺序表的基本操作 ClearList用于将一个顺序表置为空表。算法描述如下：</td><td>
+                     顺序表的基本操作&nbsp;ClearList用于将一个顺序表置为空表。算法描述如下：Status&nbsp;ClearList(SqList&nbsp;&amp;L){__________（？？）____return(OK);&nbsp;}请选择正确的选项填在空中。(A)&nbsp;L.size=0;(B)&nbsp;L.length=0;(C)&nbsp;L.elem=0;(D)&nbsp;for(i=0;i&lt;L.length;i++)L.elem[i]=0;&nbsp;
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>LB1003j</td><td>
+                         简单
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     顺序表 
+                    </td><td>计算机算法必须具备(   )这三个特性。</td><td>
+                     计算机算法必须具备(&nbsp;&nbsp;&nbsp;)这三个特性。A)可执行性、可移植性、可扩充性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B)可执行性、确定性、有穷性C)确定性、有穷性、稳定性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D)易读性、稳定性、安全性
+                    </td><td>B</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>LB1005j</td><td>
+                         简单
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     
+                    </td><td>数据结构中数据元素之间的逻辑关系被称为(     )。</td><td>
+                     数据结构中数据元素之间的逻辑关系被称为(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)。A)数据的存储结构&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B)数据的基本操作C)程序的算法&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D)数据的逻辑结构
+                    </td><td>D</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>LB1006j</td><td>
+                         简单
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     
+                    </td><td>在下面的程序段中，对x的赋值语句的频度为(     )。</td><td>
+                     在下面的程序段中，对x的赋值语句的频度为(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)。for&nbsp;(i&nbsp;=&nbsp;1;&nbsp;i&nbsp;&lt;=&nbsp;n;&nbsp;i++)&nbsp;&nbsp;&nbsp;for&nbsp;(j&nbsp;=&nbsp;1;&nbsp;j&nbsp;&lt;=&nbsp;n;&nbsp;j++)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;=&nbsp;x+1;A)O(2n)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B)O(n)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C)O(n2)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D)O(logn)
+                    </td><td>C</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>LB1007p</td><td>
+                         普通
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     
+                    </td><td>程序段for (i = n-1; i &gt;= 1; i--)</td><td>
+                     程序段for&nbsp;(i&nbsp;=&nbsp;n-1;&nbsp;i&nbsp;&gt;=&nbsp;1;&nbsp;i--)&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(j&nbsp;=&nbsp;1;&nbsp;j&nbsp;&lt;=&nbsp;i;&nbsp;j++)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(a[j]&nbsp;&gt;&nbsp;a[j+1])&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{temp=a[j];&nbsp;a[j]=a[j+1];&nbsp;a[j+1]&nbsp;=&nbsp;temp;}其中n为正整数，则最后一行的语句频度在最坏的情况下是(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)。A)O(n)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B)O(nlogn)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C)O(n*n*n)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D)O(n*n)
+                    </td><td>D</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>LB1008j</td><td>
+                         简单
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     
+                    </td><td>连续存储设计时，存储单元的地址(     )。</td><td>
+                     连续存储设计时，存储单元的地址(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)。A)一定连续&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B)一定不连续C)不一定连续&nbsp;&nbsp;&nbsp;&nbsp;D)部分连续，部分不连续
+                    </td><td>A</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>LB1009p</td><td>
+                         普通
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     顺序表 
+                    </td><td>可以用（   ）定义一个完整的数据结构。</td><td>
+                     可以用（&nbsp;&nbsp;&nbsp;）定义一个完整的数据结构。A)数据元素&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B)数据对象C)数据关系&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D)抽象数据类型
+                    </td><td>D</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>LB1010j</td><td>
+                         简单
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     顺序表 
+                    </td><td>当输入非法错误时，一个“好”的算法会进行适当处理，而不会产生难对理解的输出结果。</td><td>
+                     当输入非法错误时，一个“好”的算法会进行适当处理，而不会产生难对理解的输出结果。这称为算法的(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)。A)可读性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B)健壮性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C)正确性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D)有穷性
+                    </td><td>B</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>LB1011j</td><td>
+                         简单
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     顺序表 
+                    </td><td>算法分析的目的是(     )。</td><td>
+                     算法分析的目的是(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)。A)找出数据结构的合理性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B)研究算法中的输入和输出的关系C)分析算法的效率以求改进&nbsp;&nbsp;&nbsp;&nbsp;D)分析算法的易懂性和文档性
+                    </td><td>C</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-01-06p</td><td>
+                         简单
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     
+                    </td><td>数据结构是相互之间存在一种或多种特定关系的（    ）集合。</td><td>
+                     数据结构是相互之间存在一种或多种特定关系的（）集合。(A)&nbsp;数据(B)&nbsp;数据元素(C)&nbsp;数据对象(D)&nbsp;数据项&nbsp;
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>cxy_x_04p </td><td>
+                         普通
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     顺序表 
+                    </td><td>向一个有127个元素的顺序表中插入一个新元素并保持原来顺序不变，平均要移动（ ） 个元素</td><td>
+                     向一个有127个元素的顺序表中插入一个新元素并保持原来顺序不变，平均要移动（&nbsp;）&nbsp;个元素（A）8&nbsp;（B）63.5（C）63&nbsp;（D）7
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>cxy_x_04j </td><td>
+                         简单
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     顺序表 
+                    </td><td>链表是一种采用（ ）存储结构存储的线性表</td><td>
+                     链表是一种采用（&nbsp;）存储结构存储的线性表（A）顺序&nbsp;（B）链式（C）星式&nbsp;（D）网状
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>LB1002j</td><td>
+                         简单
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     
+                    </td><td>计算机算法指的是（   ）。</td><td>
+                     计算机算法指的是（&nbsp;&nbsp;&nbsp;）。A)计算方法&nbsp;&nbsp;&nbsp;&nbsp;B)排序方法&nbsp;&nbsp;&nbsp;&nbsp;C)解决问题的步骤序列&nbsp;&nbsp;&nbsp;&nbsp;D)调度方法
+                    </td><td>C</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-01-01p</td><td>
+                         普通
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     
+                    </td><td>分析程序中语句(3)的频度</td><td>
+                     分析程序中语句(3)的频度(1)for(I=1;&nbsp;I&lt;=9;&nbsp;I++)&nbsp;&nbsp;&nbsp;&nbsp;(2)for(j=1;&nbsp;j&nbsp;&lt;=&nbsp;I&nbsp;;&nbsp;j++)&nbsp;&nbsp;&nbsp;&nbsp;(3){&nbsp;t&nbsp;=&nbsp;I&nbsp;*&nbsp;j&nbsp;;&nbsp;printf(“%5d”,t);&nbsp;}(A)&nbsp;45&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(B)&nbsp;44(C)&nbsp;36&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(D)&nbsp;63&nbsp;
+                    </td><td>A         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>LB1004j</td><td>
+                         简单
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     顺序表 
+                    </td><td>一个算法应该是(     )。</td><td>
+                     一个算法应该是(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)。A)程序&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B)问题求解步骤的描述&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C)要满足五个基本特性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D)A和C
+                    </td><td>B</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>LB1012j</td><td>
+                         简单
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     顺序表 
+                    </td><td>下述哪一条是顺序存储结构的优点？</td><td>
+                     下述哪一条是顺序存储结构的优点？A)插入运算方便&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B)可方便地用于各种逻辑结构的存储表示C)存储密度大&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D)删除运算方便
+                    </td><td>C</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>LB1001j</td><td>
+                         简单
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     
+                    </td><td>算法的计算量的大小称为计算的（   ）。</td><td>
+                     算法的计算量的大小称为计算的（&nbsp;&nbsp;&nbsp;）。A）效率&nbsp;&nbsp;&nbsp;B）复杂性&nbsp;&nbsp;C）现实性&nbsp;&nbsp;D）难度
+                    </td><td>B</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>cxy_x_01p </td><td>
+                         普通
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     
+                    </td><td>数据在计算机存储器内表示时，物理地址与逻辑地址相同并且是连续的，称之为</td><td>
+                     数据在计算机存储器内表示时，物理地址与逻辑地址相同并且是连续的，称之为：（&nbsp;）（A）存储结构&nbsp;（B）逻辑结构（C）顺序存储结构&nbsp;（D）链式存储结构
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>cxy_x_02p </td><td>
+                         普通
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     
+                    </td><td>一个向量第一个元素的存储地址是100，每个元素的长度为2，则第5个元素的地址是</td><td>
+                     一个向量第一个元素的存储地址是100，每个元素的长度为2，则第5个元素的起始地址是（A）110&nbsp;（B）108（C）100&nbsp;（D）120
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>cxy_x_03p </td><td>
+                         简单
+                    </td><td>
+                         阶段一
+                    </td><td>
+                     顺序表 
+                    </td><td>在n个结点的顺序表中，算法的时间复杂度是O（1）的操作是：</td><td>
+                     在n个结点的顺序表中，算法的时间复杂度是O（1）的操作是：（&nbsp;）（A）访问第i个结点（1≤i≤n）和求第i个结点的直接前驱（2≤i≤n）（B）在第i个结点后插入一个新结点（1≤i≤n）（C）删除第i个结点（1≤i≤n）（D）&nbsp;将n个结点从小到大排序
+                    </td><td>A         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-02-01j</td><td>
+                         简单
+                    </td><td>
+                         阶段二
+                    </td><td>
+                     链表 
+                    </td><td>在单链表指针为p的结点之后插入指针为s的结点，正确的操作是（   ）</td><td>
+                     在单链表指针为p的结点之后插入指针为s的结点，正确的操作是（）(A)&nbsp;p-&gt;next=s;&nbsp;s-&gt;next=p-&gt;next(B)&nbsp;s-&gt;next=p-&gt;next;&nbsp;p-&gt;next=s(C)&nbsp;p-&gt;next=s;&nbsp;p-&gt;next=s-&gt;next(D)&nbsp;p-&gt;next=s-&gt;next;&nbsp;p-&gt;next=s
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>LB2001p</td><td>
+                         普通
+                    </td><td>
+                         阶段二
+                    </td><td>
+                     链表 
+                    </td><td>静态链表中指针表示的是</td><td>
+                     静态链表中指针表示的是（&nbsp;&nbsp;&nbsp;）。(A)下一元素的地址&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(B)内存储器的地址(C)下一元素在数组中的位置&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(D)左链或右链指向的元素的地址
+                    </td><td>C</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>LB2002p</td><td>
+                         普通
+                    </td><td>
+                         阶段二
+                    </td><td>
+                     链表 
+                    </td><td>单链表中，增加一个头结点的目的是为了(   )。</td><td>
+                     单链表中，增加一个头结点的目的是为了(&nbsp;&nbsp;&nbsp;)。(A)使单链表至少有一个结点&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(B)标识表结点中首结点的位置(C)方便运算的实现&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(D)说明单链表是线性表的链式存储
+                    </td><td>C</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-02-07j</td><td>
+                         简单
+                    </td><td>
+                         阶段二
+                    </td><td>
+                     链表 
+                    </td><td>若一个线性表中最常用的操作是取第i个元素和找第i个元素的前趋元素，则采用（   ）存储方式最节省时间。</td><td>
+                     若一个线性表中最常用的操作是取第i个元素和找第i个元素的前趋元素，则采用（）存储方式最节省时间。A.&nbsp;顺序表B.&nbsp;单链表C.&nbsp;双链表D.&nbsp;单循环链表&nbsp;
+                    </td><td>A</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-02-08j</td><td>
+                         简单
+                    </td><td>
+                         阶段二
+                    </td><td>
+                     链表 
+                    </td><td>非空的循环单链表head的尾结点p满足（   ）。</td><td>
+                     非空的循环单链表head的尾结点p满足（）。A.&nbsp;p-&gt;next==head&nbsp;B.&nbsp;p-&gt;next==NULLC.&nbsp;p==NULLD.&nbsp;p==head&nbsp;
+                    </td><td>A</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-02-09j</td><td>
+                         简单
+                    </td><td>
+                         阶段二
+                    </td><td>
+                     链表 
+                    </td><td>链表不具有的特点是（   ）。</td><td>
+                     链表不具有的特点是（）。A.&nbsp;可随机访问任一元素　B.&nbsp;插入删除不需要移动元素C.&nbsp;不必事先估计存储空间D.&nbsp;所需空间与线性表长度成正比&nbsp;
+                    </td><td>A</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-02-10j</td><td>
+                         简单
+                    </td><td>
+                         阶段二
+                    </td><td>
+                     链表 
+                    </td><td>在双向循环链表中，在p指针所指的结点后插入一个指针q所指向的新结点，修改指针的操作是（   ）。</td><td>
+                     在双向循环链表中，在p指针所指的结点后插入一个指针q所指向的新结点，修改指针的操作是（）。A.&nbsp;p-&gt;next=q;q-&gt;prior=p;p-&gt;next-&gt;prior=q;q-&gt;next=q;B.&nbsp;p-&gt;next=q;p-&gt;next-&gt;prior=q;q-&gt;prior=p;q-&gt;next=p-&gt;next;C.&nbsp;q-&gt;prior=p;q-&gt;next=p-&gt;next;p-&gt;next-&gt;prior=q;p-&gt;next=q;D.&nbsp;q-&gt;next=p-&gt;next;q-&gt;prior=p;p-&gt;next=q;p-&gt;next=q;&nbsp;
+                    </td><td>C</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-02-11j</td><td>
+                         简单
+                    </td><td>
+                         阶段二
+                    </td><td>
+                     链表 
+                    </td><td>线性表采用链式存储时，结点的存储地址（   ）。</td><td>
+                     线性表采用链式存储时，结点的存储地址（）。A.&nbsp;必须是连续的B.&nbsp;必须是不连续的C.&nbsp;连续与否均可D.&nbsp;和头结点的存储地址相连续&nbsp;
+                    </td><td>C</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-02-12j</td><td>
+                         简单
+                    </td><td>
+                         阶段二
+                    </td><td>
+                     链表 
+                    </td><td>从表中任一结点出发，都能扫描整个表的是（   ）。</td><td>
+                     从表中任一结点出发，都能扫描整个表的是（）。A.&nbsp;单链表B.&nbsp;顺序表C.&nbsp;循环链表D.&nbsp;静态链表&nbsp;
+                    </td><td>C</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-02-13p</td><td>
+                         普通
+                    </td><td>
+                         阶段二
+                    </td><td>
+                     链表 
+                    </td><td>在具有n个结点的单链表上查找值为x的元素时，其时间复杂度为（   ）。</td><td>
+                     在具有n个结点的单链表上查找值为x的元素时，其时间复杂度为（）。A.&nbsp;O(n)B.&nbsp;O(1)C.&nbsp;O(n2)D.&nbsp;O(n-1)&nbsp;
+                    </td><td>A</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-02-14j</td><td>
+                         简单
+                    </td><td>
+                         阶段二
+                    </td><td>
+                     链表 
+                    </td><td>线性表L=(a1,a2,……,an)，下列说法正确的是（   ）。</td><td>
+                     线性表L=(a1,a2,……,an)，下列说法正确的是（）。A.每个元素都有一个直接前驱和一个直接后继B.线性表中至少要有一个元素C.表中诸元素的排列顺序必须是由小到大或由大到小D.除第一个和最后一个元素外，其余每个元素都由一个且仅有一个直接前驱和直接后继&nbsp;
+                    </td><td>D</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-02-15j</td><td>
+                         简单
+                    </td><td>
+                         阶段二
+                    </td><td>
+                     链表 
+                    </td><td>线性表的顺序存储结构是一种（   ）存储结构。</td><td>
+                     线性表的顺序存储结构是一种（）存储结构。A.&nbsp;随机存取B.&nbsp;顺序存取C.&nbsp;索引存取D.&nbsp;散列存取&nbsp;
+                    </td><td>A</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-02-16j</td><td>
+                         简单
+                    </td><td>
+                         阶段二
+                    </td><td>
+                     链表 
+                    </td><td>循环链表的主要优点是（   ）。</td><td>
+                     循环链表的主要优点是（）。A.&nbsp;不再需要头指针B.&nbsp;已知某结点位置后能容易找到其直接前驱C.&nbsp;在进行插入、删除运算时能保证链表不断开D.&nbsp;在表中任一结点出发都能扫描整个链表&nbsp;
+                    </td><td>D</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-02-17j</td><td>
+                         简单
+                    </td><td>
+                         阶段二
+                    </td><td>
+                     链表 
+                    </td><td>．设指针变量p指向单链表结点A，则删除结点A的后继结点B需要的操作为（  ）。</td><td>
+                     设指针变量p指向单链表结点A，则删除结点A的后继结点B需要的操作为（）。(A)&nbsp;p-&gt;next=p-&gt;next-&gt;next(B)&nbsp;p=p-&gt;next(C)&nbsp;p=p-&gt;next-&gt;next(D)&nbsp;p-&gt;next=p&nbsp;
+                    </td><td>A         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-02-05p</td><td>
+                         简单
+                    </td><td>
+                         阶段二
+                    </td><td>
+                     链表 
+                    </td><td>构造一个带头结点的空链表,  算法描述：</td><td>
+                     构造一个带头结点的空链表,算法描述：Status&nbsp;InitList_L(______________________){L=(&nbsp;LinkList&nbsp;)&nbsp;malloc&nbsp;(&nbsp;sizeof&nbsp;(&nbsp;Lnode&nbsp;)&nbsp;);if&nbsp;(L==NULL)&nbsp;exit&nbsp;(OVERFLOW);L&nbsp;-&gt;&nbsp;next=NULL;L&nbsp;-&gt;&nbsp;data=0;return&nbsp;OK;&nbsp;}(A)&nbsp;LinkList&nbsp;L(B)&nbsp;LinkList&nbsp;*L(C)&nbsp;LinkList&nbsp;&amp;L(D)&nbsp;LinkList&nbsp;L,int&nbsp;i,ElemType&nbsp;e&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-02-06p</td><td>
+                         普通
+                    </td><td>
+                         阶段二
+                    </td><td>
+                     链表 
+                    </td><td>构造一个带头结点的空循环单链表,  算法描述：</td><td>
+                     构造一个带头结点的空循环单链表,算法描述：Status&nbsp;InitList_L(LinkList&nbsp;&amp;L){L=(&nbsp;LinkList&nbsp;)&nbsp;malloc&nbsp;(&nbsp;sizeof&nbsp;(&nbsp;Lnode&nbsp;)&nbsp;);if&nbsp;(L==NULL)&nbsp;exit&nbsp;(OVERFLOW);_____________________return&nbsp;OK;&nbsp;}(A)&nbsp;L&nbsp;-&gt;&nbsp;next=NULL;(B)&nbsp;L&nbsp;-&gt;&nbsp;next=L;(C)&nbsp;L=L&nbsp;-&gt;&nbsp;next;(D)&nbsp;L&nbsp;-&gt;&nbsp;next=(*L)-&gt;next;
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-02-02p</td><td>
+                         简单
+                    </td><td>
+                         阶段二
+                    </td><td>
+                     链表 
+                    </td><td>线性表若采用链式存储结构时，要求内存中可用存储单元的地址（  ）。</td><td>
+                     线性表若采用链式存储结构时，要求内存中可用存储单元的地址（）。(A)&nbsp;必须是连续的(B)&nbsp;部分地址必须是连续的(C)&nbsp;一定是不连续的(D)&nbsp;连续或不连续都可以&nbsp;
+                    </td><td>D         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-02-03j</td><td>
+                         简单
+                    </td><td>
+                         阶段二
+                    </td><td>
+                     链表 
+                    </td><td>链表不具有的特点是（   ）。</td><td>
+                     链表不具有的特点是（）。A．插入、删除不需要移动元素&nbsp;&nbsp;&nbsp;&nbsp;B．可随机访问任一元素C．不必事先估计存储空间&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D．所需空间与线性长度成正比&nbsp;
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-02-04n</td><td>
+                         困难
+                    </td><td>
+                         阶段二
+                    </td><td>
+                     链表 
+                    </td><td>在双向链表指针p的结点前插入一个指针q的结点操作是（   ）。</td><td>
+                     在双向链表指针p的结点前插入一个指针q的结点操作是（）。A．p-&gt;prior=q;&nbsp;q-&gt;next=q;&nbsp;p-&gt;prior-&gt;next=q;&nbsp;q-&gt;prior=q;B．p-&gt;prior=q;&nbsp;p-&gt;prior-&gt;next=q;&nbsp;q-&gt;prior=p;&nbsp;q-&gt;prior=p-&gt;priorC．q-&gt;next=p;&nbsp;q-&gt;prior=p-&gt;prior;&nbsp;p-&gt;prior-&gt;next=q;&nbsp;p-&gt;prior=q;D．q-&gt;prior=p-&gt;prior;&nbsp;q-&gt;next=q;&nbsp;p-&gt;prior=q;&nbsp;p-&gt;prior=q;&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>cxy_x_12p </td><td>
+                         普通
+                    </td><td>
+                         阶段二
+                    </td><td>
+                     链表 
+                    </td><td>带头结点的单链表head为空的判定条件是（）</td><td>
+                     带头结点的单链表head为空的判定条件是（）A．head&nbsp;==&nbsp;NULL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B．head.next&nbsp;==&nbsp;NULLC．head.next&nbsp;==&nbsp;head&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D．head&nbsp;!=&nbsp;NULL
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>cxy_x_13p </td><td>
+                         普通
+                    </td><td>
+                         阶段二
+                    </td><td>
+                     链表 
+                    </td><td>在单向循环链表中，基头指针为h，那么p所指结点为尾结点的条件是（）</td><td>
+                     在单向循环链表中，基头指针为h，那么p所指结点为尾结点的条件是（）A．p&nbsp;=&nbsp;NULL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B．p.next=NULL&nbsp;C．p&nbsp;=h&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D．p.next=h
+                    </td><td>D         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>cxy_x_14j </td><td>
+                         普通
+                    </td><td>
+                         阶段二
+                    </td><td>
+                     链表 
+                    </td><td>与线性表的链接存储不相符的特性是（）</td><td>
+                     与线性表的链接存储不相符的特性是（）A．插入和删除操作灵活&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B．需要连续的存储空间C．存储空间动态分配权&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D．需另外开辟空间来保存元素间的关系
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-03-17j</td><td>
+                         简单
+                    </td><td>
+                         阶段三
+                    </td><td>
+                     栈和队列 
+                    </td><td>具有线性结构的数据结构是（   ）。</td><td>
+                     具有线性结构的数据结构是（）。A.图B.树C.广义表D.栈&nbsp;
+                    </td><td>D</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-03-04j</td><td>
+                         普通
+                    </td><td>
+                         阶段三
+                    </td><td>
+                     栈和队列 
+                    </td><td>设输入序列为1、2、3、4、5、6，则通过栈的作用后可以得到的输出序列为（  ）。</td><td>
+                     设输入序列为1、2、3、4、5、6，则通过栈的作用后可以得到的输出序列为（）。(A)&nbsp;5，3，4，6，1，2(B)&nbsp;3，2，5，6，4，1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(C)&nbsp;3，1，2，5，4，6(D)&nbsp;1，5，4，6，2，3&nbsp;
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-03-07p</td><td>
+                         简单
+                    </td><td>
+                         阶段三
+                    </td><td>
+                     栈和队列 
+                    </td><td>循环队列存储在数组A[0..m]中，则入队时的操作为（   ）。</td><td>
+                     循环队列存储在数组A[0..m]中，则入队时的操作为（）。A．rear&nbsp;=&nbsp;rear&nbsp;+&nbsp;1B．rear&nbsp;=&nbsp;(rear&nbsp;+&nbsp;1)&nbsp;mod&nbsp;(m&nbsp;–&nbsp;1)C．rear&nbsp;=&nbsp;(rear&nbsp;+&nbsp;1)&nbsp;mod&nbsp;mD．rear&nbsp;=&nbsp;(rear&nbsp;+&nbsp;1)&nbsp;mod&nbsp;(m&nbsp;+&nbsp;1)&nbsp;
+                    </td><td>D         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-03-08p</td><td>
+                         简单
+                    </td><td>
+                         阶段三
+                    </td><td>
+                     栈和队列 
+                    </td><td>和顺序栈相比，链栈有一个比较明显的优势是（   ）。</td><td>
+                     和顺序栈相比，链栈有一个比较明显的优势是（）。A．通常不会出现栈满的情况B．通常不会出现栈空的情况C．插入操作更容易实现D．删除操作更容易实现&nbsp;
+                    </td><td>A         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-03-06j</td><td>
+                         普通
+                    </td><td>
+                         阶段三
+                    </td><td>
+                     栈和队列 
+                    </td><td>有六个元素6,5,4,3,2,1顺序入栈，问下列哪一个不是合法的出栈序列？（   ）</td><td>
+                     有六个元素6,5,4,3,2,1顺序入栈，问下列哪一个不是合法的出栈序列？（）A．5&nbsp;4&nbsp;3&nbsp;6&nbsp;1&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B．3&nbsp;4&nbsp;6&nbsp;5&nbsp;2&nbsp;1C．4&nbsp;5&nbsp;3&nbsp;1&nbsp;2&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D．2&nbsp;3&nbsp;4&nbsp;1&nbsp;5&nbsp;6&nbsp;
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-03-03j</td><td>
+                         简单
+                    </td><td>
+                         阶段三
+                    </td><td>
+                     栈和队列 
+                    </td><td>设栈的输入序列为1，2，3，4，则（  ）不可能是其输出的栈序列</td><td>
+                     设栈的输入序列为1，2，3，4，则（）不可能是其输出的栈序列&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(A)&nbsp;1,2,4,3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(B)&nbsp;2,1,3,4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(C)&nbsp;1,4,3,2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(D)&nbsp;4,3,1,2&nbsp;
+                    </td><td>D         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-03-09p</td><td>
+                         普通
+                    </td><td>
+                         阶段三
+                    </td><td>
+                     栈和队列 
+                    </td><td>顺序循环队列的类型定义如下：</td><td>
+                     顺序循环队列的类型定义如下：typedef&nbsp;int&nbsp;ET;typedef&nbsp;struct{ET&nbsp;*base;int&nbsp;Front;int&nbsp;Rear;int&nbsp;Size}Queue;Queue&nbsp;Q;队列&nbsp;Q&nbsp;是否空的条件判断为____________________________(A)&nbsp;Q.Front==Q.Rear+1(B)&nbsp;Q.Rear==Q.Front(C)&nbsp;Q.Rear==(Q.Front+1)&nbsp;%&nbsp;Q.Size(D)&nbsp;Q.Rear==Q.Front&nbsp;and&nbsp;Q.Front==0
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-03-10j</td><td>
+                         简单
+                    </td><td>
+                         阶段三
+                    </td><td>
+                     栈和队列 
+                    </td><td>设计一个判别表达式中括号是否配对的算法，采用（   ）数据结构最佳。</td><td>
+                     设计一个判别表达式中括号是否配对的算法，采用（）数据结构最佳。A.&nbsp;顺序表B.&nbsp;链表C.&nbsp;队列D.&nbsp;栈&nbsp;
+                    </td><td>D</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-03-11j</td><td>
+                         简单
+                    </td><td>
+                         阶段三
+                    </td><td>
+                     栈和队列 
+                    </td><td>队列的插入操作是在（   ）。</td><td>
+                     队列的插入操作是在（）。A.&nbsp;队尾B.&nbsp;队头C.&nbsp;队列任意位置D.&nbsp;队头元素后&nbsp;
+                    </td><td>A</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-03-11p</td><td>
+                         普通
+                    </td><td>
+                         阶段三
+                    </td><td>
+                     栈和队列 
+                    </td><td>表达式a*(b+c)-d的后缀表达式是（   ）。</td><td>
+                     表达式a*(b+c)-d的后缀表达式是（）。A.&nbsp;abcd+-　&nbsp;&nbsp;B.&nbsp;abc+*d-C.&nbsp;abc*+d-&nbsp;&nbsp;D.&nbsp;-+*abcd&nbsp;
+                    </td><td>B</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-03-12j</td><td>
+                         简单
+                    </td><td>
+                         阶段三
+                    </td><td>
+                     栈和队列 
+                    </td><td>将递归算法转换成对应的非递归算法时，通常需要使用（   ）来保存中间结果。</td><td>
+                     将递归算法转换成对应的非递归算法时，通常需要使用（）来保存中间结果。A.队列B.栈C.链表D.树&nbsp;
+                    </td><td>B</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-03-13p</td><td>
+                         普通
+                    </td><td>
+                         阶段三
+                    </td><td>
+                     栈和队列 
+                    </td><td>五节车厢以编号1，2，3，4，5顺序进入铁路调度站（栈），可以得到（   ）的编组。</td><td>
+                     五节车厢以编号1，2，3，4，5顺序进入铁路调度站（栈），可以得到（）的编组。A.&nbsp;3，4，5，1，2B.&nbsp;2，4，1，3，5C.&nbsp;3，5，4，2，1D.&nbsp;1，3，5，2，4&nbsp;
+                    </td><td>C</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-03-14j</td><td>
+                         简单
+                    </td><td>
+                         阶段三
+                    </td><td>
+                     栈和队列 
+                    </td><td>判定一个顺序栈S（栈空间大小为n）为空的条件是（   ）。</td><td>
+                     判定一个顺序栈S（栈空间大小为n）为空的条件是（）。A.&nbsp;S-&gt;top==0B.&nbsp;S-&gt;top!=0C.&nbsp;S-&gt;top==nD.&nbsp;S-&gt;top!=n&nbsp;
+                    </td><td>A</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-03-15p</td><td>
+                         普通
+                    </td><td>
+                         阶段三
+                    </td><td>
+                     栈和队列 
+                    </td><td>依次在初始为空的队列中插入元素a,b,c,d以后，紧接着做了两次删除操作，此时的队头元素是（   ）。</td><td>
+                     依次在初始为空的队列中插入元素a,b,c,d以后，紧接着做了两次删除操作，此时的队头元素是（）。A.&nbsp;aB.&nbsp;bC.&nbsp;cD.&nbsp;d&nbsp;
+                    </td><td>C</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>LB3001j</td><td>
+                         简单
+                    </td><td>
+                         阶段三
+                    </td><td>
+                     栈和队列 
+                    </td><td>对于栈操作数据的原则是(   )。</td><td>
+                     对于栈操作数据的原则是(&nbsp;&nbsp;&nbsp;)。(A)先进先出&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(B)后进先出(C)后进后出&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(D)不分顺序
+                    </td><td>B</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>LB3002p</td><td>
+                         普通
+                    </td><td>
+                         阶段三
+                    </td><td>
+                     栈和队列 
+                    </td><td>一个栈的输入序列为1, 2, ..., n，若输出序列的第一个元素是n，输出第i（1&lt;=i&lt;=n）</td><td>
+                     一个栈的输入序列为1,&nbsp;2,&nbsp;...,&nbsp;n，若输出序列的第一个元素是n，输出第i（1&lt;=i&lt;=n）个元素是(&nbsp;&nbsp;&nbsp;)。(A)不确定&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(B)n-i+1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(C)i&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(D)n-i
+                    </td><td>B</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>LB3004p</td><td>
+                         普通
+                    </td><td>
+                         阶段三
+                    </td><td>
+                     栈和队列 
+                    </td><td>向一个栈顶指针为h的带头结点的链栈中插入指针s所指的结点时，应执行(   )。</td><td>
+                     向一个栈顶指针为h的带头结点的链栈中插入指针s所指的结点时，应执行(&nbsp;&nbsp;&nbsp;)。(A)h-&gt;next=s;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(B)s-&gt;next=h;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(C)s-&gt;next=h;&nbsp;h-&gt;next=s;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(D)s-&gt;next=h-&gt;next;h-&gt;next=s;
+                    </td><td>D</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>LB3005j</td><td>
+                         简单
+                    </td><td>
+                         阶段三
+                    </td><td>
+                     栈和队列 
+                    </td><td>某堆栈的输入序列为a, b, c, d，下面的四个序列中，不可能是它的输出序列的是(   )。</td><td>
+                     某堆栈的输入序列为a,&nbsp;b,&nbsp;c,&nbsp;d，下面的四个序列中，不可能是它的输出序列的是(&nbsp;&nbsp;&nbsp;)。(A)a,c,b,d&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(B)b,c,d,a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(C)c,d,b,a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(D)d,c,a,b
+                    </td><td>D</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-03-05p</td><td>
+                         简单
+                    </td><td>
+                         阶段三
+                    </td><td>
+                     栈和队列 
+                    </td><td>栈和队列的共同点是（   ）。</td><td>
+                     栈和队列的共同点是（）。(A)都是先进后出(B)都是后进先出(C)只允许在端点插入和删除元素(D)没有共同点&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>LB3003p</td><td>
+                         普通
+                    </td><td>
+                         阶段三
+                    </td><td>
+                     栈和队列 
+                    </td><td>如入栈序列为1, 2, 3, 4, 5，则可能得到的出栈序列为(   )。</td><td>
+                     如入栈序列为1,&nbsp;2,&nbsp;3,&nbsp;4,&nbsp;5，则可能得到的出栈序列为(&nbsp;&nbsp;&nbsp;)。(A)1,&nbsp;2,&nbsp;5,&nbsp;3,&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(B)3,&nbsp;1,&nbsp;2,&nbsp;5,&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(C)3,&nbsp;2,&nbsp;5,&nbsp;4,&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(D)以上都不可能
+                    </td><td>C</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-03-01p</td><td>
+                         普通
+                    </td><td>
+                         阶段三
+                    </td><td>
+                     栈和队列 
+                    </td><td>在栈的操作中，输入序列为A,B,C,D,不可能得到的输出数列是（ ）。</td><td>
+                     在栈的操作中，输入序列为A,B,C,D,不可能得到的输出数列是（&nbsp;）。&nbsp;&nbsp;&nbsp;(A)&nbsp;ABCD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(B)&nbsp;DCBA&nbsp;&nbsp;&nbsp;(C)&nbsp;ACDB&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(D)&nbsp;CABD&nbsp;
+                    </td><td>D         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-03-02p</td><td>
+                         简单
+                    </td><td>
+                         阶段三
+                    </td><td>
+                     栈和队列 
+                    </td><td>顺序循环队列的类型定义如下：</td><td>
+                     顺序循环队列的类型定义如下：#define&nbsp;MAXQSIZE&nbsp;100typedef&nbsp;struct{QElemtype&nbsp;*base;int&nbsp;front;int&nbsp;rear;}SqQueue;SqQueue&nbsp;Q;队列&nbsp;Q&nbsp;是否为空的条件判断为____________________________(A)&nbsp;Q.front==Q.rear+1(B)&nbsp;Q.rear==Q.front(C)&nbsp;Q.rear==(Q.front+1)&nbsp;%&nbsp;MAXQSIZE(D)&nbsp;Q.Rear==Q.Front&nbsp;and&nbsp;Q.Front==0
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-04-07j</td><td>
+                         简单
+                    </td><td>
+                         阶段四
+                    </td><td>
+                     数组的存储
+                    </td><td>将10阶对称矩阵压缩存储到一维数组A中，则数组A的长度最少为（  ）。</td><td>
+                     将10阶对称矩阵压缩存储到一维数组A中，则数组A的长度最少为（）。(A)&nbsp;100&nbsp;(B)&nbsp;40&nbsp;(C)&nbsp;55&nbsp;(D)&nbsp;80&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-04-04p</td><td>
+                         普通
+                    </td><td>
+                         阶段四
+                    </td><td>
+                     数组的存储
+                    </td><td>对称矩阵的压缩存储：</td><td>
+                     对称矩阵的压缩存储：以行序为主序存储下三角中的元素，包括对角线上的元素。二维下标为(&nbsp;i&nbsp;,&nbsp;j&nbsp;),存储空间的一维下标为k，给出k与&nbsp;i&nbsp;,&nbsp;j&nbsp;(i&gt;=j)的关系k=___________________（1&lt;=&nbsp;i,&nbsp;j&nbsp;&lt;=&nbsp;n&nbsp;,0&lt;=&nbsp;k&nbsp;&lt;&nbsp;n*(n+1)/2)。(A)&nbsp;i*(i-1)/2&nbsp;+&nbsp;j&nbsp;-&nbsp;1(B)&nbsp;i*(i+1)/2&nbsp;+&nbsp;j(C)&nbsp;j*(j-1)/2&nbsp;+&nbsp;i&nbsp;-&nbsp;1(D)&nbsp;j*(j+1)/2&nbsp;+&nbsp;i
+                    </td><td>A         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-04-08j</td><td>
+                         简单
+                    </td><td>
+                         阶段四
+                    </td><td>
+                     
+                    </td><td>设有两个串S1和S2，求串S2在S1中首次出现位置的运算称作（）。</td><td>
+                     设有两个串S1和S2，求串S2在S1中首次出现位置的运算称作（）。A.连接B.求子串C.模式匹配D.判断子串&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-04-09j</td><td>
+                         简单
+                    </td><td>
+                         阶段四
+                    </td><td>
+                     
+                    </td><td>已知串S=’aaab’，则next数组值为（  ）。</td><td>
+                     已知串S=’aaab’，则next数组值为（）。A.&nbsp;0123B.&nbsp;1123&nbsp;C.&nbsp;1231D.&nbsp;1211&nbsp;
+                    </td><td>A         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-04-10j</td><td>
+                         简单
+                    </td><td>
+                         阶段四
+                    </td><td>
+                     
+                    </td><td>串与普通的线性表相比较，它的特殊性体现在（）。</td><td>
+                     串与普通的线性表相比较，它的特殊性体现在（）。A.&nbsp;顺序的存储结构B.&nbsp;链式存储结构C.&nbsp;数据元素是一个字符D.&nbsp;数据元素任意&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-04-11p</td><td>
+                         普通
+                    </td><td>
+                         阶段四
+                    </td><td>
+                     
+                    </td><td>设串长为n，模式串长为m，则KMP算法所需的附加空间为（ ）。</td><td>
+                     设串长为n，模式串长为m，则KMP算法所需的附加空间为（）。A.&nbsp;O(m)B.&nbsp;O(n)C.&nbsp;O(m*n)D.&nbsp;O(nlog2m)&nbsp;
+                    </td><td>A         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-04-14j</td><td>
+                         简单
+                    </td><td>
+                         阶段四
+                    </td><td>
+                     特殊矩阵
+                    </td><td>稀疏矩阵的常见压缩存储方法有（）两种。</td><td>
+                     稀疏矩阵的常见压缩存储方法有（）两种。A.二维数组和三维数组B.三元组和散列表C.三元组和十字链表D.散列表和十字链表&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-04-01j</td><td>
+                         简单
+                    </td><td>
+                         阶段四
+                    </td><td>
+                     数组概念
+                    </td><td>数组通常具有的两种基本操作是（   ）。</td><td>
+                     数组通常具有的两种基本操作是（）。A．查找和修改&nbsp;&nbsp;B．查找和索引C．索引和修改&nbsp;&nbsp;D．建立和删除&nbsp;
+                    </td><td>A         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-04-02j</td><td>
+                         简单
+                    </td><td>
+                         阶段四
+                    </td><td>
+                     特殊矩阵
+                    </td><td>稀疏矩阵一般的压缩存储方法有两种，即（   ）。</td><td>
+                     稀疏矩阵一般的压缩存储方法有两种，即（）。A．二维数组和三维数组&nbsp;&nbsp;&nbsp;B．三元组和散列C．三元组和十字链表&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D．散列和十字链表&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-04-05p</td><td>
+                         普通
+                    </td><td>
+                         阶段四
+                    </td><td>
+                     数组的存储
+                    </td><td>二维数组A[7][8]以列序为主序的存储，计算数组元素A[5][3] 的一维存储空间下标 k=___________。</td><td>
+                     二维数组A[7][8]以列序为主序的存储，计算数组元素A[5][3]&nbsp;的一维存储空间下标&nbsp;k=___________。(A)&nbsp;38(B)&nbsp;43(C)&nbsp;26(D)&nbsp;29
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-05-18p</td><td>
+                         普通
+                    </td><td>
+                         阶段五
+                    </td><td>
+                     二叉树
+                    </td><td>棵二叉树的顺序存储情况如下：</td><td>
+                     棵二叉树的顺序存储情况如下：1&nbsp;2&nbsp;3&nbsp;4&nbsp;5&nbsp;6&nbsp;7&nbsp;8&nbsp;9&nbsp;10&nbsp;11&nbsp;12&nbsp;13&nbsp;14&nbsp;15A&nbsp;B&nbsp;C&nbsp;0&nbsp;D&nbsp;E&nbsp;F&nbsp;0&nbsp;0&nbsp;G&nbsp;0&nbsp;M&nbsp;N&nbsp;0&nbsp;X结点F的左孩子为_________。(A)&nbsp;M(B)&nbsp;N(C)&nbsp;X(D)&nbsp;没有
+                    </td><td>D         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-05-12j</td><td>
+                         简单
+                    </td><td>
+                         阶段五
+                    </td><td>
+                     二叉树
+                    </td><td>由3个结点可以构造出多少种不同的二叉树？</td><td>
+                     由3个结点可以构造出多少种不同的二叉树？A．2&nbsp;&nbsp;&nbsp;&nbsp;B．3&nbsp;&nbsp;&nbsp;C．4&nbsp;&nbsp;&nbsp;&nbsp;D．5&nbsp;
+                    </td><td>D</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-05-06p</td><td>
+                         普通
+                    </td><td>
+                         阶段五
+                    </td><td>
+                     二叉树
+                    </td><td>若一棵二叉树具有10个度为2的结点，5个度为1的结点，则度为0的结点个数是（   ）。</td><td>
+                     若一棵二叉树具有10个度为2的结点，5个度为1的结点，则度为0的结点个数是（）。(A)&nbsp;9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(B)&nbsp;11(C)&nbsp;15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(D)&nbsp;14&nbsp;
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-05-01j</td><td>
+                         简单
+                    </td><td>
+                         阶段五
+                    </td><td>
+                     二叉树
+                    </td><td>高度为k的二叉树结点数最多为（  ）。</td><td>
+                     高度为k的二叉树结点数最多为（）。(A)&nbsp;2k-1&nbsp;&nbsp;&nbsp;(B)&nbsp;2K+1(C)&nbsp;2K-1&nbsp;&nbsp;&nbsp;(D)&nbsp;2k+1&nbsp;
+                    </td><td>A         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-05-13j</td><td>
+                         简单
+                    </td><td>
+                         阶段五
+                    </td><td>
+                     树的概念
+                    </td><td>设树T的度为4，其中度为1, 2, 3和4的结点个数分别为4, 2, 1, 1，则T中的叶子数为（   ）。</td><td>
+                     设树T的度为4，其中度为1,&nbsp;2,&nbsp;3和4的结点个数分别为4,&nbsp;2,&nbsp;1,&nbsp;1，则T中的叶子数为（）。A．5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B．6C．7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D．8&nbsp;
+                    </td><td>D         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-05-14j</td><td>
+                         简单
+                    </td><td>
+                         阶段五
+                    </td><td>
+                     二叉树
+                    </td><td>若一棵二叉树具有10个度为2的结点，5个度为1的结点，则度为0的结点个数是（   ）。</td><td>
+                     若一棵二叉树具有10个度为2的结点，5个度为1的结点，则度为0的结点个数是（）。A．9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B．11&nbsp;&nbsp;&nbsp;&nbsp;C．15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D．不确定&nbsp;
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-05-15j</td><td>
+                         简单
+                    </td><td>
+                         阶段五
+                    </td><td>
+                     二叉树
+                    </td><td>某二叉树的前序序列和后序序列正好相反，则该二叉树一定是（   ）的二叉树。</td><td>
+                     某二叉树的前序序列和后序序列正好相反，则该二叉树一定是（）的二叉树。A．空或只有一个结点&nbsp;&nbsp;&nbsp;&nbsp;B．高度等于其结点数C．作一结点无左孩子&nbsp;&nbsp;&nbsp;&nbsp;D．作一结点无右孩子&nbsp;
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-05-04p</td><td>
+                         简单
+                    </td><td>
+                         阶段五
+                    </td><td>
+                     二叉树
+                    </td><td>.将一颗树转化为二叉树，根结点（  ）右子树。</td><td>
+                     将一颗树转化为二叉树，根结点（）右子树。(A)&nbsp;没有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(B)&nbsp;有(C)&nbsp;有也可没有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(D)&nbsp;不能确定&nbsp;
+                    </td><td>A         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-05-19p</td><td>
+                         普通
+                    </td><td>
+                         阶段五
+                    </td><td>
+                     树的概念
+                    </td><td>设树T的度为4，其中度为1，2，3，4的结点个数分别为4，2，1，1。则T中的叶子结点数为：（）</td><td>
+                     设树T的度为4，其中度为1，2，3，4的结点个数分别为4，2，1，1。则T中的叶子结点数为：（）A、8B、7C、6D、5&nbsp;
+                    </td><td>A         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-05-07p</td><td>
+                         普通
+                    </td><td>
+                         阶段五
+                    </td><td>
+                     二叉树
+                    </td><td>一个具有1025个结点的二叉树高度为（   ）。</td><td>
+                     一个具有1025个结点的二叉树高度为（）。(A)&nbsp;11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(B)&nbsp;10(C)&nbsp;11和1025之间&nbsp;&nbsp;&nbsp;(D)&nbsp;10和1024之间&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-05-16p</td><td>
+                         普通
+                    </td><td>
+                         阶段五
+                    </td><td>
+                     二叉树
+                    </td><td>一棵二叉树的顺序存储情况如下：</td><td>
+                     一棵二叉树的顺序存储情况如下：1&nbsp;2&nbsp;3&nbsp;4&nbsp;5&nbsp;6&nbsp;78&nbsp;9&nbsp;10&nbsp;11&nbsp;12&nbsp;13&nbsp;14&nbsp;15A&nbsp;B&nbsp;C&nbsp;0&nbsp;D&nbsp;E&nbsp;F&nbsp;0&nbsp;0&nbsp;G&nbsp;0&nbsp;M&nbsp;N&nbsp;0&nbsp;X该树的度为2的结点数为_________。(A)&nbsp;1(B)&nbsp;2(C)&nbsp;3(D)&nbsp;4
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-05-17j</td><td>
+                         简单
+                    </td><td>
+                         阶段五
+                    </td><td>
+                     赫夫曼树
+                    </td><td>一棵有n个叶子结点的 Haffman 树共有 ___________个结点。</td><td>
+                     一棵有n个叶子结点的&nbsp;Haffman&nbsp;树共有&nbsp;___________个结点。(A)&nbsp;n+1(B)&nbsp;2n-1(C)&nbsp;2n+1(D)&nbsp;2n
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-05-20p</td><td>
+                         普通
+                    </td><td>
+                         阶段五
+                    </td><td>
+                     树的概念
+                    </td><td>设结点A有3个兄弟结点且结点B为结点A的双亲结点，则结点B的度数数为（  ）。</td><td>
+                     设结点A有3个兄弟结点且结点B为结点A的双亲结点，则结点B的度数数为（）。(A)&nbsp;3(B)&nbsp;4(C)&nbsp;5(D)&nbsp;1&nbsp;
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-05-21j</td><td>
+                         简单
+                    </td><td>
+                         阶段五
+                    </td><td>
+                     二叉树
+                    </td><td>根据二叉树的定义可知二叉树共有（   ）种不同的形态。</td><td>
+                     根据二叉树的定义可知二叉树共有（）种不同的形态。(A)&nbsp;4(B)&nbsp;5(C)&nbsp;6(D)&nbsp;7&nbsp;
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>LB5001j</td><td>
+                         简单
+                    </td><td>
+                         阶段五
+                    </td><td>
+                     树的概念
+                    </td><td>下列数据中，（    ）是非线性数据结构。</td><td>
+                     下列数据中，（&nbsp;&nbsp;&nbsp;&nbsp;）是非线性数据结构。A)树&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B)字符串&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C)队列&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D)栈
+                    </td><td>A</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-05-02p</td><td>
+                         普通
+                    </td><td>
+                         阶段五
+                    </td><td>
+                     二叉树
+                    </td><td>假定在一棵二叉树中，度为2的结点为15，度为1的结点为30个，则整棵树的结点个数为（ ）。</td><td>
+                     假定在一棵二叉树中，度为2的结点为15，度为1的结点为30个，则整棵树的结点个数为（&nbsp;）。(A)&nbsp;59&nbsp;&nbsp;&nbsp;&nbsp;(B)&nbsp;76(C)&nbsp;74&nbsp;&nbsp;&nbsp;&nbsp;(D)&nbsp;61&nbsp;
+                    </td><td>D         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>wcw0501p</td><td>
+                         普通
+                    </td><td>
+                         阶段五
+                    </td><td>
+                     二叉树
+                    </td><td>在一课二叉树上第5层的结点数最多为（  ）个</td><td>
+                     在一课二叉树上第5层的结点数最多为（&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;）个&nbsp;&nbsp;&nbsp;&nbsp;A.8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B.16&nbsp;&nbsp;&nbsp;&nbsp;C.15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D.32
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-05-08j</td><td>
+                         简单
+                    </td><td>
+                         阶段五
+                    </td><td>
+                     赫夫曼树
+                    </td><td>有n个叶子结点的赫夫曼树的结点总数为（  ）。</td><td>
+                     有n个叶子结点的赫夫曼树的结点总数为（）。(A)&nbsp;n+1(B)&nbsp;2n+1(C)&nbsp;2n-1(D)不确定&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-05-09j</td><td>
+                         简单
+                    </td><td>
+                         阶段五
+                    </td><td>
+                     树的概念
+                    </td><td>利用孩子兄弟表示法存储树，则根结点的右指针（   ）。</td><td>
+                     利用孩子兄弟表示法存储树，则根结点的右指针（）。(A)&nbsp;指向最左孩子(B)&nbsp;指向最右孩子(C)&nbsp;为空(D)&nbsp;非空&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-05-10j</td><td>
+                         简单
+                    </td><td>
+                         阶段五
+                    </td><td>
+                     树综合
+                    </td><td>以一维数组作为堆的序列的存储结构，则堆对应的肯定是一棵（    ）树。</td><td>
+                     以一维数组作为堆的序列的存储结构，则堆对应的肯定是一棵（）树。(A)&nbsp;满二叉树(B)&nbsp;二叉排序树(C)&nbsp;完全二叉树(D)&nbsp;赫夫曼树&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-06-08j</td><td>
+                         简单
+                    </td><td>
+                         阶段六
+                    </td><td>
+                     图概念
+                    </td><td>在一个无向图中，所有顶点的度数之和等于所有边数（    ）倍。</td><td>
+                     在一个无向图中，所有顶点的度数之和等于所有边数（）倍。(A)&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(B)&nbsp;2(C)&nbsp;1/2&nbsp;&nbsp;&nbsp;&nbsp;(D)&nbsp;4&nbsp;
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-06-07j</td><td>
+                         简单
+                    </td><td>
+                         阶段六
+                    </td><td>
+                     图综合
+                    </td><td>已知有向图G=(V,E),G的一个可能的拓扑序列是</td><td>
+                     已知有向图G=(V,E)，其中V={V1,V2,V3,V4,V5,V6,V7}，E={&lt;V1,V2&gt;,&lt;V1,V3&gt;,&lt;V1,V4&gt;,&lt;V2,V5&gt;,&lt;V3,V5&gt;,&lt;V3,V6&gt;,&lt;V4,V6&gt;,&lt;V5,V7&gt;,&lt;V6,V7&gt;},G的一个可能的拓扑序列是（）。(A)&nbsp;V1,V3,V4,V6,V2,V5,V7(B)V1,V3,V2,V6,V4,V5,V7(C)&nbsp;V1,V3,V4,V5,V2,V6,V7(D)V1,V2,V5,V3,V4,V6,V7&nbsp;
+                    </td><td>A         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-06-01j</td><td>
+                         简单
+                    </td><td>
+                         阶段六
+                    </td><td>
+                     图综合
+                    </td><td>在下图中得到的一种拓扑序列为（   ）</td><td>
+                     在下图中得到的一种拓扑序列为（）(A)&nbsp;C0C1C2C7C4C8C6C3C5&nbsp;&nbsp;&nbsp;&nbsp;(B)&nbsp;C1C0C2C4C8C7C6C3C5(C)&nbsp;C0C1C2C3C4C5C6C7C8&nbsp;&nbsp;&nbsp;(D)&nbsp;C0C1C2C4C3C5C7C8C6&nbsp;
+                    </td><td>D         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-06-02j</td><td>
+                         简单
+                    </td><td>
+                         阶段六
+                    </td><td>
+                     图综合
+                    </td><td>在一个具有n个顶点的无向图中，要连通全部顶点至少要（ ）条边</td><td>
+                     在一个具有n个顶点的无向图中，要连通全部顶点至少要（）条边(A)&nbsp;n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(B)&nbsp;n-1(C)&nbsp;n+1&nbsp;&nbsp;&nbsp;(D)&nbsp;n/2&nbsp;
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-06-03j</td><td>
+                         简单
+                    </td><td>
+                         阶段六
+                    </td><td>
+                     图综合
+                    </td><td>关键路径是事件结点网络中的（    ）</td><td>
+                     关键路径是事件结点网络中的（）(A)&nbsp;从源点到汇点的最长路径(B)&nbsp;从源点到汇点的最短路径&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(C)&nbsp;最长的回路(D)&nbsp;最短回路&nbsp;
+                    </td><td>A         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-06-04j</td><td>
+                         简单
+                    </td><td>
+                         阶段六
+                    </td><td>
+                     图概念
+                    </td><td>设某无向图中有n个顶点e条边，则该无向图中所有顶点的度之和为（  ）。</td><td>
+                     设某无向图中有n个顶点e条边，则该无向图中所有顶点的度之和为（）。&nbsp;&nbsp;&nbsp;(A)&nbsp;n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(B)&nbsp;e(C)&nbsp;2n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(D)&nbsp;2e&nbsp;
+                    </td><td>D         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-06-06j</td><td>
+                         简单
+                    </td><td>
+                         阶段六
+                    </td><td>
+                     图综合
+                    </td><td>拓扑排序的有向图中，最多存在（   ）条环路。</td><td>
+                     拓扑排序的有向图中，最多存在（）条环路。(A)&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(B)&nbsp;0(C)&nbsp;-1&nbsp;&nbsp;&nbsp;&nbsp;(D)&nbsp;2&nbsp;
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-06-10j</td><td>
+                         简单
+                    </td><td>
+                         阶段六
+                    </td><td>
+                     图概念
+                    </td><td>一个具有n个顶点的有向图最多有（   ）条边。</td><td>
+                     一个具有n个顶点的有向图最多有（）条边。A.&nbsp;n×(n-1)/2B.&nbsp;n×(n-1)C.&nbsp;n×(n+1)/2D.&nbsp;n2&nbsp;
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-06-09j</td><td>
+                         简单
+                    </td><td>
+                         阶段六
+                    </td><td>
+                     图的遍历
+                    </td><td>在下列四个选项中，（     ）操作能用于检测有向图是否有环。</td><td>
+                     在下列四个选项中，（）操作能用于检测有向图是否有环。(A)&nbsp;深度优先遍历(B)&nbsp;广度优先遍历(C)&nbsp;拓扑排序(D)&nbsp;归并排序
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-06-05j</td><td>
+                         简单
+                    </td><td>
+                         阶段六
+                    </td><td>
+                     图概念
+                    </td><td>一项工程完工所需的最少时间等于某个（  ）。</td><td>
+                     一项工程完工所需的最少时间等于某个（）。(A)&nbsp;AOE网中源点到汇点事件最多的路径长度(B)&nbsp;AOE网中源点到汇点最长路径的长度(C)&nbsp;AOE网中源点到汇点最短路径的长度(D)&nbsp;AOE网中源点到汇点活动最多的路径的长度
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-05-05j</td><td>
+                         简单
+                    </td><td>
+                         阶段七
+                    </td><td>
+                     
+                    </td><td>二叉排序树中左子树上所有结点的值均（  ）根结点的值。</td><td>
+                     二叉排序树中左子树上所有结点的值均（）根结点的值。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(A)&nbsp;大于&nbsp;&nbsp;&nbsp;(B)&nbsp;小于&nbsp;&nbsp;&nbsp;&nbsp;(C)&nbsp;等于&nbsp;&nbsp;&nbsp;(D)&nbsp;大于或小于&nbsp;
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-07-06j</td><td>
+                         简单
+                    </td><td>
+                         阶段七
+                    </td><td>
+                     
+                    </td><td>下列数据结构中能应用二分查找的是：（）</td><td>
+                     下列数据结构中能应用二分查找的是：（）A、有序线性链表B、有序顺序表C、顺序存储的栈D、顺序存储的队列&nbsp;
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-07-04j</td><td>
+                         简单
+                    </td><td>
+                         阶段七
+                    </td><td>
+                     
+                    </td><td>在哈希查找中，平均查找长度主要与()有关</td><td>
+                     在哈希查找中，平均查找长度主要与()有关A&nbsp;哈希表长度B&nbsp;哈希元素的个数C&nbsp;装填因子D&nbsp;处理冲突的方法&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-07-05j</td><td>
+                         简单
+                    </td><td>
+                         阶段七
+                    </td><td>
+                     
+                    </td><td>采用顺序查找方式查找长度为n的线性表，平均查找长度为（  ）</td><td>
+                     采用顺序查找方式查找长度为n的线性表，平均查找长度为（）A&nbsp;nB&nbsp;n/2C（n+1）/2D&nbsp;（n-1）/2&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-07-01j</td><td>
+                         简单
+                    </td><td>
+                         阶段七
+                    </td><td>
+                     
+                    </td><td>分别以下列序列构造二叉排序树，与用其它三个序列所构造的结果不同的是（  ）。</td><td>
+                     分别以下列序列构造二叉排序树，与用其它三个序列所构造的结果不同的是（）。(A)（100，80，&nbsp;90，&nbsp;60，&nbsp;120，110，130）(B)（100，120，110，130，80，&nbsp;60，&nbsp;90）(C)（100，60，&nbsp;80，&nbsp;90，&nbsp;120，110，130）(D)&nbsp;(100，80，&nbsp;60，&nbsp;90，&nbsp;120，130，110)&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-07-07j</td><td>
+                         简单
+                    </td><td>
+                         阶段七
+                    </td><td>
+                     
+                    </td><td>已知一个有序表为（11，22，33，44，55，66，77，88，99），则折半查找55需要比较（）次。</td><td>
+                     已知一个有序表为（11，22，33，44，55，66，77，88，99），则折半查找55需要比较（）次。A.&nbsp;1B.&nbsp;2C.&nbsp;3D.&nbsp;4&nbsp;
+                    </td><td>A         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-05-22j</td><td>
+                         简单
+                    </td><td>
+                         阶段七
+                    </td><td>
+                     
+                    </td><td>对一棵二叉排序树按（）遍历，可得到结点值从小到大的排列序列。</td><td>
+                     对一棵二叉排序树按（）遍历，可得到结点值从小到大的排列序列。A.&nbsp;先序　B.&nbsp;中序C.&nbsp;后序D.&nbsp;层次&nbsp;
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-07-09j</td><td>
+                         简单
+                    </td><td>
+                         阶段七
+                    </td><td>
+                     
+                    </td><td>、对线性表进行折半查找时，要求线性表必须（）。</td><td>
+                     、对线性表进行折半查找时，要求线性表必须(）。A.&nbsp;以顺序方式存储　B.&nbsp;以链接方式存储C.&nbsp;以顺序方式存储，且结点按关键字有序排序D.&nbsp;以链接方式存储，且结点按关键字有序排序&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-07-02j</td><td>
+                         简单
+                    </td><td>
+                         阶段七
+                    </td><td>
+                     静态查找表
+                    </td><td>适用于索引查找的表的元素排列要求为(    )</td><td>
+                     适用于索引查找的表的元素排列要求为()(A)&nbsp;块内有序，块间有序(B)&nbsp;块内无序，块间有序(C)&nbsp;块内有序，块间无序(D)&nbsp;块内无序，块间无序&nbsp;
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-07-03j</td><td>
+                         简单
+                    </td><td>
+                         阶段七
+                    </td><td>
+                     
+                    </td><td>下面关于哈希(Hash，杂凑)查找的说法正确的是(    )</td><td>
+                     下面关于哈希(Hash，杂凑)查找的说法正确的是()(A)哈希函数构造的越复杂越好，因为这样随机性好，冲突小(B)&nbsp;除留余数法是所有哈希函数中最好的(C)&nbsp;不存在特别好与坏的哈希函数，要视情况而定(D)&nbsp;若需在哈希表中删去一个元素，不管用何种方法解决冲突都只要简单的将该元素删去即可&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-07-08j</td><td>
+                         简单
+                    </td><td>
+                         阶段七
+                    </td><td>
+                     
+                    </td><td>在散列查找中，平均查找长度主要与（）有关。</td><td>
+                     在散列查找中，平均查找长度主要与（）有关。A.&nbsp;散列表长度B.散列元素个数C.&nbsp;装填因子D.&nbsp;处理冲突方法&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-05-03j</td><td>
+                         简单
+                    </td><td>
+                         阶段七
+                    </td><td>
+                     
+                    </td><td>分别以下列序列构造二叉排序树，与用其它三个序列所构造的结果不同的是(    )</td><td>
+                     分别以下列序列构造二叉排序树，与用其它三个序列所构造的结果不同的是()&nbsp;(A)（100，80，&nbsp;90，&nbsp;60，&nbsp;120，110，130）(B)（100，120，110，130，80，&nbsp;60，&nbsp;90）(C)（100，60，&nbsp;80，&nbsp;90，&nbsp;120，110，130）(D)&nbsp;(100，80，&nbsp;60，&nbsp;90，&nbsp;120，130，110)&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>LB7001p</td><td>
+                         普通
+                    </td><td>
+                         阶段七
+                    </td><td>
+                     哈希表
+                    </td><td>以下与数据的存储结构无关的术语是(     )。</td><td>
+                     以下与数据的存储结构无关的术语是(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)。A)循环队列&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B)链表&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C)哈希表&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D)栈
+                    </td><td>D</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-05-11j</td><td>
+                         简单
+                    </td><td>
+                         阶段七
+                    </td><td>
+                     
+                    </td><td>平衡二叉树上所有结点的平衡因子不可能为（    ）。</td><td>
+                     平衡二叉树上所有结点的平衡因子不可能为（）。(A)&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(B)&nbsp;0(C)&nbsp;-1&nbsp;&nbsp;&nbsp;&nbsp;(D)&nbsp;2&nbsp;
+                    </td><td>D         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-08-03j</td><td>
+                         简单
+                    </td><td>
+                         阶段八
+                    </td><td>
+                     
+                    </td><td>下面给出的四种排序法中（    ）是稳定的排序方法。</td><td>
+                     下面给出的四种排序法中（）是稳定的排序方法。(A)&nbsp;快速排序(B)&nbsp;希尔排序(C)&nbsp;归并排序(D)&nbsp;堆排序&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-08-04j</td><td>
+                         简单
+                    </td><td>
+                         阶段八
+                    </td><td>
+                     
+                    </td><td>有一组数据（15，9，7，8，20，1，6，4），用堆排序的筛选方法建立的初始小顶堆为（    ）。</td><td>
+                     有一组数据（15，9，7，8，20，1，6，4），用堆排序的筛选方法建立的初始小顶堆为（）。(A)&nbsp;1，4，8，7，20，6，15，9(B)&nbsp;1，7，15，6，4，8，20，9(C)&nbsp;1，4，6，8，20，7，15，9(D)&nbsp;A，B，C均不对。&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-08-02j</td><td>
+                         简单
+                    </td><td>
+                         阶段八
+                    </td><td>
+                     
+                    </td><td>下面给出的四种排序法中(    )排序法是不稳定性排序法。</td><td>
+                     下面给出的四种排序法中()排序法是不稳定性排序法。(A)&nbsp;插入排序&nbsp;&nbsp;&nbsp;(B)&nbsp;起泡排序&nbsp;(C)&nbsp;归并排序&nbsp;&nbsp;&nbsp;(D)&nbsp;堆排序&nbsp;
+                    </td><td>D         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-08-01j</td><td>
+                         简单
+                    </td><td>
+                         阶段八
+                    </td><td>
+                     
+                    </td><td>设有1000个无序的元素，希望用最快的方法挑选出前10个最大的元素，适合用（    ）排序法。</td><td>
+                     设有1000个无序的元素，希望用最快的方法挑选出前10个最大的元素，适合用（）排序法。(A)&nbsp;堆排序&nbsp;&nbsp;&nbsp;&nbsp;(B)&nbsp;快速排序(C)&nbsp;起泡排序&nbsp;&nbsp;(D)&nbsp;基数排序&nbsp;
+                    </td><td>A         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-08-08j</td><td>
+                         简单
+                    </td><td>
+                         阶段八
+                    </td><td>
+                     
+                    </td><td>若需要在O(nlog2n)的时间内完成对数组的排序，且要求排序是稳定的，则可选择的排序方法是（   ）。</td><td>
+                     若需要在O(nlog2n)的时间内完成对数组的排序，且要求排序是稳定的，则可选择的排序方法是（）。A.&nbsp;快速排序　B.&nbsp;堆排序C.&nbsp;归并排序D.&nbsp;直接插入排序&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-08-07j</td><td>
+                         普通
+                    </td><td>
+                         阶段八
+                    </td><td>
+                     
+                    </td><td>一组待排序序列为（46,79,56,38,40,84），则利用堆排序的方法建立的初始堆为（   ）。</td><td>
+                     一组待排序序列为（46,79,56,38,40,84），则利用堆排序的方法建立的初始堆为（）。A.&nbsp;79,46,56,38,40,80B.&nbsp;84,79,56,38,40,46C.&nbsp;84,79,56,46,40,38D.&nbsp;84,56,79,40,46,38&nbsp;
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-08-06j</td><td>
+                         简单
+                    </td><td>
+                         阶段八
+                    </td><td>
+                     
+                    </td><td>设有以下四种排序方法，则（   ）的空间复杂度最大。</td><td>
+                     设有以下四种排序方法，则（）的空间复杂度最大。(A)&nbsp;冒泡排序(B)&nbsp;快速排序(C)&nbsp;堆排序(D)&nbsp;希尔排序&nbsp;
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-08-05j</td><td>
+                         简单
+                    </td><td>
+                         阶段八
+                    </td><td>
+                     
+                    </td><td>对{05, 46, 13, 55, 94, 17, 42}进行基数排序，一趟排序的结果是：</td><td>
+                     对{05,&nbsp;46,&nbsp;13,&nbsp;55,&nbsp;94,&nbsp;17,&nbsp;42}进行基数排序，一趟排序的结果是：A．05,&nbsp;46,&nbsp;13,&nbsp;55,&nbsp;94,&nbsp;17,&nbsp;42&nbsp;&nbsp;&nbsp;&nbsp;B．05,&nbsp;13,&nbsp;17,&nbsp;42,&nbsp;46,&nbsp;55,&nbsp;94C．42,&nbsp;13,&nbsp;94,&nbsp;05,&nbsp;55,&nbsp;46,&nbsp;17&nbsp;&nbsp;&nbsp;&nbsp;D．05,&nbsp;13,&nbsp;46,&nbsp;55,&nbsp;17,&nbsp;42,&nbsp;94&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>wcw_08_01j</td><td>
+                         简单
+                    </td><td>
+                         阶段八
+                    </td><td>
+                     
+                    </td><td>对n个记录的文件进行堆排序，最坏情况下的执行时间为</td><td>
+                     对n个记录的文件进行堆排序，最坏情况下的执行时间为（）&nbsp;A&nbsp;0(log2n)&nbsp;&nbsp;B.O(n)&nbsp;&nbsp;&nbsp;C.O(nlogn)&nbsp;&nbsp;D.O(n2)&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>wcw_08_02j</td><td>
+                         简单
+                    </td><td>
+                         阶段八
+                    </td><td>
+                     
+                    </td><td>堆序列对应的一维数组是</td><td>
+                     堆序列对应的一维数组是（）A.完全二叉树&nbsp;&nbsp;&nbsp;B.线性表&nbsp;&nbsp;&nbsp;&nbsp;C.二叉排序树&nbsp;&nbsp;&nbsp;D.平衡二叉树&nbsp;&nbsp;
+                    </td><td>A         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>wcw_08_03p</td><td>
+                         普通
+                    </td><td>
+                         阶段八
+                    </td><td>
+                     
+                    </td><td>对于有10个元素的无序序列（2，33，21，18，65，38，7，49，24，86），用筛选法建堆</td><td>
+                     对于有10个元素的无序序列（2，33，21，18，65，38，7，49，24，86），用筛选法建堆，必须从关键字（）的结点开始。&nbsp;A.86&nbsp;&nbsp;&nbsp;B.2&nbsp;&nbsp;&nbsp;&nbsp;C.65&nbsp;&nbsp;&nbsp;D.38&nbsp;&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>wcw_08_04p</td><td>
+                         普通
+                    </td><td>
+                         阶段八
+                    </td><td>
+                     
+                    </td><td>一组记录的关键字为（45，80，55，40，42，85），</td><td>
+                     一组记录的关键字为（45，80，55，40，42，85），则利用快速排序法，以第一个记录为基准得到一次划分结果是（）A.（40，42，45，55，80，85）B.（42，40，45，80，55，85）C.（42，40，45，55，80，85）D.（42，40，45，85，55，80）&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>wcw_08_05p</td><td>
+                         普通
+                    </td><td>
+                         阶段八
+                    </td><td>
+                     
+                    </td><td>在所有的排序方法中，关键字的比较次数与记录的初始排列无关的是</td><td>
+                     在所有的排序方法中，关键字的比较次数与记录的初始排列无关的是（）A.希尔排序&nbsp;&nbsp;&nbsp;&nbsp;B.冒泡排序&nbsp;&nbsp;&nbsp;&nbsp;C.直接插入排序&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D.简单选择排序&nbsp;
+                    </td><td>D         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>wcw_08_06p</td><td>
+                         简单
+                    </td><td>
+                         阶段八
+                    </td><td>
+                     
+                    </td><td>在简单选择排序中，记录的移动次数为（）数量级</td><td>
+                     在简单选择排序中，记录的移动次数为（）数量级A.&nbsp;0(log2n&nbsp;&nbsp;B.O(n)&nbsp;&nbsp;&nbsp;C.O(nlogn)&nbsp;&nbsp;D.O(n2)&nbsp;
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>wcw_08_07j</td><td>
+                         简单
+                    </td><td>
+                         阶段八
+                    </td><td>
+                     
+                    </td><td>从未排序序列中依次取出一个元素，与已排序序列中的元素依次进行比较</td><td>
+                     从未排序序列中依次取出一个元素，与已排序序列中的元素依次进行比较，然后将其放在已排序序列的合适位置，该排序方法称为（）排序法。A.插入&nbsp;&nbsp;&nbsp;B.选择&nbsp;&nbsp;&nbsp;C.希尔&nbsp;&nbsp;&nbsp;&nbsp;D.归并&nbsp;
+                    </td><td>A         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>wcw_08_08p</td><td>
+                         普通
+                    </td><td>
+                         阶段八
+                    </td><td>
+                     
+                    </td><td>下面四种排序方法中，要求辅助空间最大的是（）</td><td>
+                     下面四种排序方法中，要求辅助空间最大的是（）A.插入排序&nbsp;&nbsp;B.堆排序&nbsp;&nbsp;C.快速排序&nbsp;&nbsp;&nbsp;&nbsp;D.归并排序&nbsp;
+                    </td><td>D         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-09-07j</td><td>
+                         简单
+                    </td><td>
+                         阶段九
+                    </td><td>
+                     其它
+                    </td><td>下列数据结构中具有记忆功能的是：（）</td><td>
+                     下列数据结构中具有记忆功能的是：（）A、队列B、循环队列C、栈D、顺序表&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-09-06j</td><td>
+                         简单
+                    </td><td>
+                         阶段九
+                    </td><td>
+                     其它
+                    </td><td>在关系数据库中，用来表示实体之间联系的是：（）</td><td>
+                     在关系数据库中，用来表示实体之间联系的是：（）A、树结构B、网结构C、线结构D、二维表&nbsp;
+                    </td><td>D         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-04-03p</td><td>
+                         简单
+                    </td><td>
+                         阶段九
+                    </td><td>
+                     广义表
+                    </td><td>一个广义表为(a,(a,b),d,e,((i,j,),k))，则该广义表的深度为____。</td><td>
+                     一个广义表为(a,(a,b),d,e,((i,j,),k))，则该广义表的深度为____。(A)&nbsp;1(B)&nbsp;2(C)&nbsp;3(D)&nbsp;4
+                    </td><td>C</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-04-15p</td><td>
+                         普通
+                    </td><td>
+                         阶段九
+                    </td><td>
+                     广义表
+                    </td><td>一个非空广义表的表头（ ）。</td><td>
+                     一个非空广义表的表头（）。A.&nbsp;不可能是子表B.&nbsp;只能是子表C.&nbsp;只能是原子D.&nbsp;可以是子表或原子&nbsp;
+                    </td><td>D</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-04-16j</td><td>
+                         简单
+                    </td><td>
+                         阶段九
+                    </td><td>
+                     广义表
+                    </td><td>广义表G=(a,b(c,d,(e,f)),g)的长度是（）。</td><td>
+                     广义表G=(a,b(c,d,(e,f)),g)的长度是（）。A.&nbsp;3B.&nbsp;4C.&nbsp;7D.&nbsp;8&nbsp;
+                    </td><td>A</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-09-03j</td><td>
+                         简单
+                    </td><td>
+                         阶段九
+                    </td><td>
+                     其它
+                    </td><td>下列关系运算中，能使经运算后得到的新关系中属性个数多于原来关系中属性个数的是：（）</td><td>
+                     下列关系运算中，能使经运算后得到的新关系中属性个数多于原来关系中属性个数的是：（）A、选择B、连接C、投影D、并&nbsp;
+                    </td><td>B         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-09-04j</td><td>
+                         简单
+                    </td><td>
+                         阶段九
+                    </td><td>
+                     其它
+                    </td><td>在关系模型中：（）</td><td>
+                     在关系模型中：（）A、为了建立一个关系，首先要构造数据的逻辑关系B、表示关系的二维表中各元组的每一个分量还可以分成若干数据项C、一个关系的属性名表称为关系模式D、一个关系可以包括多个二维表&nbsp;
+                    </td><td>C         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-09-05j</td><td>
+                         简单
+                    </td><td>
+                         阶段九
+                    </td><td>
+                     其它
+                    </td><td>下列叙述正确的是：（）</td><td>
+                     下列叙述正确的是：（）A、数据的逻辑结构与存储结构必定是一一对应的B、由于计算机的存储空间是向量式的存储结构，因此，数据的存储结构一定是线性结构C、程序设计语言中的数组一般是顺序存储结构，因此，利用数组只能处理线性结构D、以上三种说法都不对&nbsp;
+                    </td><td>D         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-04-06j</td><td>
+                         简单
+                    </td><td>
+                         阶段九
+                    </td><td>
+                     广义表
+                    </td><td>已知广义表：A=(a,(b,c,(d),e),(f,g),h) 其长度为________。</td><td>
+                     已知广义表：A=(a,(b,c,(d),e),(f,g),h)&nbsp;其长度为________。(A)&nbsp;3(B)&nbsp;4(C)&nbsp;5(D)&nbsp;6
+                    </td><td>B</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-04-12j</td><td>
+                         简单
+                    </td><td>
+                         阶段九
+                    </td><td>
+                     广义表
+                    </td><td>设广义表L=((a，b，c))，则L的长度和深度分别为（）。</td><td>
+                     设广义表L=((a，b，c))，则L的长度和深度分别为（）。A.&nbsp;1和1B.&nbsp;1和3C.&nbsp;1和2D.&nbsp;2和3&nbsp;
+                    </td><td>C</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-04-13j</td><td>
+                         简单
+                    </td><td>
+                         阶段九
+                    </td><td>
+                     广义表
+                    </td><td>广义表((a),a)的表尾是（ ）。</td><td>
+                     广义表((a),a)的表尾是（）。A.&nbsp;aB.&nbsp;(a)C.&nbsp;()D.&nbsp;((a))&nbsp;
+                    </td><td>B</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-09-01j</td><td>
+                         简单
+                    </td><td>
+                         阶段九
+                    </td><td>
+                     其它
+                    </td><td>适用于折半查找的表的存储方式及元素排列要求为(    )</td><td>
+                     适用于折半查找的表的存储方式及元素排列要求为()(A)&nbsp;链接方式存储，元素无序(B)&nbsp;链接方式存储，元素有序(C)&nbsp;顺序方式存储，元素无序(D)&nbsp;顺序方式存储，元素有序&nbsp;
+                    </td><td>D         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>zdd-09-02j</td><td>
+                         简单
+                    </td><td>
+                         阶段九
+                    </td><td>
+                     其它
+                    </td><td>以下数据结构中，（   ）是非线性数据结构。</td><td>
+                     以下数据结构中，（）是非线性数据结构。A．树&nbsp;&nbsp;B．字符串&nbsp;&nbsp;C．队列&nbsp;&nbsp;&nbsp;D．栈&nbsp;
+                    </td><td>A         </td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr>
+	</table>
+</div></form>

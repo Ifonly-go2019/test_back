@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<p id="1">1<p>
+	<p id="2">2<p>
+	<body>
+	</body>
+	<script type="text/javascript">
+
+var test1=""
+document.getElementById("1").innerHTML=encodeURIComponent(test1);
+document.getElementById("2").innerHTML=decodeURIComponent(test1);
+// document.write(encodeURIComponent(test1)+ "<br />")
+// document.write(decodeURIComponent(test1))
+
+</script>
+</html>

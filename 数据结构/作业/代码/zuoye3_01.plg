@@ -1,0 +1,34 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: zuoye3_01 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\admin\AppData\Local\Temp\RSPAA71.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/zuoye3_01.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\admin\Desktop\CODE\数据结构\作业\代码\zuoye3_01.c"
+]
+Creating command line "cl.exe @C:\Users\admin\AppData\Local\Temp\RSPAA71.tmp" 
+Creating temporary file "C:\Users\admin\AppData\Local\Temp\RSPAA81.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/zuoye3_01.pdb" /debug /machine:I386 /out:"Debug/zuoye3_01.exe" /pdbtype:sept 
+".\Debug\zuoye3_01.obj"
+]
+Creating command line "link.exe @C:\Users\admin\AppData\Local\Temp\RSPAA81.tmp"
+<h3>Output Window</h3>
+Compiling...
+zuoye3_01.c
+C:\Users\admin\Desktop\CODE\数据结构\作业\代码\zuoye3_01.c(36) : error C2115: 'function' : incompatible types
+C:\Users\admin\Desktop\CODE\数据结构\作业\代码\zuoye3_01.c(36) : warning C4024: 'print' : different types for formal and actual parameter 1
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+zuoye3_01.exe - 1 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

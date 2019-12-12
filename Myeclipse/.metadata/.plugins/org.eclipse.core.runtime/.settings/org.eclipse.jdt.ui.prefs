@@ -1,0 +1,21 @@
+#Tue Nov 19 00:51:35 CST 2019
+content_assist_proposals_foreground=0,0,0
+spelling_locale_initialized=true
+org.eclipse.jdt.ui.text.templates_migrated=true
+breadcrumb.com.genuitec.myeclipse.perspective.myeclipseperspective=true
+useAnnotationsPrefPage=true
+eclipse.preferences.version=1
+org.eclipse.jface.textfont=1|Courier New|10.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Courier New;
+tabWidthPropagated=true
+org.eclipse.jdt.ui.editor.tab.width=
+fontPropagated=true
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.javadoclocations.migrated=true
+proposalOrderMigrated=true
+content_assist_proposals_background=255,255,255
+org.eclipse.jdt.ui.formatterprofiles.version=11
+content_assist_number_of_computers=15
+useQuickDiffPrefPage=true
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.text.DateFormat"><rhs name\="java.text.SimpleDateFormat"/></lhs><lhs name\="java.text.Format"><rhs name\="java.text.SimpleDateFormat"/></lhs><lhs name\="java.lang.Cloneable"><rhs name\="java.text.SimpleDateFormat"/><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.text.SimpleDateFormat"><rhs name\="java.text.SimpleDateFormat"/></lhs><lhs name\="javaBean.LoginBean"><rhs name\="javaBean.LoginBean"/></lhs><lhs name\="javaBean.VipBean"><rhs name\="javaBean.VipBean"/></lhs><lhs name\="DB.DateBaseconnect"><rhs name\="DB.DateBaseconnect"/></lhs><lhs name\="Dao.userDao"><rhs name\="Dao.userDao"/></lhs><lhs name\="javeBean.useBean"><rhs name\="javeBean.useBean"/></lhs><lhs name\="Dao.addUserDao"><rhs name\="Dao.addUserDao"/></lhs><lhs name\="datebase.dbutil"><rhs name\="datebase.dbutil"/></lhs><lhs name\="javaBean.studentBean"><rhs name\="javaBean.studentBean"/></lhs><lhs name\="Dao.studentsRegistDao"><rhs name\="Dao.studentsRegistDao"/></lhs><lhs name\="Dao.adminRegistDao"><rhs name\="Dao.adminRegistDao"/></lhs><lhs name\="javaBean.adminBean"><rhs name\="javaBean.adminBean"/></lhs><lhs name\="Dao.Admindao"><rhs name\="Dao.Admindao"/></lhs><lhs name\="Dao.studentsDao"><rhs name\="Dao.studentsDao"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.RandomAccess"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.AbstractList"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.AbstractCollection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.ArrayList"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="javaBean.gradeBean"><rhs name\="javaBean.gradeBean"/></lhs><lhs name\="Dao.GradeDao"><rhs name\="Dao.GradeDao"/></lhs><lhs name\="javaBean.classBean"><rhs name\="javaBean.classBean"/></lhs><lhs name\="javaBean.inGradeBean"><rhs name\="javaBean.inGradeBean"/></lhs><lhs name\="class_type.sm3_type"><rhs name\="class_type.sm3_type"/></lhs><lhs name\="sm3.SM3_Attack"><rhs name\="sm3.SM3_Attack"/></lhs><lhs name\="serverlet.Trace"><rhs name\="serverlet.Trace"/></lhs></history>
+org.eclipse.jdt.ui.text.code_templates_migrated=true

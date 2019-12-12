@@ -1,0 +1,91 @@
+﻿<form method="post" action="list.aspx" id="ctl00">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+</div>
+<div>
+	<table cellspacing="0" rules="all" border="1" id="GVForExport" style="border-collapse:collapse;">
+		<tr>
+			<th scope="col">自定义题号</th><th scope="col">题目难度</th><th scope="col">所属阶段</th><th scope="col">知识点</th><th scope="col">题目名称</th><th scope="col">题目描述</th><th scope="col">答案</th><th scope="col">答案描述</th><th scope="col">备注</th>
+		</tr><tr>
+			<td>3_1</td><td>
+                         困难
+                    </td><td>
+                         阶段四
+                    </td><td>
+                     java考试
+                    </td><td>如下题目要求，完成代码编写</td><td>
+                     如下UML类图：1、动物园的饲养员类有feed方法完成对动物的喂养，该方法需要2个参数，一个参数为Food接口类型，另一个参数为Animal类型，表示对该Animal对象进行食物的喂养；2、Food为接口，Food接口中有方法beeaten（表示食物被吃掉）；3、Animal为抽象类，其中Animal类有抽象方法eat，该方法需要使用Food类型的引用对象作为参数，方法调用Food类型的引用对象的beeaten方法，用以表示动物吃食物的过程;3、仔细观察Bone，Fish，Dog，Cat在UML图中的关系，分别定义这些类及该类的方法；4、另写一个主类，在主类中完成饲养员喂养动物的逻辑，要求给Dog对象喂Bone，给Cat对象喂fish；
+                    </td><td>根据得分点，酌情扣分</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2-1</td><td>
+                         普通
+                    </td><td>
+                         阶段四
+                    </td><td>
+                     java考试
+                    </td><td>按照题目要求完成编程：</td><td>
+                      &nbsp; 现设计一个企业员工信息管理程序，主要用于管理员工的各项信息。拟采用Java语言设计该程序，现要求完成以下工作：1）定义员工类表示员工对象a)定义员工类（Employee），Employee类有4个私有的成员变量，分别表示员工的姓名（name），年龄（age）、工作年限（hiredYears）和基本工资（salary），并为每个成员变量定义setter和getter方法；b)定义一个构造方法，构造Employee对象时完成对四个成员变量的初始化；c)定义一个计算员工的工资收入的方法（calculateIncome），返回员工的工资收入，计算公式：基本工资+工作年限×100；2）基于员工类（Employee）定义一个新类表示经理类员工（Manager）a)经理类员工具有一般员工的所有属性，并且在此基础上增加一个新的属性：奖金（bonus），同时经理类员工的计算工资收入的公式更新为：基本工资+工作年限×100+奖金；b)定义Manager类，并定义相应的属性，并覆盖Employee类的相应方法。3）实例化对象并运行a)实例化两个员工类对象，设置不同的姓名、年龄、工作年限和基本工资等属性，分别输出每个员工对象的工资收入；b)实例化一个经理类对象，设置其姓名、年龄、工作年限、基本工资和奖金等属性，输出经理类对象的工资收入。
+                    </td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>2-2</td><td>
+                         普通
+                    </td><td>
+                         阶段四
+                    </td><td>
+                     java考试
+                    </td><td>按照题目要求完成编程：</td><td>
+                     多线程并发打印程序设计：1）要求设计一个可多线程并发完成打印任务的类，该类并发运行的任务是循环10次，每次循环时该线程都要sleep一段时间（1000毫秒之内的随机时间），而在每次sleep之前都要打印输出此线程的名字和将要sleep的时间。2）分别以继承Thread类和实现Runnable接口的方式定义上述的多线程类，并且每个类分别创建2个对象，以多线程的方式启动，完成并发的打印任务，输出结果。
+                    </td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>cy_001_chengxuti_jiandan</td><td>
+                         简单
+                    </td><td>
+                         阶段四
+                    </td><td>
+                     java考试
+                    </td><td>按下面的描述与要求定义一个Java类</td><td>
+                     拟开发一个订单管理程序，首先要建立一个订单对象模型和一个商品对象模型。其中订单对象模型中需要抽象下面的属性和行为：属性：订单号（orderID）、订单创建时间（createTime）、顾客姓名（CustomerName）、订单上的商品（goods）等4项。要求所有属性必须为私有，且订单上的商品（goods）采用集合（List）存储。行为：1）可设置和获得订单号、订单创建时间、顾客姓名、订单上的商品；2）可计算该订单的总金额；3）定义一个构造方法，对订单的订单号、订单创建时间和顾客姓名三个属性进行初始化；商品对象模型中需要抽象下面的属性和行为：属性：商品号（goodID）、商品名称（goodName）、商品单价(goodPrice)1)可设置和获得商品号、商品名称、商品单价;其中在获取商品单价时如果数值为负数则声明抛出异常Exception; 2) 定义一个构造方法，对商品的商品号、商品名称、商品单价三个属性进行初始化；编写main方法，初始化三个商品对象和一个订单对象，其中该订单包含这三个商品，并计算该订单的总金额，需要对抛出的异常进行处理。
+                    </td><td>根据得分点，酌情扣分</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>cy_002_chengxuti_jiandan</td><td>
+                         简单
+                    </td><td>
+                         阶段四
+                    </td><td>
+                     java考试
+                    </td><td>按下面的描述与要求定义一个Java类</td><td>
+                     拟开发一个借书管理程序，首先要建立一个用户对象模型和一个图书对象模型。其中用户对象模型中需要抽象下面的属性和行为：属性：用户ID（userID）、用户姓名（userName）、联系方式（email）、已借阅的图书（books）等4项。要求所有属性必须为私有，且已借阅的图书（books）采用集合（List）存储。行为：1）可设置和获得用户ID（userID）、用户姓名（userName）、联系方式（email）、已借阅的图书（books）；2）可提醒哪些书已到期；3）定义一个构造方法，对用户ID（userID）、用户姓名（userName）、联系方式（email）三个属性进行初始化；图书对象模型中需要抽象下面的属性和行为：属性：图书号（bookID）、图书名称（bookName）、借阅时间(lendDate)、借阅期限（deadline）1)可设置和获得图书号（bookID）、图书名称（bookName）、借阅时间(lendDate)、借阅期限（deadline）;其中在获取借阅期限时，如果期限为负数，则声明抛出异常Exception; 2) 定义一个构造方法，对图书号（bookID）、图书名称（bookName）、借阅时间(lendDate)、借阅期限（deadline）等四个个属性进行初始化；编写main方法，初始化三个图书对象和一个用户对象，其中该用户借阅了包含这三个图书，查询是否有到期的书籍，有则打印提示信息，需要对抛出的异常进行处理。
+                    </td><td>根据得分点，酌情扣分</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>3-2</td><td>
+                         困难
+                    </td><td>
+                         阶段四
+                    </td><td>
+                     java考试
+                    </td><td>如下UML图，按照题目要求完成编程：</td><td>
+                     1、PhotoGraphable为接口。2、PhotoGrapher为摄影师类，有方法photoGraph，该方法需要一个PhotoGraphable接口类型的引用作为参数，在该方法中，继续调用PhotoGraphable接口类型对象的takePhoto方法完成拍摄动作；3、SingleLenCamera为单反相机类，该相机被设计为多线程类；takePhoto方法被实现为自拍功能，当摄影师调用相机的takePhoto后，相机能以线程方式自己连拍5次；4、SmartPhone为智能手机类，摄影师一般用其摄影功能作为拍摄的补充。5、要求定义一个主类（类名不限），主类中完成如下逻辑：创建摄影师，智能手机，单反相机对象；摄影师在拍摄时使用的是单反相机的自拍功能，单反相机自行工作；单反相机自拍线程工作期间，摄影师继续使用智能手机来拍摄些别的场景照片；
+                    </td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>java补考1</td><td>
+                         简单
+                    </td><td>
+                         阶段五
+                    </td><td>
+                     Java补考
+                    </td><td>请阅读如下要求，完成设计、编程</td><td>
+                     定义教官类：Instructor，学员类：Soldier，步枪类：Gun，子弹类：Bullet1、Instructor类具有以下成员：属性：姓名，性别，军衔，职务方法：构造方法、基本的get，set方法、射击培训（该方法需要Soldier对象及枪对象作为参数）2、Soldier类具有以下成员：属性：姓名，年龄，所属单位，是否接受过射击训练方法：构造方法，基本的get、set方法、装填（Gun对象作为参数），持枪射击（需要Gun对象作为参数）3、3、Gun类具有以下成员：属性：型号，名称，子弹，子弹是否已经装填方法：构造方法、基本的set，get方法、装填子弹，射击4、Bullet类具有以下成员：属性：型号，名称，类型方法：构造方法ps：相关方法除了必要的逻辑判断，方法的主体实现部分可以采用输出信息的方式模拟。主类相关逻辑：1、教官培训学员射击2、学员开枪射击（只有通过教官培训后才能自己开枪）3、注意开枪时，需要检查枪是否已经装填了子弹
+                    </td><td>根据得分点酌情给分</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr><tr>
+			<td>java补考2</td><td>
+                         简单
+                    </td><td>
+                         阶段五
+                    </td><td>
+                     Java补考
+                    </td><td>按照如下要求完成编程</td><td>
+                     1、编写名为Shape的抽象类表示形状；这个类具有的属性和方法是：（20分）1、一个String类型的属性color，表示形状的颜色，默认值为“white”；两个double类型的属性area和perimeter，分别表示形状的面积和周长，默认值都为0；（5分）2、3个属性的get和set方法；（5分）3、一个带参数的构造方法，能初始化形状的颜色；（5分）4、calculateArea( )计算并返回形状的面积，定义为抽象方法；（2.5分）5、calculatePerimeter( )计算并返回形状的周长，定义为抽象方法；（2.5分）2、编写名为Rectangle的类表示矩形，并且Rectangle继承于Shape类，Rectangle类具有的属性和方法有：（20分）1、直接继承于父类的属性；2、新增2个double类型的属性width和height，分别表示矩形的宽和高，默认值为1；定义width和height属性的get和set方法；（5分）3、一个带参数的构造方法，初始化矩形的颜色、宽和高三个属性；（5分）4、实现父类的calculateArea()方法，得到矩形的面积；（5分）5、实现父类的calculatePerimeter()，得到矩形的周长；（5分）3、创建两个Rectangle对象，一个颜色为red，宽为15，高为5，另外一个颜色为blue，宽20，高10，分别输出两个Rectangle对象的面积和周长。（10分）
+                    </td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr>
+	</table>
+</div></form>

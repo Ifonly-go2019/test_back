@@ -1,0 +1,508 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+p{
+	font-size: 12px;
+}
+body{
+	font-size: 12px;
+}
+li{
+	list-style: none;
+	
+}
+header{
+	width: 100%;
+	height: 178px;
+	background: url(../img/day3/header.png) no-repeat/** 不重复*/;
+	border: 1px solid white;
+}
+header nav{
+			height:42px;
+			/* background: rgb();/** 纯色*/ */            
+}
+.navcontent{
+		height: 42px;
+		background: rgba(255,255,255,0.5);
+}
+.container{
+	    width:100%;
+		margin: 0 auto;
+		/* border: 1px solid ; */	
+				
+}
+
+/* .container li{
+    line	 
+	
+} */
+
+header nav ul{
+	width: 800px;
+	height: 42px;
+	/* border: 1px solid yellow; */
+	margin-left: 200px;
+/* 	padding-left: 10px; */
+	float: left;
+	
+}
+header nav ul li{
+	 padding:0 10px;
+	 /* margin:0 10px; */
+	 height: 42px;
+     line-height:42px ;
+	 float:left;
+
+}
+header nav ul li a{
+	color: #fff;
+	text-decoration:none ;
+	font-size:small;
+}
+.dropDown{
+	width: 150px;
+	height: 150px;
+	background: rgba(255,255,255,0.5);
+	margin: 0 auto;
+	/* opacity: 0; */
+	display:none;
+}
+.dropDown img{
+	width: 150px;
+	height: 150px;
+}
+header nav ul li:hover a{
+	cursor: move;/*鼠标指针为移动形态*/
+	cursor: pointer;/** 鼠标指针为手型*/
+	background: rgba(255,255,255,.7);
+	display: inline-block;
+}
+header nav ul li:hover .dropDown{
+	display: block;/** 显示方式为块儿级*/
+	
+}
+.headerTool{
+	width:230px;
+	height: 40px;
+	/* border: 1px solid yellow; */
+	float:right;
+	font-size: small;
+}
+.headerTool img{/* 图片以文字的基线对齐 */
+	width:32px ;
+	height: 32px;
+	border-radius: 50%;
+	vertical-align:middle ;
+	margin-left: -100px;
+	margin-top: -3px;
+}
+.headerTool em{
+	font-style: normal;
+	/* display: block; 不好用 占据后续空间*/
+	/* display: inline;显示为行内 没用 */
+	display:inline-block;/* 行内块 */
+	padding:0 5px;
+	/* margin-left: -6px; */
+	font-style: normal;
+	line-height: 42px;
+}
+.headerTool em:hover{
+	cursor: pointer;/** 鼠标指针为手型*/
+	background: rgba(255,255,255,.7);
+	
+}
+#top{
+	 position: relative;
+	display: inline-block;
+	
+}
+.headerTool div span{
+	padding: 15px 18px;
+	background: deeppink;
+	
+	border-radius: 0px 0px 8px 8px;
+	display: inline-block;
+}
+.searchContent{
+	margin-top: 3 px;
+	width: 1170px;
+	height: 130px;
+	margin-left: 200px;
+	/* border: 1px solid #FF1493; */
+}
+.slogan{
+	width: 220px;
+	height: 30px;
+	color: #fff;
+	float: left;
+	font-style: normal;
+	/* 文本水平居中 */
+	text-align: center;
+	line-height: 30px;
+	background: rgba(255,255,255,0);
+}
+.searchBox{
+   float: right
+}
+.searchBtn{
+	height:32px;
+    width: 80px;	
+    float: left;
+	margin-top: 80px;
+	margin-right: 3px;
+	/* margin-left: -120px; */
+	background: rgba(255,255,255,0.68);
+	border-radius:4px 4px 4px 4px ;
+}
+.searchBtn a{
+	margin-top: 8px;
+	margin-left: 40px;
+	
+	color: orangered;
+	font-style: normal;
+	font-size: 12px;
+	text-decoration:none;
+	display: inline-block;
+	
+}
+.in{
+	height:32px;
+	width: 200px;
+	margin-top: 80px;
+	margin-right: 40px;
+	float: left;
+	border-radius:6px 6px 6px 6px ;
+	border: solid rgba(255,255,255,0.68);
+}
+.button{
+	margin-top: 84px;
+	left: 1280px;
+	height:32px;
+	width: 42px;
+	position: absolute;
+	border-radius:6px 6px 6px 6px ;
+	background: rgba(255,255,255,0.68);
+	border: solid rgba(255,255,255,0.68);
+}
+.button i{
+	height:32px;
+	width: 42px;
+}
+.button:hover i{
+	color: red;
+	cursor: pointer;/** 鼠标指针为手型*/
+}
+.searchBtn :hover{
+	background:rgba(255,255,255,1);
+	border-radius:4px 4px 4px 4px ;
+}
+.dropTo{
+	 height: 70px;
+	width: 200px;
+	margin-left: -140px;
+	display: none;
+	background: rgba(255,255,255,.7);
+	border-radius:4px 4px 4px 4px ;	
+}
+.dropTo ul{
+	margin-left: -10px;
+	 height: 70px;
+	width: 200px;
+    display: flex;
+	border-radius:4px 4px 4px 4px ;		
+	background: rgba(255,255,255,.7);
+	margin: 0 auto;
+	position: re;
+} 
+
+ 
+#top:hover span{
+	cursor: move;/*鼠标指针为移动形态*/
+	cursor: pointer;/** 鼠标指针为手型*/
+	
+	display: inline-block;
+}
+#top:hover .dropTo{
+	display: block;/** 显示方式为块儿级*/
+	
+}
+.navMenu{
+	margin-left:180px ;
+}
+.ulList{
+	/*outline*/: 1px solid red;
+	width: 1160px;
+	height: 42px;
+/* 	margin-top: 15px; */
+	display: flex;
+	
+}
+.menu{
+	height: 20px;
+	margin: 10px;
+	font-size: 13px;
+	align-items: center;
+	justify-content: space-between;
+}
+.menu img{
+	height: 40px;
+}
+.menu:hover {
+	cursor: move;/*鼠标指针为移动形态*/
+	cursor: pointer;/** 鼠标指针为手型*/
+	background: rgba(128,128,128,0.13);
+	display: inline-block;
+}
+
+
+#use_1{
+	width: 100%;
+	height: 260px;
+	/*outline*/: 1px solid deeppink;
+}
+.runBox{
+	width: 440px;
+	height: 220px;
+	margin-left: 180px;
+	overflow: hidden;
+	
+	/*outline*/: 1px solid deeppink 2s;
+}
+.runBox ul li img{
+	border-radius:10px 10px 10px 10px ;
+}
+.runBox ul{
+	 width:600%;
+	 height:220px;
+	 
+	 /*outline*/: 1px solid deeppink;
+	 animation: boxMove 15s linear infinite ;
+}
+.runBox ul li{
+	width: 440px;
+	height: 220px;
+	/*outline*/: 1px solid green;
+	float: left;
+	
+}
+.runBox img:hover{
+	cursor: pointer;/** 鼠标指针为手型*/
+	
+}
+.runBox ul:hover{
+	animation-play-state: paused;
+}
+@keyframes boxMove{
+	0%{
+		margin-left: 0px;
+	}
+	8%{
+		margin-left: 0px;
+	}
+	16%{
+		margin-left: -440px;
+	}
+	24%{
+		margin-left: -440px;
+	}
+	32%{
+		margin-left: -880px;
+	}
+	40%{
+		margin-left: -880px;
+	}
+	48%{
+		margin-left: -1320px;
+	}
+	56%{
+		margin-left: -1320px;
+	}
+	64%{
+		margin-left: -1760px;
+	}
+	72%{
+		margin-left: -1760px;
+	}
+	80%{
+		margin-left: -2200px;
+	}
+	88%{
+		margin-left: -2200px;
+	}
+	96%{
+		margin-left: -2200pxpx;
+	}
+	100%{
+		margin-left: -2200pxpx;
+	}	
+}
+
+
+.showBox{
+	 width: 720px;
+	 height: 220px;
+	 /*outline*/: 1px solid deeppink;
+	 float:none;
+	 right: 180px;
+ 
+	 position: absolute;
+	 top: 222px;
+}
+.showBox ul{
+	
+	margin: 10px;
+	display: flex;
+	
+}
+.showBox ul li{
+	height: 100px;
+	margin: 0 auto;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.showBox  img{
+	height: 100px;
+	border-radius:10px 10px 10px 10px ;
+}
+.showBoxlist{
+	margin-top:-10px;
+	height: 100px;
+	
+}
+.showBox_front{
+	height: 100px;
+	width: 160px;
+	margin-top:-100px;
+	background: rgba(60,60,60,0.1);
+	border-radius:10px 10px 10px 10px ;
+	opacity: 0;
+}
+.showBox_front p{
+	
+	font-size: medium;
+	text-align: center;
+}
+.showBox ul li:hover .showBox_front{
+	opacity: 1;
+	
+}
+
+/* 
+.showBox li:nth-child(1){
+	margin-left: -20px;
+}
+.showBox li:nth-child(5){
+	margin-left: -20px;
+} */
+.showBox img:hover{
+		cursor: pointer;/** 鼠标指针为手型*/
+		opacity: 0;
+}
+.headerLine{
+	width: 900px;
+	height: 45px;
+	left: 180px;
+	display: flex;
+	position: relative;
+	/*outline*/:1px solid deeppink ;
+}  
+.headerLine span{
+	display:block;
+	/* justify-content: flex-start;
+	align-items: center; */
+	position: absolute;
+	text-align: center;
+/* 	margin-top: -50px;*/
+    margin-left: 30px;
+    margin-top: 10px;
+    /* margin: 10px auto ; */
+	font-size: large;
+}  
+.icon{
+	width: 260px;
+	height: 213px;
+	/*outline*/: 1px solid deeppink;
+	margin-top: -43px;
+	margin-right: 178px;
+	float: right;
+}
+.onlineNumber{
+	width: 260px;
+	height: 34px;
+	position: relative;
+	margin-top: 8px;
+	background-color: rgba(128,128,128,0.13);
+	/*outline*/: 1px solid deeppink;
+	border-radius: 10px;
+} 
+.onlineNumber a{
+	margin:0 auto;
+	font-size: 12px;
+	text-decoration: none;
+	margin: 10px;
+}                     
+#icon-1{
+	margin-top: 8px;
+}
+.same{
+	width: 900px;
+	height: 168px;
+	margin-left: 180px;
+	/*outline*/: 1px solid deeppink;
+	
+}
+.same ul {
+	display: flex;
+	
+}
+.same img{
+	border-radius: 10px;
+}
+.same ul li{
+	margin: 10px;
+	justify-content: space-between;
+}
+.showBox_front-1{
+	height: 100px;
+	width: 160px;
+	margin-top:-135px;
+	background: rgba(60,60,60,0.1);
+	border-radius:10px 10px 10px 10px ;
+	opacity: 0;
+}
+.showBox_front-1 em{
+	top: 100px;
+}
+.same ul li:hover .showBox_front-1{
+	
+	opacity: 1;
+	
+}
+.same ul li:hover{
+	cursor: pointer;
+}
+#same-1-1:hover{
+	opacity: 0.3;
+}
+#use_2{
+	height: 228px;
+	/*outline*/: 1px solid deeppink;
+}
+.headerLine a{
+	font-size: 20px;
+	margin-top: 4px;
+	color: rgba(30,144,255,0.5);
+}
+.headerLine p{
+	margin-top: 15px;
+	font-size: 10px;
+	margin-left: 200px;
+
+}
+.number1{
+    height: 336px;	
+}
+.iconNumber1{
+	height: 368px;
+}

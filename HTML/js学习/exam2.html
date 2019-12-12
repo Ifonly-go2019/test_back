@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" id="txtName">
+		<input type="button" id="btnCheck" value="验重">
+		<span id="errMsg" >	
+		</span>
+	
+		
+	</body>
+	<script type="text/javascript">
+		
+		document.getElementById("btnCheck").onclick=function(){
+			var str=document.getElementById("txtName").value;
+			console.log(str.length);
+			if(str.length==0){
+				document.getElementById("errMsg").innerText="对不起，请输入你的姓名";
+				document.getElementById("errMsg").style.color="#FF0000";
+			}else {
+				document.getElementById("errMsg").innerText="";
+			}
+		}
+	</script>
+</html>

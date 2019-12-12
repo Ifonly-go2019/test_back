@@ -1,0 +1,607 @@
+﻿<form method="post" action="List.aspx" id="ctl00">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+</div>
+<div>
+	<table cellspacing="0" rules="all" border="1" id="GVForExport" style="border-collapse:collapse;">
+		<tr>
+			<th scope="col">自定义题号</th><th scope="col">题目名称</th><th scope="col">所属阶段</th><th scope="col">知识点</th><th scope="col">题目难度</th><th scope="col">题目描述</th><th scope="col">源代码</th><th scope="col">测试输入</th><th scope="col">测试输出</th><th scope="col">分值比重</th><th scope="col">备注</th>
+		</tr><tr>
+			<td>Java_003  </td><td>利用for循环打印9*9  表?</td><td>
+                         阶段一
+                    </td><td>
+                     java概述（何林波）
+                    </td><td>
+                         简单
+                    </td><td>
+                     
+	利用for循环打印9*9&nbsp; 表?
+
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.java&quot;,&quot;code&quot;:&quot;public class main{\n    public static void main(String[]args){\n    System.out.println();\n    System.out.print(\&quot;output:\&quot;);\n    for (int j=1;j&lt;10;j++){\n        for(int k=1;k&lt;10;k++) {\n            if (k&gt;j) break;   \n            System.out.print(\&quot; \&quot;+k+\&quot;X\&quot;+j+\&quot;=\&quot;+j*k);\n         }\n        System.out.println();\n        }\n    }\n}\n&quot;}]}</td><td>
+                     
+                    </td><td>
+                     
+output: 1X1=1
+ 1X2=2 2X2=4
+ 1X3=3 2X3=6 3X3=9
+ 1X4=4 2X4=8 3X4=12 4X4=16
+ 1X5=5 2X5=10 3X5=15 4X5=20 5X5=25
+ 1X6=6 2X6=12 3X6=18 4X6=24 5X6=30 6X6=36
+ 1X7=7 2X7=14 3X7=21 4X7=28 5X7=35 6X7=42 7X7=49
+ 1X8=8 2X8=16 3X8=24 4X8=32 5X8=40 6X8=48 7X8=56 8X8=64
+ 1X9=9 2X9=18 3X9=27 4X9=36 5X9=45 6X9=54 7X9=63 8X9=72 9X9=81
+
+                    </td><td>
+                     100.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>Java_005  </td><td>利用程序输出如下图形</td><td>
+                         阶段一
+                    </td><td>
+                     java概述（何林波）
+                    </td><td>
+                         普通
+                    </td><td>
+                     
+	利用程序输出如下图形:
+
+	&nbsp;&nbsp; *
+
+	&nbsp;&nbsp; * * *
+
+	&nbsp;&nbsp; * * * * *
+
+	&nbsp;&nbsp; * * * * * * *
+
+	&nbsp;&nbsp; * * * * *
+
+	&nbsp;&nbsp; * * *
+
+	&nbsp;&nbsp; *
+
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.java&quot;,&quot;code&quot;:&quot;class main{ \n    public static void main(String[] args){\n         System.out.print(\&quot;output:\&quot;);\n        for (int i=1; i&lt;=13; i+=2){\n            for(int j=1; j&lt;=i &amp;&amp; i+j&lt;= 14; j++){\n            System.out.print(\&quot;* \&quot;);\n          }\n            System.out.println();\n        }\n    }\n}\n&quot;}]}</td><td>
+                     
+                    </td><td>
+                     output:* 
+* * * 
+* * * * * 
+* * * * * * * 
+* * * * * 
+* * * 
+* 
+
+                    </td><td>
+                     100.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>Java_004  </td><td>输出所有的水仙花数，把谓水仙花数是指一个数3位数，其各各位数字立方和等于其本身，</td><td>
+                         阶段一
+                    </td><td>
+                     java概述（何林波）
+                    </td><td>
+                         简单
+                    </td><td>
+                     
+	输出所有的水仙花数，把谓水仙花数是指一个数3位数，其各各位数字立方和等于其本身，
+
+	&nbsp;&nbsp; 例如：153 = 1*1*1 + 3*3*3 + 5*5*5&nbsp; 
+
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.java&quot;,&quot;code&quot;:&quot;class main{\n    public static void main(String[] args){\n        System.out.println(\&quot;output:please num\&quot;);\n    int number = 100;\n    int i, j, k;\n    for (int sum; number&lt;1000; number++){\n        i=number/100;  j=(number-i*100)/10;  k=number-i*100-j*10;\n        sum=i*i*i+j*j*j+k*k*k;\n        if (sum==number) System.out.println(number+\&quot; is a dafodil number! \&quot;);\n        }\n    }\n}\n&quot;}]}</td><td>
+                     
+                    </td><td>
+                     output:please num
+153 is a dafodil number! 
+370 is a dafodil number! 
+371 is a dafodil number! 
+407 is a dafodil number! 
+
+                    </td><td>
+                     100.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>Java_006  </td><td>结果输出，格式为: 1-1/2+1/3-1/4+…+1/99-1/100 = 表达式的值</td><td>
+                         阶段一
+                    </td><td>
+                     java概述（何林波）
+                    </td><td>
+                         简单
+                    </td><td>
+                     
+	编程求下列式子的值， 
+	&nbsp;&nbsp;&nbsp; ｙ＝1-1/2+1/3-1/4+&hellip;+1/99-1/100&nbsp;&nbsp; 
+
+	并将结果输出，格式为: 1-1/2+1/3-1/4+&hellip;+1/99-1/100 = 表达式的值
+
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.java&quot;,&quot;code&quot;:&quot;public class main{\npublic static void main(String[] args) {\n\t\tdouble sum=0;\n\t\tfor(double i=1;i&lt;=100;i++)\n\t\t{\n\t\t\tsum=sum+Math.pow(-1, i-1)*(1/i);\n\t\t}\n\t\t\n\t\t  System.out.print(\&quot;output:1-1/2+1/3-1/4+…+1/99-1/100=\&quot;+sum);\n\t}\n\t\n}\n&quot;}]}</td><td>
+                     
+                    </td><td>
+                     output:1-1/2+1/3-1/4+…+1/99-1/100=0.688172179310195
+                    </td><td>
+                     100.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>Java_001  </td><td>是否是闰年</td><td>
+                         阶段一
+                    </td><td>
+                     java概述（何林波）
+                    </td><td>
+                         简单
+                    </td><td>
+                     
+	1，编写程序，判断给定的某个年份是否是闰年。
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 闰年的判断规则如下：
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; （1）若某个年份能被4整除但不能被100整除，则是闰年。
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; （2）若某个年份能被400整除，则也是闰年。
+
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.java&quot;,&quot;code&quot;:&quot;import java.util.Scanner;\nclass main{\n    public static void main(String[] arge){\n        System.out.print(\&quot;output:please input yrear:\&quot;);\n    int year;   \n    Scanner scanner = new Scanner(System.in);\n    year = scanner.nextInt();\n    if (year&lt;0||year&gt;3000){\n        System.out.println(\&quot;error\&quot;);\n        System.exit(0);\n        }\n    if ((year%4==0)&amp;&amp;(year%100!=0)||(year%400==0)) \n        System.out.println(year+\&quot; is bissextile\&quot;);\n    else \n        System.out.println(year+\&quot; is not bissextile \&quot;);\n    }\n}\n&quot;}]}</td><td>
+                     23
+                    </td><td>
+                     output:please input yrear:23 is not bissextile 
+
+                    </td><td>
+                     100.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>Java_002  </td><td>求1+3+5+7+……+99 的和值。</td><td>
+                         阶段一
+                    </td><td>
+                     java概述（何林波）
+                    </td><td>
+                         简单
+                    </td><td>
+                     
+	编写程序求1+3+5+7+&hellip;&hellip;+99 的和值。
+
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.java&quot;,&quot;code&quot;:&quot;class main{\n    public static void main(String[] args){\n        int number = 1;\n        int sum = 0;\n        for ( ; number &lt;100; number+=2 ){ sum += number; }\n        System.out.println(\&quot;output:1+3+5+7+....+99= \&quot; +sum);\n    }\n}\n&quot;}]}</td><td>
+                     
+                    </td><td>
+                     output:1+3+5+7+....+99= 2500
+
+                    </td><td>
+                     100.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>Java_007  </td><td>判断能否构成三角形</td><td>
+                         阶段一
+                    </td><td>
+                     java概述（何林波）
+                    </td><td>
+                         简单
+                    </td><td>
+                     
+	输入三角形的三边a, b, c，判断能否构成三角形. 若能，计算面积.
+
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.java&quot;,&quot;code&quot;:&quot;import java.util.Scanner;\npublic class main{\npublic static void main(String[] args) {\n\t\tSystem.out.print(\&quot;output:请输入三个整数\\n\&quot;);\n\t\tScanner cin=new Scanner(System.in);\n\t\tint a=cin.nextInt();\n\t\tint b=cin.nextInt();\n\t\tint c=cin.nextInt();\n\t\tif(a+b&lt;c||a+c&lt;b||c+b&lt;a)\n\t\t\t{\n\t\t\tSystem.out.print(\&quot;不能构成三角形\\n\&quot;);\n\t\t\t}\n\t\telse\n\t\t\t{\n\t\t\tint l=a+b+c;\n\t\t    System.out.print(l);\n\t\t    }\n\t\t\t}\n\n}\n&quot;}]}</td><td>
+                     3 2 1
+                    </td><td>
+                     output:请输入三个整数
+6
+                    </td><td>
+                     100.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>Java_008  </td><td>输入任意一个1~7之间的整数，将他们转换成对应的英文单词</td><td>
+                         阶段一
+                    </td><td>
+                     java概述（何林波）
+                    </td><td>
+                         简单
+                    </td><td>
+                     
+	编写程序，输入任意一个1~7之间的整数，将他们转换成对应的英文单词. 例如：1转换成Monday，7转换成Sunday.
+
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.java&quot;,&quot;code&quot;:&quot;import java.util.Scanner;\npublic class main{\npublic static void main(String[] args) {\n\t\tSystem.out.print(\&quot;output:请输入任意一个1~7之间的整数\\n\&quot;);\n\t\tScanner cin=new Scanner(System.in);\n\t\tint m=cin.nextInt();\n\t    if(m==1)\n\t    \tSystem.out.print(\&quot;Monday\&quot;);\n\t    else\n\t    \tif(m==2)\n\t\t    \tSystem.out.print(\&quot;Tuesday\&quot;);\n\t    \t else\n\t \t    \tif(m==3)\n\t \t\t    \tSystem.out.print(\&quot;Wensday\&quot;);\n\t \t    \t else\n\t \t\t    \tif(m==4)\n\t \t\t\t    \tSystem.out.print(\&quot;Thuesday\&quot;);\n\t \t\t    \t else\n\t \t\t\t    \tif(m==5)\n\t \t\t\t\t    \tSystem.out.print(\&quot;Friday\&quot;);\n\t \t\t\t    \t else\n\t \t\t\t\t    \tif(m==6)\n\t \t\t\t\t\t    \tSystem.out.print(\&quot;Saturday\&quot;);\n\t \t\t\t\t    \telse \n\t \t\t\t\t    \t\tSystem.out.print(\&quot;Sunday\&quot;);\n\t}\n\n}\n&quot;}]}</td><td>
+                     2々5々3
+                    </td><td>
+                     output:请输入任意一个1~7之间的整数
+Tuesday々output:请输入任意一个1~7之间的整数
+Friday々output:请输入任意一个1~7之间的整数
+Wensday
+                    </td><td>
+                     40.00々40.00々20.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>cy_001_chengxutiankong_kunnan</td><td>按功能要求编写构造函数</td><td>
+                         阶段一
+                    </td><td>
+                     变量默认值与作用域（昌燕）
+                    </td><td>
+                         困难
+                    </td><td>
+                     1.申明成员变量number,id和&nbsp;name，其中id表示玩具的序号，name表示玩具的名字2.编写构造函数&nbsp;，在构造函数中为成员变量name,id赋值，3.其中name的值通过为构造函数传参数赋值。4.id代表玩具的序号，每个玩具的序号自增且必须唯一。&nbsp;提示：可以让number完成序号的自增，再赋值给id，以确保序号唯一。注意：本题为填空编程题，只能在/******start******/和/******end******/之间填写代码。测试用例1：输入:TOM,ALICE输出：output:TOM:目前共有2个娃娃！TOM:我的ID是1TOM:hello!ALICE:目前共有2个娃娃！ALICE:我的ID是2ALICE:hello!测试用例2：输入:Bob,Charlie输出：output:Bob:目前共有2个娃娃！Bob:我的ID是1Bob:hello!Charlie:目前共有2个娃娃！Charlie:我的ID是2Charlie:hello!
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.java&quot;,&quot;code&quot;:&quot;import java.io.BufferedReader;\nimport java.io.InputStreamReader;\n\n class doll {\n\n/* 1.申明成员变量number,id和 name，其中id表示玩具的序号，name表示玩具的名字\n * 2.编写构造函数 ，在构造函数中为成员变量name,id赋值，\n * 3.其中name的值通过为构造函数传参数赋值。\n * 4.id代表玩具的序号，每个玩具的序号自增且必须唯一。\n * 提示：可以让number完成序号的自增，再赋值给id，以确保序号唯一。\n *\n*/\n\n/******start******/\nprivate static int number=0;\nprivate int id=0;\nprivate String name;\npublic doll(String name){\n\tthis.name = name;\n\tnumber++;\n\tid=number;\n}\n/******end******/\n\npublic void speak(String word){\n\tString showNumber=\&quot;目前共有\&quot;+number+\&quot;个娃娃！\&quot;;\n\tString showId=\&quot;我的ID是\&quot;+id;\n\tSystem.out.println(name+\&quot;:\&quot;+showNumber);\n\tSystem.out.println(name+\&quot;:\&quot;+showId);\n\tSystem.out.println(name+\&quot;:\&quot;+word);\n}\npublic static String input(){\n\ttry{\n\t\tBufferedReader br=new BufferedReader(new InputStreamReader(System.in));\n\t\tString a=br.readLine();\n\t\treturn a;\n\t\t}catch(Exception e){\n\t\t\treturn null;\n\t\t}\n\t\t}\n}\npublic class main{\n\tpublic static void main(String args[]){\n\t\tString str1 = doll.input();\n\t\tString str[]= new String[2];\n\t\tif(str1.contains(\&quot;,\&quot;)){\n\t\t\tstr = str1.split(\&quot;,\&quot;);\n\t\t\tdoll doll1 = new doll(str[0]);\n\t\t\tdoll doll2 = new doll(str[1]);\n\t\t\tSystem.out.println(\&quot;output:\&quot;);\n\t\t\tdoll1.speak(\&quot;hello!\&quot;);\n\t\t\tdoll2.speak(\&quot;hello!\&quot;);\n\t\t}else{\n\t\t\tSystem.out.println(\&quot;输入请用逗号隔开！\&quot;);\n\t\t}\t\n      }\n}\n\n\n&quot;}]}</td><td>
+                     TOM,ALICE々Bob,Charlie
+                    </td><td>
+                     output:
+TOM:目前共有2个娃娃！
+TOM:我的ID是1
+TOM:hello!
+ALICE:目前共有2个娃娃！
+ALICE:我的ID是2
+ALICE:hello!
+
+々output:
+Bob:目前共有2个娃娃！
+Bob:我的ID是1
+Bob:hello!
+Charlie:目前共有2个娃娃！
+Charlie:我的ID是2
+Charlie:hello!
+                    </td><td>
+                     50.00々50.00
+                    </td><td>private static int number=0;
+private int id=0;
+private String name;
+public doll(String name){
+	this.name = name;
+	number++;
+	id=number;
+}</td>
+		</tr><tr>
+			<td>cy_004_chengxuntiankong_kunnan</td><td>按注释要求填写程序</td><td>
+                         阶段一
+                    </td><td>
+                     运算符与表达式，优先级与结合性（昌燕）
+                    </td><td>
+                         困难
+                    </td><td>
+                     按注释要求填写程序编写方法reverseArray实现数组重元素逆序&nbsp;测试用例1：输入：x,y,1,2输出：output:x,y,1,2,逆序后：2,1,y,x,&nbsp;测试用例2：输入：a,b,7,8输出：output:a,b,7,8,逆序后：8,7,b,a,
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.java&quot;,&quot;code&quot;:&quot;import java.io.BufferedReader;\nimport java.io.InputStreamReader;\n\n class reverse {\n\t\n\t/*\n\t * 编写方法reverseArray实现数组重元素逆序\n\t *\n\t */\n\n/******start******/\n\tpublic String[] reverseArray(String[] s){\n\t\tString [] a = new String[s.length]; \n\t\tfor(int i=0;i&lt;s.length;i++){\n\t\t\ta[a.length-i-1]=s[i];\n\t\t}\n\t\treturn a;\n\t}\n/******end******/\n }\n\tpublic class main{\n\tpublic static String input(){\n\t\ttry{\n\t\t\tBufferedReader br=new BufferedReader(new InputStreamReader(System.in));\n\t\t\tString a=br.readLine();\n\t\t\treturn a;\n\t\t\t}catch(Exception e){\n\t\t\t\treturn null;\n\t\t\t}\n\t\t\t}\n\tpublic static void print(String []s){\n\t\tfor(int i=0;i&lt;s.length;i++){\n\t\t\tSystem.out.print(s[i]+\&quot;,\&quot;);\n\t\t}\n\t\tSystem.out.println();\n\t}\n\t\n\tpublic static void main(String args[]){\n\t\tString str1 = input();\n\t\tString a[]= new String[4];\n\t\tif(str1.contains(\&quot;,\&quot;)){\n\t\t\ta = str1.split(\&quot;,\&quot;);\n\t\t\tSystem.out.println(\&quot;output:\&quot;);\n\t\tprint(a);\n\t\treverse r =new reverse();\n\t\tString [] s = new String [4];\n\t\ts=r.reverseArray(a);\n\t\tSystem.out.println(\&quot;逆序后：\&quot;);\n\t\tprint(s);\n\t\t}else{\n\t\t\tSystem.out.println(\&quot;输入请用逗号隔开！\&quot;);\n\t\t}\n\t}\n}\n&quot;}]}</td><td>
+                     x,y,1,2々a,b,7,8
+                    </td><td>
+                     output:
+x,y,1,2,
+逆序后：
+2,1,y,x,
+々output:
+a,b,7,8,
+逆序后：
+8,7,b,a,
+
+                    </td><td>
+                     50.00々50.00
+                    </td><td>public String[] reverseArray(String[] s){
+		String [] a = new String[s.length]; 
+		for(int i=0;i&lt;s.length;i++){
+			a[a.length-i-1]=s[i];
+		}
+		return a;
+	}
+</td>
+		</tr><tr>
+			<td>sw_array_01</td><td>数组的定义与应用</td><td>
+                         阶段一
+                    </td><td>
+                     数组（索望）
+                    </td><td>
+                         普通
+                    </td><td>
+                     按下面的描述定义类，并编写代码。1、定义两个类，StudentScore和totalscore，StudentScore表示学生的成绩，有一个float类型的属性score表示分数，以及对应的setter和getter方法。在下面代码空白区填写代码完成StudentScore类的定义。2、totalscore类表示所有学生成绩的汇总成绩单，totalscore类有两个属性，一个名为name的属性，汇总成绩单的名称，另一个属性名为stuScores，表示本成绩单包含的所有学生成绩，定义为StudentScore数组类型。定义这两个变量以及相应的getter和setter方法。totalscore类还有一个对两个成员变量进行初始化的构造方法，以及一个计算本成绩单上所有成绩之和的方法，方法名为calculateTotalScore。按此要求定义totalscore类。3、根据注释在下面的/******start******/&nbsp;/******end******/区域填写代码。&nbsp;
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;totalscore.java&quot;,&quot;code&quot;:&quot;import java.util.ArrayList;\nimport java.util.List;\nimport java.util.Scanner;\n/**\n * StudentScore类，表示单个学生的成绩 \n */\nclass StudentScore{\n\t//成员变量score，表示学生的分数\n\tprivate float score;\n\t//StudentScore 的构造方法，对score变量进行初始化\n\t/******start******/\n\n\n         /******end******/\n\t//score变量的setter和getter方法\n\t/******start******/\n\n\n \n\n        /******end******/\n\n\t\n}\n/**\n * totalscore类的定义\n */\npublic class totalscore {\n\t//成员变量 name表示成绩单的名称\n\tprivate String name;\n\t//StudentScore数组类型的成员变量stuScores，表示本成绩单包含的所有学生成绩。\n\t/******start******/\n\n\n         /******end******/\n\n\t//totalscore类的构造方法，对两个成员变量进行初始化\n\t/******start******/\n\n\n \n\n       /******end******/\n\n\t/**\n\t * calculateTotalScore方法，计算本成绩单上所有成绩之和\n\t * @return 总成绩\n\t */\n\tpublic float calculateTotalScore(){\n\t\t/******start******/\n\n\n \n\n                 /******end******/\n\n\t}\n\tpublic static void main(String[] args) {\n\t\tList&lt;StudentScore&gt; scores = new ArrayList&lt;StudentScore&gt;();\n\t\tSystem.out.println(\&quot;请输入成绩，成绩之间用空格隔开,结尾标记为exit，比如输入：\\\&quot;79 69 90 exit\\\&quot;，将会得到输出结果：\\\&quot;238.0\\\&quot;\&quot;);\n\t\tScanner scanner = new Scanner(System.in); \n\t\twhile (scanner.hasNextFloat()) {\n\t\t\tfloat score =scanner.nextFloat();\n\t\t\tscores.add(new StudentScore(score));\n\t\t}\n\t\tscanner.close();\n\t\ttotalscore exam = new totalscore(\&quot;网络1班\&quot;, scores.toArray(new StudentScore[0]));\n\t\tSystem.out.println(\&quot;output:\&quot;+exam.calculateTotalScore());\n\t\n\t}\n\t\n}\n\n&quot;}]}</td><td>
+                     10 20 30 exit々65 70 80 90 exit
+                    </td><td>
+                     output:60.0
+々output:305.0
+
+                    </td><td>
+                     50.00々50.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>sw_002</td><td>求小于n（2&lt;n&lt;100）的素数</td><td>
+                         阶段一
+                    </td><td>
+                     java基本语句，程序结构（索望）
+                    </td><td>
+                         简单
+                    </td><td>
+                     按下面要求在指定区间编写代码。
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;sushu.java&quot;,&quot;code&quot;:&quot;import java.util.ArrayList;\nimport java.util.Scanner;\n\npublic class sushu {\n\tpublic static void main(String[] args) {\n\t\tArrayList&lt;Integer&gt; list = new ArrayList&lt;Integer&gt;();\n\t\tSystem.out.println(\&quot;请输入一个大于1，小于100的正整数n和一个结尾标记exit(两者之间以空格隔开)，比如输入：\\\&quot;10 exit\\\&quot;，即n=10，将输出小于n(n=10)的所有素数与素数的个数，即：\\\&quot;所有小于等于n的素数共有4个，它们是：[2, 3, 5, 7]\\\&quot;\&quot;);\n\t\tScanner scanner = new Scanner(System.in); \n\t\tint n = 0;\n\t\twhile (scanner.hasNextInt()) {\n\t\t\tn = scanner.nextInt();\n\t\t}\n\t\tif (n&lt;2) {\n\t\t\tSystem.out.println(\&quot;output:输入有误\&quot;);\n\t\t}else {\n\t\t\tfor (int i = 2; i &lt;= n; i++) {\n\t\t\t\tif (isPrime(i))\n\t\t\t\t\tlist.add(i);\n\t\t\t}\n\t\t\tSystem.out.println(\&quot;output:所有小于等于\&quot;+n+\&quot;的素数共有\&quot; + list.size() + \&quot;个，它们是：\&quot;+list);\n\t\t}\n\t}\n    /**\n     * 定义一个静态的方法 isPrime,该方法实现对一个判断一个正整数是否为素数。\n     * @param i 待判断的正整数,\n     * @return 当i&lt;2时，返回false，当i&gt;=2时，i为素数则返回true，i为合数则返回false，\n     */\n\tpublic static boolean isPrime(int i) {\n\t/******start******/\t\t\n\n\n         /******end******/\t\n }\n}&quot;}]}</td><td>
+                     0 exit々20 exit々25 exit々50 exit
+                    </td><td>
+                     请输入一个大于1，小于100的正整数n和一个结尾标记exit(两者之间以空格隔开)，比如输入："10 exit"，即n=10，将输出小于n(n=10)的所有素数与素数的个数，即："所有小于等于n的素数共有4个，它们是：[2, 3, 5, 7]"
+output:输入有误
+々请输入一个大于1，小于100的正整数n和一个结尾标记exit(两者之间以空格隔开)，比如输入："10 exit"，即n=10，将输出小于n(n=10)的所有素数与素数的个数，即："所有小于等于n的素数共有4个，它们是：[2, 3, 5, 7]"
+output:所有小于等于n的素数共有8个，它们是：[2, 3, 5, 7, 11, 13, 17, 19]
+々请输入一个大于1，小于100的正整数n和一个结尾标记exit(两者之间以空格隔开)，比如输入："10 exit"，即n=10，将输出小于n(n=10)的所有素数与素数的个数，即："所有小于等于n的素数共有4个，它们是：[2, 3, 5, 7]"
+output:所有小于等于n的素数共有9个，它们是：[2, 3, 5, 7, 11, 13, 17, 19, 23]
+々请输入一个大于1，小于100的正整数n和一个结尾标记exit(两者之间以空格隔开)，比如输入："10 exit"，即n=10，将输出小于n(n=10)的所有素数与素数的个数，即："所有小于等于n的素数共有4个，它们是：[2, 3, 5, 7]"
+output:所有小于等于n的素数共有15个，它们是：[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]
+
+                    </td><td>
+                     10.00々30.00々30.00々30.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>sw_005</td><td>接口的应用</td><td>
+                         阶段二
+                    </td><td>
+                     抽象类与接口
+                    </td><td>
+                         普通
+                    </td><td>
+                     已知有一接口Shape，表示图形。Shape接口中抽象了所有图形对象都具有两个方法，计算图形的周长（getPerimeter）和面积（getArea）。由于Shape接口并不表示一种具体的图形，所以这两个方法为抽象方法。现要求定义两个非抽象类：Rectangle类和Circle类去实现Shape接口。Rectangle类表示矩形，矩形应具有长（length）和宽（width）两个属性才能计算其周长和面积。Circle类表示圆，圆形应具有半径（radius）才能计算圆的周长和面积。故：要求在下面的指定区域分别定义Rectangle类和Circle类。两个类都实现了Shape接口，但需要增加各种的属性，并实现父接口中的两个抽象方法。实现计算面积和周长。最后要求能在demo类的main方法中正常运行程序。&nbsp;
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;demo.java&quot;,&quot;code&quot;:&quot;import java.util.ArrayList;\nimport java.util.List;\nimport java.util.Scanner;\n\npublic class demo {\n\tpublic static void main(String[] args) {\n\t\tList&lt;Double&gt; inputs = new ArrayList&lt;Double&gt;();\n\t\t//从控制台输入数据，一次性依次输入矩形的长、宽和圆形的半径三个数据。最后以exit结束。\n\t\tSystem.out.println(\&quot;请依次序输入矩形的长、宽和圆形的半径这三个数据，数据之间用空格隔开,结尾标记为exit，比如输入：\\\&quot;10 20 5 exit\\\&quot;，将会得到输出结果：\\\&quot;此图形的周长是：60.0,面积是：200.0\\\&quot;\&quot;);\n\t\tScanner scanner = new Scanner(System.in); \n\t\twhile (scanner.hasNextDouble()) {\n\t\t\tdouble input = scanner.nextDouble();\n\t\t\tinputs.add(input);\n\t\t}\n\t\t//实例化Rectangle类的实例对象\n\t\tShape rectangle = new Rectangle(inputs.get(0), inputs.get(1));\n\t\tSystem.out.println(\&quot;矩形的周长和面积分别是：\&quot;);\n\t\tSystem.out.print(\&quot;output:\&quot;);\n\t\tSystem.out.println(rectangle.getPerimeter()+\&quot;和\&quot;+rectangle.getArea());\n\t\t//实例化Circle类的实例对象\n\t\tShape circle = new Circle(inputs.get(2));\n\t\tSystem.out.println(\&quot;圆形的周长和面积分别是：\&quot;);\n\t\tSystem.out.print(\&quot;output:\&quot;);\n\t\tSystem.out.print(circle.getPerimeter()+\&quot;和\&quot;+circle.getArea());\n\t\t//输出矩形和圆形的周长与面积值\n\t   \n\t}\n\n}\ninterface Shape{\n\t/**\n\t * 计算图形的周长\n\t * @return 周长值\n\t */\n\tpublic abstract double getPerimeter();\n\t/**\n\t * 计算图形的面积\n\t * @return 面积值\n\t */\n\tpublic abstract double getArea();\n}\n/**\n * 定义类Rectangle表示矩形，实现Shape接口。\n * Rectangle类必须具有长（length）和宽（width）两个属性，定义为double类型；\n * Rectangle类提供计算周长和面积的方法实现。\n * Rectangle类的访问修饰符定义为default\n */\n/******start******/\n\n\n\n\n\n/******end******/\n/**\n * \n * 定义类Circle类表示圆形，Circle类实现Shape接口。\n * Circle类必须具有半径（radius）的属性，定义为double类型；\n * Circle类提供计算周长和面积的方法实现。\n * Circle类的访问修饰符定义为default\n */\n/******start******/\n\n\n\n\n\n/******end******/\n&quot;}]}</td><td>
+                     25 30 15 exit々12 23 17 exit
+                    </td><td>
+                     请依次序输入矩形的长、宽和圆形的半径这三个数据，数据之间用空格隔开,结尾标记为exit，比如输入："10 20 5 exit"，将会得到输出结果："此图形的周长是：60.0,面积是：200.0"
+矩形的周长和面积分别是：
+output:110.0和750.0
+圆形的周长和面积分别是：
+output:94.24777960769379和706.8583470577034々请依次序输入矩形的长、宽和圆形的半径这三个数据，数据之间用空格隔开,结尾标记为exit，比如输入："10 20 5 exit"，将会得到输出结果："此图形的周长是：60.0,面积是：200.0"
+矩形的周长和面积分别是：
+output:70.0和276.0
+圆形的周长和面积分别是：
+output:106.81415022205297和907.9202768874503
+                    </td><td>
+                     50.00々50.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>sw_003</td><td>类的继承应用：员工类Employee与经理类Manager</td><td>
+                         阶段二
+                    </td><td>
+                     类的继承（索望）
+                    </td><td>
+                         普通
+                    </td><td>
+                     按下面代码中的注释提示，以及demo类中main方法中的代码来完成Employee类与Manager类的定义，以让demo类中的main方法能正常运行，并输出预定结果。
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;demo.java&quot;,&quot;code&quot;:&quot;import java.util.Scanner;\n\npublic class demo{\n\tpublic static void main(String[] args) {\n\t\tSystem.out.println(\&quot;请输入职员姓名和月薪，以逗号\\\&quot;,\\\&quot;隔开，例如：张三,1000\&quot;);\n\t\tScanner scanner = new Scanner(System.in); \n\t\tString input[] = scanner.nextLine().split(\&quot;,\&quot;);\n\t\tString name = input[0];\n\t\tdouble monthlyIncome = Double.parseDouble(input[1]);\n\t\tEmployee zhansan = new Employee(name,monthlyIncome);\n\t\t\n\t\tSystem.out.println(\&quot;请依次输入经理的姓名、月薪和奖金信息，以逗号\\\&quot;,\\\&quot;隔开，例如：李四,2000,10000\&quot;);\n\t\tinput = scanner.nextLine().split(\&quot;,\&quot;);\n\t\tname = input[0];\n\t\tmonthlyIncome = Double.parseDouble(input[1]);\n\t\tdouble bonus  = Double.parseDouble(input[2]);\n\t\tEmployee lisi = new Manager(name,monthlyIncome,bonus);\n\t\tzhansan.showInfo();\n\t\tlisi.showInfo();\t}\n}&quot;},{&quot;filename&quot;:&quot;employee.java&quot;,&quot;code&quot;:&quot;/**\n * 定义一个Employee类表示职员；\n * 1、Employee类有两个成员变量，姓名name和月薪monthlyIncome,\n * 2、Employee类有一个构造方法，实现对两个成员变量的初始化。\n * 3、Employee类有两个成员方法，calculateAnnualIncome：计算职员的年收入，实现算法为：年收入=月薪&#215;12；\n * showInfo方法则输出职员的姓名和年收入等信息。\n * 按下面的注释提示以及demo类中main方法提示填写代码，完善Employee类的定义\n */\nclass Employee {\n\tprotected String name;//姓名\n\tprotected double monthlyIncome;//月薪\n\t/**\n\t * Employee类的构造方法，对两个成员变量进行初始化\n\t * @param name：\n\t * @param monthlyIncome\n\t */\n\t/******start******/\n\n\n\n\n        /******end******/\n\t/**\n\t * 成员方法：calculateAnnualIncome，计算职员的年收入，年收入=月薪&#215;12\n\t * @return\n\t */\n\t/******start******/\n\n\n\n\n        /******end******/\n\t/**\n\t * 成员方法：showInfo，输出职员的相关信息。\n\t */\n\tpublic void showInfo(){\n\t\tSystem.out.println(\&quot;output:\&quot;+name+\&quot;的年收入为：\&quot;+calculateAnnualIncome());\n\t}\n}&quot;},{&quot;filename&quot;:&quot;manager.java&quot;,&quot;code&quot;:&quot;/**\n * 定义Manager类，表示经理。经理也是一类职员，跟一般职员比较，经理多了一个收入属性，奖金（bonus）;\n * 所以，Manager类需要重写calculateAnnualIncome方法，计算经理的年收入的方法为:年收入=月薪&#215;12+奖金\n * 按这些说明，以及demo类中的代码来完成Manager类的定义。\n * 重要提示：因为程序编译需要，请不要将Manager类的访问修饰符定义为public，而定义为default\n */\n\n/******start******/\n\n\n\n\n\n\n\n\n\n\n\n\n\n/******end******/\n&quot;}]}</td><td>
+                     Tom,3500
+Jerry,5000,15000々Tony,1000
+Marry,2000,5000
+                    </td><td>
+                     请输入职员姓名和月薪，以逗号","隔开，例如：张三,1000
+请依次输入经理的姓名、月薪和奖金信息，以逗号","隔开，例如：李四,2000,10000
+output:Tom的年收入为：42000.0
+output:Jerry的年收入为：75000.0
+々请输入职员姓名和月薪，以逗号","隔开，例如：张三,1000
+请依次输入经理的姓名、月薪和奖金信息，以逗号","隔开，例如：李四,2000,10000
+output:Tony的年收入为：12000.0
+output:Marry的年收入为：29000.0
+
+                    </td><td>
+                     50.00々50.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>sw_004</td><td>抽象类与继承的应用</td><td>
+                         阶段二
+                    </td><td>
+                     类的继承（索望）
+                    </td><td>
+                         普通
+                    </td><td>
+                     已知有一抽象类Shape，表示图形。Shape类中抽象了所有图形对象都具有两个方法，计算图形的周长（getPerimeter）和面积（getArea）。由于Shape类并不表示一种具体的图形，所以这两个方法为抽象方法。现要求定义两个Shape的非抽象子类，Rectangle类和Circle类。Rectangle类表示矩形，矩形应具有长（length）和宽（width）两个属性才能计算其周长和面积。Circle类表示圆，圆形应具有半径（radius）才能计算圆的周长和面积。故：要求在下面的指定区域分别定义Rectangle类和Circle类。两个类继承于Shape，但需要增加各种的属性，并重写父类的两个抽象方法。实现计算面积和周长。最后要求能在demo类的main方法中正常运行程序。&nbsp;
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;demo.java&quot;,&quot;code&quot;:&quot;import java.util.ArrayList;\nimport java.util.List;\nimport java.util.Scanner;\n\npublic class demo {\n\tpublic static void main(String[] args) {\n\t\tList&lt;Double&gt; inputs = new ArrayList&lt;Double&gt;();\n\t\t//从控制台输入数据，一次性依次输入矩形的长、宽和圆形的半径三个数据。最后以exit结束。\n\t\tSystem.out.println(\&quot;请依次序输入矩形的长、宽和圆形的半径这三个数据，数据之间用空格隔开,结尾标记为exit，比如输入：\\\&quot;10 20 5 exit\\\&quot;，将会得到输出结果：\\\&quot;此图形的周长是：60.0,面积是：200.0\\\&quot;\&quot;);\n\t\tScanner scanner = new Scanner(System.in); \n\t\twhile (scanner.hasNextDouble()) {\n\t\t\tdouble input = scanner.nextDouble();\n\t\t\tinputs.add(input);\n\t\t}\n\t\t//实例化Rectangle类的实例对象\n\t\tShape rectangle = new Rectangle(inputs.get(0), inputs.get(1));\n\t\t//实例化Circle类的实例对象\n\t\tShape circle = new Circle(inputs.get(2));\n\t\tSystem.out.print(\&quot;output:\&quot;);\n\t\t//输出矩形和圆形的周长与面积值\n\t\trectangle.printInfo();\n\t\tcircle.printInfo();\n\t\t\n\t}\n\n}\nabstract class Shape{\n\t/**\n\t * 计算图形的周长\n\t * @return 周长值\n\t */\n\tpublic abstract double getPerimeter();\n\t/**\n\t * 计算图形的面积\n\t * @return 面积值\n\t */\n\tpublic abstract double getArea();\n\t/**\n\t * 输出图形的周长与面积信息\n\t */\n\tpublic void printInfo(){\n\t\tSystem.out.print(\&quot;此图形的周长是：\&quot;+getPerimeter()+\&quot;,面积是：\&quot;+getArea()+\&quot;。\&quot;);\n\t}\n}\n/**\n * 定义类Rectangle表示矩形，矩形是Shape的一种。\n * Rectangle类必须具有长（length）和宽（width）两个属性，定义为double类型；\n * Rectangle类提供实现了的计算周长和面积的方法。\n * Rectangle类的访问修饰符为default，而不是public\n */\n\n/******start******/\n\n\n\n\n\n/******end******/\n\n/**\n * \n * 定义类Circle类表示圆形，圆形也是Shape的一种。\n * Circle类必须具有半径（radius）的属性，定义为double类型；\n * Circle类提供实现了的计算周长和面积的方法。\n * Circle类的访问修饰符为default，而不是public\n */\n\n\n/******start******/\n\n\n\n/******end******/\n&quot;}]}</td><td>
+                     13 34 16 exit々15 25 5 exit
+                    </td><td>
+                     请依次序输入矩形的长、宽和圆形的半径这三个数据，数据之间用空格隔开,结尾标记为exit，比如输入："10 20 5 exit"，将会得到输出结果："此图形的周长是：60.0,面积是：200.0"
+output:此图形的周长是：94.0,面积是：442.0。此图形的周长是：100.53096491487338,面积是：804.247719318987。々请依次序输入矩形的长、宽和圆形的半径这三个数据，数据之间用空格隔开,结尾标记为exit，比如输入："10 20 5 exit"，将会得到输出结果："此图形的周长是：60.0,面积是：200.0"
+output:此图形的周长是：80.0,面积是：375.0。此图形的周长是：31.41592653589793,面积是：78.53981633974483。
+                    </td><td>
+                     50.00々50.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>hlb_001</td><td>根据题意完成编程填空题</td><td>
+                         阶段二
+                    </td><td>
+                     类的多态性（何林波）
+                    </td><td>
+                         困难
+                    </td><td>
+                     定义DemoPerson,该类有属性name，带参的构造方法初始化name成员变量，有speak方法，输出字符串：“my&nbsp;name&nbsp;is:xxxx”,xxxx为键盘录入的姓名（即name值）；定义类DemoStudent，该类是DemoPerson的子类，有自己的成员变量number（学号），其构造方法需要2个字符串作为参数，用以初始化name及学号，DemoStudent类覆盖了父类的speak方法；且新增另一个speak方法，该方法需要一个字符串作为参数，该方法的功能是直接输出参数的值；
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.java&quot;,&quot;code&quot;:&quot;import java.util.Scanner;\n/******start******/\n\n/******end******/\npublic class main{\n\n\t/**\n\t * @param args\n\t */\n\tpublic static void main(String[] args) {\n\t\t// TODO Auto-generated method stub\n\t\tScanner san = new Scanner(System.in);\n\t\tString name = san.next();\n\t\tString number = san.next();\n\t\tDemoPerson stu = new DemoStudent(name,number);\n\t\tstu.speak();\t\n\t\tDemoStudent substu = (DemoStudent)stu;\n\t\tString msg = substu.getNumber();\n\t\tsubstu.speak(msg);\n\t}\n\n}&quot;}]}</td><td>
+                     lisi
+20140723々zhansan
+20140723
+                    </td><td>
+                     output:my name is:lisi my number is:20140723
+output:20140723々output:my name is:zhansan my number is:20140723
+output:20140723
+
+                    </td><td>
+                     50.00々50.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>cy_002_chengxutiankong_kunnan</td><td>按注释要求完成代码填写</td><td>
+                         阶段二
+                    </td><td>
+                     类和对象（昌燕）
+                    </td><td>
+                         困难
+                    </td><td>
+                     &nbsp;按注释要求完成代码填写1.设置狗狗的主人2.如果狗狗原先就有主人3.那么取消和原先主人的关联关系4.建立狗和新的主人的关联关系5.建立新的主人和狗的关联关系&nbsp;测试用例1：输入：a,b,c输出：output:狗狗c的主人是:a狗狗c的主人是:b测试用例2：输入：x,y,z输出：output:狗狗z的主人是:x狗狗z的主人是:y
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.java&quot;,&quot;code&quot;:&quot;import java.io.BufferedReader;\nimport java.io.InputStreamReader;\n\nclass Owner{\n\tprivate String name;\n\tprivate Dog dog;\n\tpublic Dog getDog(){\n\t\treturn dog;\n\t}\n\tpublic void setDog(Dog dog){\n\t\tthis.dog = dog;\n\t}\n\tpublic  Owner(String name ){\n\t\tthis.name=name;\n\t}\n\tpublic String getName(){\n\t\treturn name;\n\t}\n\t\n}\n\n class Dog {\nString name;\nOwner owner;\npublic  Dog(String name ){\n\tthis.name=name;\n}\npublic Owner getOwner(){\n\treturn owner;\n}\n /*\n*按注释要求完成代码填写\n*1.设置狗狗的主人\n*2.如果狗狗原先就有主人\n*3.那么取消和原先主人的关联关系\n*4.建立狗和新的主人的关联关系\n*5.建立新的主人和狗的关联关系\n*/\n\n/******start******/\npublic void setOwner(Owner owner){\n\tif(this.owner!=null){   \n\t\tthis.owner.setDog(null); \n\t\t}\n\tthis.owner = owner;   \n\towner.setDog(this);\t\n}\n\n/******end******/\n\n}\npublic class main{\n\tpublic static String input(){\n\t\ttry{\n\t\t\tBufferedReader br=new BufferedReader(new InputStreamReader(System.in));\n\t\t\tString a=br.readLine();\n\t\t\treturn a;\n\t\t\t}catch(Exception e){\n\t\t\t\treturn null;\n\t\t\t}\n\t\t\t}\n\tpublic static void main(String args[]){\n\t\tString str1 = input();\n\t\tString str[]= new String[3];\n\t\tif(str1.contains(\&quot;,\&quot;)){\n\t\t\tstr = str1.split(\&quot;,\&quot;);\n\t\tOwner owner1 =new Owner(str[0]);\n\t\tOwner owner2=new Owner(str[1]); \n\t\tDog dog= new Dog(str[2]);\n\t\tdog.setOwner(owner1);\n                System.out.println(\&quot;output:\&quot;);\n\t\tSystem.out.println(\&quot;狗狗\&quot;+dog.name+\&quot;的主人是:\&quot;+dog.owner.getName());\n\t\tdog.setOwner(owner2);\n\t\tSystem.out.println(\&quot;狗狗\&quot;+dog.name+\&quot;的主人是:\&quot;+dog.owner.getName());\n\t}else{\n\t\tSystem.out.println(\&quot;输入请用逗号隔开！\&quot;);\n\t}\n\t}\n\n\n}\n\n&quot;}]}</td><td>
+                     x,y,z々a,b,c
+                    </td><td>
+                     output:
+狗狗z的主人是:x
+狗狗z的主人是:y
+々output:
+狗狗c的主人是:a
+狗狗c的主人是:b
+
+                    </td><td>
+                     50.00々50.00
+                    </td><td>public void setOwner(Owner owner){
+	if(this.owner!=null){   
+		this.owner.setDog(null); 
+		}
+	this.owner = owner;   
+	owner.setDog(this);	
+}</td>
+		</tr><tr>
+			<td>cy_003_chengxutiankong_kunnan</td><td>按注释要求填写程序</td><td>
+                         阶段二
+                    </td><td>
+                     类和对象（昌燕）
+                    </td><td>
+                         困难
+                    </td><td>
+                     按注释要求填写程序&nbsp;1.定义一个创建对象的方法&nbsp;&nbsp;2.编写一个交换数组中两元素的位置的方法&nbsp;测试用例1：输入：a,b输出：output:a,b,交换后：b,a,测试用例2：输入：x,y输出：output:x,y,交换后：y,x,
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.java&quot;,&quot;code&quot;:&quot;import java.io.BufferedReader;\nimport java.io.InputStreamReader;\n\n class Exchange {\n\t/*\n\t * 1.定义一个创建对象的方法\n\t * 2.编写一个交换数组中两元素的位置的方法\n\t * \n\t */\n\n/******start******/\n\tpublic static Exchange newInstance(){\n\t\tExchange e = new Exchange();\n\t\treturn e;\n\t}\n\n\tpublic String[] method(String[] s){\n\t\tString temp = s[0];\n\t\ts[0]=s[1];\n\t\ts[1]=temp;\n\t\treturn s;\n\t}\n/******end******/\n}\n\tpublic class main {\n\tpublic static String input(){\n\t\ttry{\n\t\t\tBufferedReader br=new BufferedReader(new InputStreamReader(System.in));\n\t\t\tString a=br.readLine();\n\t\t\treturn a;\n\t\t\t}catch(Exception e){\n\t\t\t\treturn null;\n\t\t\t}\n\t\t\t}\n\tpublic static void print(String []s){\n\t\tfor(int i=0;i&lt;s.length;i++){\n\t\t\tSystem.out.print(s[i]+\&quot;,\&quot;);\n\t\t}\n\t\tSystem.out.println();\n\t}\n\t\n\tpublic static void main(String args[]){\n\t\tString str1 = input();\n\t\tString a[]= new String[2];\n\t\tif(str1.contains(\&quot;,\&quot;)){\n\t\t\ta = str1.split(\&quot;,\&quot;);\n\t\t\tSystem.out.println(\&quot;output:\&quot;);\n\t\tprint(a);\n\t\tExchange e = Exchange.newInstance();\n\t\te.method(a);\n\t\tSystem.out.println(\&quot;交换后：\&quot;);\n\t\tprint(a);\n\t\n\t}\n}\n\t}\n&quot;}]}</td><td>
+                     x,y々a,b
+                    </td><td>
+                     output:
+x,y,
+交换后：
+y,x,
+々output:
+a,b,
+交换后：
+b,a,
+
+                    </td><td>
+                     50.00々50.00
+                    </td><td>	public static Exchange newInstance(){
+		Exchange e = new Exchange();
+		return e;
+	}
+
+	public String[] method(String[] s){
+		String temp = s[0];
+		s[0]=s[1];
+		s[1]=temp;
+		return s;
+	}</td>
+		</tr><tr>
+			<td>cy_005_chengxutiankong_kunnan</td><td>按要求编写一个员工类</td><td>
+                         阶段二
+                    </td><td>
+                     类和对象（昌燕）
+                    </td><td>
+                         困难
+                    </td><td>
+                     按要求编写一个员工类编写一个员工类，封装姓名、年龄、学历等属性测试用例1：输入：张三,24,硕士输出：output:员工姓名：张三员工年龄：24员工学历：硕士测试用例2：输入：李四,20,学士输出：output:员工姓名：李四员工年龄：20员工学历：学士
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.java&quot;,&quot;code&quot;:&quot;import java.io.BufferedReader;\nimport java.io.InputStreamReader;\n\n class Emplee {\n\t/***\n\t * 1.编写一个员工类，封装姓名、年龄、学历等属性\n\t * \n\t */\n/******start******/\n\tprivate String name;\n\tprivate String age;\n\tprivate String education;\n\t\n\tpublic String getName() {\n\t\treturn name;\n\t}\n\tpublic void setName(String name) {\n\t\tthis.name = name;\n\t}\n\tpublic String getAge() {\n\t\treturn age;\n\t}\n\tpublic void setAge(String age) {\n\t\tthis.age = age;\n\t}\n\tpublic String getEducation() {\n\t\treturn education;\n\t}\n\tpublic void setEducation(String education) {\n\t\tthis.education = education;\n\t}\n/******end******/\n }\n\tpublic class main{\n\tpublic static void main(String args[]){\n\t\tString str1 = input();\n\t\tString a[]= new String[3];\n\t\tif(str1.contains(\&quot;,\&quot;)){\n\t\t\ta = str1.split(\&quot;,\&quot;);\n\t\t\t\n\t\tString name = a[0];\n\t\tString age = a[1];\n\t\tString education = a[2];\n\t\tEmplee e = new Emplee();\n\t\te.setName(name);\n\t\te.setAge(age);\n\t\te.setEducation(education);\n\t\tSystem.out.println(\&quot;output:\&quot;);\n\t\tSystem.out.println(\&quot;员工姓名：\&quot;+e.getName());\n\t\tSystem.out.println(\&quot;员工年龄：\&quot;+e.getAge());\n\t\tSystem.out.println(\&quot;员工学历：\&quot;+e.getEducation());\n\t\t}else{\n\t\t\tSystem.out.println(\&quot;输入请用逗号隔开！\&quot;);\n\t\t}\n\t}\n\tpublic static String input(){\n\t\ttry{\n\t\t\tBufferedReader br=new BufferedReader(new InputStreamReader(System.in));\n\t\t\tString a=br.readLine();\n\t\t\treturn a;\n\t\t\t}catch(Exception e){\n\t\t\t\treturn null;\n\t\t\t}\n\t\t\t}\n}\n&quot;}]}</td><td>
+                     张三,24,硕士々李四,20,学士
+                    </td><td>
+                     output:
+员工姓名：张三
+员工年龄：24
+员工学历：硕士
+々output:
+员工姓名：李四
+员工年龄：20
+员工学历：学士
+
+                    </td><td>
+                     50.00々50.00
+                    </td><td>输入的代码无法保存，不知道为什么
+</td>
+		</tr><tr>
+			<td>java集合与异常001</td><td>集合类基本方法</td><td>
+                         阶段三
+                    </td><td>
+                     Java集合框架（熊熙）
+                    </td><td>
+                         简单
+                    </td><td>
+                     了解一下集合类的基本方法的使用&nbsp;
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.java&quot;,&quot;code&quot;:&quot;import java.util.*; \npublic class main{ \npublic static void main(String[] args) { \nCollection collection1=new ArrayList();//创建一个集合对象 \ncollection1.add(\&quot;000\&quot;);//添加对象到Collection集合中 \ncollection1.add(\&quot;111\&quot;); \ncollection1.add(\&quot;222\&quot;); \nSystem.out.println(\&quot;集合collection1的大小：\&quot;+collection1.size()); \nSystem.out.println(\&quot;集合collection1的内容：\&quot;+collection1); \ncollection1.remove(\&quot;000\&quot;);//从集合collection1中移除掉 \&quot;000\&quot; 这个对象 \nSystem.out.println(\&quot;集合collection1移除 000 后的内容：\&quot;+collection1); \nSystem.out.println(\&quot;集合collection1中是否包含000 ：\&quot;+collection1.contains(\&quot;000\&quot;)); \nSystem.out.println(\&quot;集合collection1中是否包含111 ：\&quot;+collection1.contains(\&quot;111\&quot;));\n \n/******start******/\nCollection collection2=new ArrayList(); \ncollection2.addAll(collection1);//将collection1 集合中的元素全部都加到collection2中 \nSystem.out.println(\&quot;output:集合collection2的内容：\&quot;+collection2); \ncollection2.clear();//清空集合 collection1 中的元素 \nSystem.out.println(\&quot;output:集合collection2是否为空 ：\&quot;+collection2.isEmpty()); \n/******end******/\n\n//将集合collection1转化为数组 \nObject s[]= collection1.toArray(); \nfor(int i=0;i&lt;s.length;i++){  \nSystem.out.println(s[i]);  \n}  \n}  \n}  &quot;}]}</td><td>
+                        
+                    </td><td>
+                     集合collection1的大小：3
+集合collection1的内容：[000, 111, 222]
+集合collection1移除 000 后的内容：[111, 222]
+集合collection1中是否包含000 ：false
+集合collection1中是否包含111 ：true
+output:集合collection2的内容：[111, 222]
+output:集合collection2是否为空 ：true
+111
+222
+
+                    </td><td>
+                     100.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>java集合与异常004</td><td>抛出异常</td><td>
+                         阶段三
+                    </td><td>
+                     Java的异常（熊熙）
+                    </td><td>
+                         简单
+                    </td><td>
+                     编写代码，做运算a/b,再执行a/b前首先判断b是不是等于零。如果b等于零，抛出数学异常。&nbsp;
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;test.java&quot;,&quot;code&quot;:&quot;public class test {\n\n\t public static void main(String args[]){\n\t\tint a=4,b=0;\n\t\t try{\n\t\t if(b == 0) throw new ArithmeticException();\n\t\t else \n\t\t System.out.println(\&quot;output:result is\&quot;+a/b);\n\t\t }\n\n/******start******/\n                  catch(ArithmeticException e){\n\t\t System.out.println(e +\&quot; output:throwed!!\&quot;);\n\n/******end******/\n\t\t }\n\t }\n}&quot;}]}</td><td>
+                     
+                    </td><td>
+                     java.lang.ArithmeticException output:throwed!!
+
+                    </td><td>
+                     100.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>java集合与异常005</td><td>判断并抛出异常</td><td>
+                         阶段三
+                    </td><td>
+                     Java的异常（熊熙）
+                    </td><td>
+                         困难
+                    </td><td>
+                     编写代码，再main()方法中调用类CCircle中的方法，计算圆的面积。并且自己定义一个异常类，如果半径为负值，抛出自己定义的异常。（在类CCircle中判断并抛出异常）&nbsp;
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;test.java&quot;,&quot;code&quot;:&quot;class CCircleException extends Exception{\n\n\tprivate static final long serialVersionUID = 1L;}\nclass CCircle{\n  private double radius;\n  public void setRadius(double r) throws CCircleException{\nif(r&lt;0){\n    throw new CCircleException();\n}\nelse\n   radius=r;\n}\npublic void show(){\n  System.out.println(\&quot;area=\&quot;+3.14*radius*radius);\n}\n}\npublic class test{\n\n/******start******/\n  public static void main(String args[]){\n  CCircle cir=new CCircle();\n  try{\n    cir.setRadius(-2.0);\n}\n  catch(CCircleException e){\n    System.out.println(e+\&quot; output:throwed!!\&quot;);\n}\n cir.show();\n}\n/******end******/\n\n}&quot;}]}</td><td>
+                     
+                    </td><td>
+                     CCircleException output:throwed!!
+area=0.0
+
+                    </td><td>
+                     100.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>java集合与异常002</td><td>迭代器</td><td>
+                         阶段三
+                    </td><td>
+                     Java集合框架（熊熙）
+                    </td><td>
+                         普通
+                    </td><td>
+                     迭代器的简单使用
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.java&quot;,&quot;code&quot;:&quot;import java.util.ArrayList; \nimport java.util.Collection; \nimport java.util.Iterator; \npublic class main{ \npublic static void main(String[] args) { \nCollection collection = new ArrayList(); \ncollection.add(\&quot;s1\&quot;); \ncollection.add(\&quot;s2\&quot;); \ncollection.add(\&quot;s3\&quot;); \n\n/******start******/\nIterator iterator = collecti\non.iterator();//得到一个迭代器 \nwhile (iterator.hasNext()) {//遍历 \nObject element = iterator.next(); \nSystem.out.println(\&quot;iterator = \&quot; + element); \n} \n/******end******/\n\nif(collection.isEmpty()) \nSystem.out.println(\&quot;collection is Empty!\&quot;); \nelse \nSystem.out.println(\&quot;collection is not Empty! size=\&quot;+collection.size()); \nIterator iterator2 = collection.iterator(); \nwhile (iterator2.hasNext()) {//移除元素 \nObject element = iterator2.next(); \nSystem.out.println(\&quot;remove: \&quot;+element); \niterator2.remove(); \n} \nIterator iterator3 = collection.iterator(); \nif (!iterator3.hasNext()) {//察看是否还有元素 \nSystem.out.println(\&quot;还有元素\&quot;); \n} \nif(collection.isEmpty()) \nSystem.out.println(\&quot;output:collection is Empty!\&quot;); \n//使用collection.isEmpty()方法来判断 \n} \n}\n&quot;}]}</td><td>
+                     
+                    </td><td>
+                     iterator = s1
+iterator = s2
+iterator = s3
+collection is not Empty! size=3
+remove: s1
+remove: s2
+remove: s3
+还有元素
+output:collection is Empty!
+
+                    </td><td>
+                     100.00
+                    </td><td>&nbsp;</td>
+		</tr><tr>
+			<td>java集合与异常003</td><td>List 与 set</td><td>
+                         阶段三
+                    </td><td>
+                     Java集合框架（熊熙）
+                    </td><td>
+                         困难
+                    </td><td>
+                     考察List&nbsp;与&nbsp;Set的用法
+                    </td><td>{ &quot;key&quot;: [{&quot;filename&quot;:&quot;main.java&quot;,&quot;code&quot;:&quot;import java.util.*; \npublic class main{ \npublic static void main(String[] args) { \nList list = new ArrayList(); \nlist.add(\&quot;aaa\&quot;); \nlist.add(\&quot;bbb\&quot;); \nlist.add(\&quot;ccc\&quot;); \nlist.add(\&quot;ddd\&quot;); \nSystem.out.println(\&quot;下标0开始：\&quot;+list.listIterator(0).next());//next() \nSystem.out.println(\&quot;下标1开始:\&quot;+list.listIterator(1).next()); \nSystem.out.println(\&quot;子List 1-3:\&quot;+list.subList(1,3));//子列表 \nListIterator it = list.listIterator();//默认从下标0开始 \n//隐式光标属性add操作 ,插入到当前的下标的前面 \nit.add(\&quot;sss\&quot;); \nwhile(it.hasNext()){ \nSystem.out.println(\&quot;output:next Index=\&quot;+it.nextIndex()+\&quot;,Object=\&quot;+it.next()); \n} \n//set属性 \n\n/******start******/\nListIterator it1 = list.listIterator(); \nit1.next(); \nit1.set(\&quot;ooo\&quot;); \nListIterator it2 = list.listIterator(list.size());//下标 \nwhile(it2.hasPrevious()){ \nSystem.out.println(\&quot;previous Index=\&quot;+it2.previousIndex()+\&quot;,Object=\&quot;+it2.previous()); \n/******end******/\n\n} \n} \n}\n&quot;}]}</td><td>
+                     
+                    </td><td>
+                     下标0开始：aaa
+下标1开始:bbb
+子List 1-3:[bbb, ccc]
+output:next Index=1,Object=aaa
+output:next Index=2,Object=bbb
+output:next Index=3,Object=ccc
+output:next Index=4,Object=ddd
+previous Index=4,Object=ddd
+previous Index=3,Object=ccc
+previous Index=2,Object=bbb
+previous Index=1,Object=aaa
+previous Index=0,Object=ooo
+
+                    </td><td>
+                     100.00
+                    </td><td>&nbsp;</td>
+		</tr>
+	</table>
+</div></form>

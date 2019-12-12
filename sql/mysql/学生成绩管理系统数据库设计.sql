@@ -1,0 +1,56 @@
+CREATE TABLE students
+(
+
+   sNo CHAR(10) PRIMARY KEY,
+   sName VARCHAR(20) NOT NULL,
+   sPwd VARCHAR(20) NOT NULL,
+   sGender CHAR(3) NOT NULL,
+   sMajor CHAR(30) NOT NULL,
+   sDepart CHAR(30) NOT NULL 
+
+)
+DROP TABLE students
+
+
+DELETE FROM students WHERE sMajor='信安'
+SELECT* FROM students
+SELECT * FROM admins
+DROP TABLE admins
+CREATE TABLE admins
+(
+   aNo CHAR(10) PRIMARY KEY,
+   aPwd VARCHAR(20) NOT NULL,
+   aInumber VARCHAR(20) 
+  
+)
+DELETE FROM admins WHERE aNo=""
+
+
+CREATE TABLE class
+(
+   cNo CHAR(10) PRIMARY KEY,
+   cName CHAR(10) NOT NULL
+) 
+DROP TABLE class
+gId CHAR(5) PRIMARY KEY  AUTO_INCREMENT,
+DROP TABLE grade
+CREATE TABLE grade
+(
+   gId BIGINT PRIMARY KEY AUTO_INCREMENT,
+   sId CHAR(10) NOT NULL,
+   cId CHAR(10) NOT NULL,
+   grade CHAR(10) NOT NULL,
+   sClasses CHAR(10) NOT NULL,
+   FOREIGN KEY(sId) REFERENCES students(sNo),  
+   FOREIGN KEY(cId) REFERENCES class(cNo)
+)
+
+
+SELECT * FROM grade
+SELECT * FROM class
+
+DELETE FROM class WHERE cName=''
+
+
+
+

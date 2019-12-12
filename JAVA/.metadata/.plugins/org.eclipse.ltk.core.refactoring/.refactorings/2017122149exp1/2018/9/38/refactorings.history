@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;&apos; to &apos;exp2.entities.Student.setCredit(...)&apos;&#x0D;&#x0A;- Original project: &apos;2017122149exp1&apos;&#x0D;&#x0A;- Destination element: &apos;exp2.entities.Student.setCredit(...)&apos;&#x0D;&#x0A;- Original element: &apos;exp2.entities.Student.setId(...)&apos;" description="Copy method" destination="/src&lt;exp2.entities{student.java[Student~setCredit~I" element1="/src&lt;exp2.entities{student.java[Student~setId~I" flags="589830" id="org.eclipse.jdt.ui.copy" members="1" policy="org.eclipse.jdt.ui.copyMembers" stamp="1537088280110" version="1.0"/>
+</session>

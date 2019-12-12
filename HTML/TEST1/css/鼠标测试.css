@@ -1,0 +1,25 @@
+.it{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	background-color: rgb(60,60,60);
+	border-radius: 80px 80px 80px 80px;
+	top:200px;
+	left:40%;
+	animation: move 1.5s linear infinite;
+}
+
+
+@keyframes move{
+	from{
+		border-radius: 10px 10px 10px 10px;
+	}
+	to{
+		border-radius: 60%;
+	}
+}
+.it:hover{
+	background: cornflowerblue;
+	animation-play-state: paused;
+	
+}

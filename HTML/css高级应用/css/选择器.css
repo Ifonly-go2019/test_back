@@ -1,0 +1,40 @@
+p::selection {
+	background-color: transparent;
+	/** 选中效果透明化*/
+}
+
+.span-box :not(p) {
+	/** 注意空格*/
+	color: pink;
+}
+
+:root {
+	background-color: #ebebeb;
+}
+
+input[type="text"] {
+	width: 100px;
+}
+
+input[type="text"]:enabled {
+	border: 1xp solid greenyellow;
+}
+
+input[type='text']:disabled {
+	border: 1xp solid red;
+}
+input[type="radio"]{
+	width: 25px;
+	height: 25px;
+}
+input[type='radio']:checked{
+	width: 35px;
+	height: 35px;
+}
+#news1:target{
+	color: #ADFF2F;
+}
+#news2:target{
+	color:orangered;
+	
+}

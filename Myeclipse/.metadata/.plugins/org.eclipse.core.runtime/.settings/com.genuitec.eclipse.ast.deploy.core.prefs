@@ -1,0 +1,13 @@
+#Mon Nov 18 22:55:17 CST 2019
+myeclipseTomcatServer.sm3_final.type=WebDeployment
+myeclipseTomcatServer.sm3_final.isExploded=true
+myeclipseTomcatServer.sm3_final.isUptoDate=true
+myeclipseTomcatServer.sm3_final.shouldOverwrite=false
+myeclipseTomcatServer.sm3_final.shouldBackup=false
+myeclipseTomcatServer.sm3_final.altContextRoot=
+myeclipseTomcatServer.sm3_final.isDeployed=true
+myeclipseTomcatServer.sm3_final.IEARProjectName=
+myeclipseTomcatServer.sm3_final.deployIsOverProject=false
+myeclipseTomcatServer.sm3_final.deploymentPath=C\:\\Users\\admin\\Desktop\\CODE\\Myeclipse\\.metadata\\.me_tcat\\webapps\\sm3_test
+eclipse.preferences.version=1
+myeclipseTomcatServer.sm3_final.contextRoot=/sm3_test

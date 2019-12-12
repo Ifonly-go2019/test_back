@@ -1,0 +1,5 @@
+1.请将所有css文件合并到你的css文件夹中，包括font-awesome.in.css 
+2.因为使用了图标库，所以请将fonts less scss文件夹放到 css js 的平级目录中，即，你的项目文件夹
+的一级子目录有 js css fonts less scss img和 首页.html
+
+建议   将所有后缀名为html的文件都放置在一级子目录中  

@@ -1,0 +1,262 @@
+package class_type;
+import java.nio.DoubleBuffer;
+import java.nio.FloatBuffer;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+
+public class sm3_type {
+	
+	
+	   public byte[] data;
+	   public String dataString;
+
+	    private boolean hasIllegalValues;
+	    private boolean isReal;
+	    private float max;
+	    private float min;
+	    public float[] sample;
+	    public float sampleFrequency;
+	    public int NumberOfSamples;
+	    public int shifted;
+	    public String title;
+         
+	    
+	    private String sm3x1 = "";
+	    private String sm3y1 = "";
+		private String sm3x2 = "";
+		private String sm3d2 = "";
+		private String sm3y2 = "";
+		private String sm3h2 = "";
+		private String sm3c3 = "";
+		private String sm3d3 = "";
+		private String sm3g3 = "";
+		private String sm3h3 = "";
+		private String sm3round = "";
+		private String Sm3step = "";
+		private int firstSampleIndex ;
+		private int  lastSampleIndex;
+	    public int tracefirst;
+	    public int tracenumber;
+		
+		
+		
+		
+		public String getDataString() {
+			return dataString;
+		}
+		public void setDataString(String dataString) {
+			this.dataString = dataString;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		public int getFirstSampleIndex() {
+			return firstSampleIndex;
+		}
+		public void setFirstSampleIndex(int firstSampleIndex) {
+			this.firstSampleIndex = firstSampleIndex;
+		}
+//		public int getLastSampleIndex() {
+//			return lastSampleIndex;
+//		}
+//		public void setLastSampleIndex(int lastSampleIndex) {
+//			this.lastSampleIndex = lastSampleIndex;
+//		}
+		public String getSm3round() {
+			return sm3round;
+		}
+		public void setSm3round(String sm3round) {
+			this.sm3round = sm3round;
+		}
+		public String getSm3step() {
+			return Sm3step;
+		}
+		public void setSm3step(String sm3step) {
+			Sm3step = sm3step;
+		}
+		public boolean isHasIllegalValues() {
+			return hasIllegalValues;
+		}
+		public void setHasIllegalValues(boolean hasIllegalValues) {
+			this.hasIllegalValues = hasIllegalValues;
+		}
+		public boolean isReal() {
+			return isReal;
+		}
+		public void setReal(boolean isReal) {
+			this.isReal = isReal;
+		}
+		public float getMax() {
+			return max;
+		}
+		public void setMax(float max) {
+			this.max = max;
+		}
+		public float getMin() {
+			return min;
+		}
+		public void setMin(float min) {
+			this.min = min;
+		}
+		public int getShifted() {
+			return shifted;
+		}
+		public void setShifted(int shifted) {
+			this.shifted = shifted;
+		}
+		public String getTitle() {
+			return title;
+		}
+		public void setTitle(String title) {
+			this.title = title;
+		}
+		public String getSm3x1() {
+			return sm3x1;
+		}
+		public void setSm3x1(String sm3x1) {
+			this.sm3x1 = sm3x1;
+		}
+		public String getSm3y1() {
+			return sm3y1;
+		}
+		public void setSm3y1(String sm3y1) {
+			this.sm3y1 = sm3y1;
+		}
+		public String getSm3x2() {
+			return sm3x2;
+		}
+		public void setSm3x2(String sm3x2) {
+			this.sm3x2 = sm3x2;
+		}
+		public String getSm3d2() {
+			return sm3d2;
+		}
+		public void setSm3d2(String sm3d2) {
+			this.sm3d2 = sm3d2;
+		}
+		public String getSm3y2() {
+			return sm3y2;
+		}
+		public void setSm3y2(String sm3y2) {
+			this.sm3y2 = sm3y2;
+		}
+		public String getSm3h2() {
+			return sm3h2;
+		}
+		public void setSm3h2(String sm3h2) {
+			this.sm3h2 = sm3h2;
+		}
+		public String getSm3c3() {
+			return sm3c3;
+		}
+		public void setSm3c3(String sm3c3) {
+			this.sm3c3 = sm3c3;
+		}
+		public String getSm3d3() {
+			return sm3d3;
+		}
+		public void setSm3d3(String sm3d3) {
+			this.sm3d3 = sm3d3;
+		}
+		public String getSm3g3() {
+			return sm3g3;
+		}
+		public void setSm3g3(String sm3g3) {
+			this.sm3g3 = sm3g3;
+		}
+		public String getSm3h3() {
+			return sm3h3;
+		}
+		public void setSm3h3(String sm3h3) {
+			this.sm3h3 = sm3h3;
+		}
+		public float getSampleFrequency() {
+			return sampleFrequency;
+		}
+		public void setSample(float[] sample) {
+			this.sample = sample;
+		}
+		public void setNumberOfSamples(int numberOfSamples) {
+			NumberOfSamples = numberOfSamples;
+		}
+		
+	  
+
+	    public void setSample(int i, float f) {
+	       
+	        this.sample[i] = f;
+	    }
+	    public int getNumberOfSamples(){
+	    	
+	        return   NumberOfSamples;
+	    }
+	    public void setSampleFrequency(float f) {
+	        this.sampleFrequency = f;
+	    }
+
+	    public void setData(byte[] bArr) {
+	        this.data = bArr;
+	        
+	    }
+	    public float[] getSample() {;
+	        return sample;
+	    }
+
+	    public float getSample(int i) {
+	        float[] sample = getSample();
+	        int i2 = this.shifted + i;
+	        if (i2 < 0 || i2 >= sample.length) {
+	            return 0.0f;
+	        }
+	        return sample[i2];
+	    }
+	    public byte[] getData() {
+	        return this.data;
+	    }
+
+	   
+
+	
+	    public static String txt2String(File file){
+	    	  StringBuilder result = new StringBuilder();
+	    	  try{
+	    	   BufferedReader br = new BufferedReader(new FileReader(file));//构造一个BufferedReader类来读取文件
+	    	   String s = null;
+	    	   while((s = br.readLine())!=null){//使用readLine方法，一次读一行
+	    	    result.append(s);
+	    	   }
+	    	   br.close(); 
+	    	  }catch(Exception e){
+	    	   e.printStackTrace();
+	    	  }
+	    	  return result.toString();
+	    	 }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+}

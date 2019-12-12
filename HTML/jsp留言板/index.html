@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			body {
+				font-size: 12px;
+			}
+
+			#main {
+				width: 100%;
+				height: 400px;
+				display: flex;
+				justify-content: space-around;
+			}
+
+			#top1 {
+				width: 600px;
+				height: 200px;
+				border-color: :1px solid deeppink;
+				border-radius: 5px;
+			}
+
+			#top2 {
+				border-radius: 5px;
+			}
+
+			#top3 {
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="main">
+			<form action="<%=path %>/servlet/test2Servlet" name="talking" method="get" id="top3">
+				<p>留言板：<p>
+						<input type="textarea" id="top1" name="userSpeaking">
+						<div>
+							用户名:<input type="text" name="Name" id="top2">
+							<input type="submit" value="上载">
+						</div>
+			</form>
+		</div>
+	</body>
+</html>

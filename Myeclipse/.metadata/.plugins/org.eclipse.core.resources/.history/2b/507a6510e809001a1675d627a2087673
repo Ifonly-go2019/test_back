@@ -1,0 +1,158 @@
+package class_type;
+
+public class sm3_type {
+	
+	
+	private String sm3x1 = "";
+	private String sm3y1 = "";
+	private String sm3x2 = "";
+	private String sm3d2 = "";
+	private String sm3y2 = "";
+	private String sm3h2 = "";
+	private String sm3c3 = "";
+	private String sm3d3 = "";
+	private String sm3g3 = "";
+	private String sm3h3 = "";
+	private String sm3round = "";
+	private String Sm3step = "";
+	private String Sample = "";
+	private int numberOfSamples = 0;
+	private float[] data;
+	
+	
+	
+	
+	public float[] getData() {
+		return data;
+	}
+
+
+	public void setData(float[] data) {
+		this.data = data;
+	}
+
+
+	public String getSample() {
+		return Sample;
+	}
+
+
+	public void setSample(String sample) {
+		Sample = sample;
+	}
+
+
+	public int getNumberOfSamples() {
+		return numberOfSamples;
+	}
+
+
+	public void setNumberOfSamples(int numberOfSamples) {
+		this.numberOfSamples = numberOfSamples;
+	}
+
+
+	public sm3_type(){
+		
+	}
+	
+	
+	public String getSm3round() {
+		return sm3round;
+	}
+	public void  setSm3round(String sm3round) {
+		this.sm3round = sm3round;
+		
+	}
+	public String getSm3step() {
+		return Sm3step;
+	}
+	public void setSm3step(String sm3step) {
+		Sm3step = sm3step;
+	}
+	public String getSm3x1() {
+		return sm3x1;
+	}
+	public void setSm3x1(String sm3x1) {
+		this.sm3x1 = sm3x1;
+	}
+	public String getSm3y1() {
+		return sm3y1;
+	}
+	public void setSm3y1(String sm3y1) {
+		this.sm3y1 = sm3y1;
+	}
+	public String getSm3x2() {
+		return sm3x2;
+	}
+	public void setSm3x2(String sm3x2) {
+		this.sm3x2 = sm3x2;
+	}
+	public String getSm3d2() {
+		return sm3d2;
+	}
+	public void setSm3d2(String sm3d2) {
+		this.sm3d2 = sm3d2;
+	}
+	public String getSm3y2() {
+		return sm3y2;
+	}
+	public void setSm3y2(String sm3y2) {
+		this.sm3y2 = sm3y2;
+	}
+	public String getSm3h2() {
+		return sm3h2;
+	}
+	public void setSm3h2(String sm3h2) {
+		this.sm3h2 = sm3h2;
+	}
+	public String getSm3c3() {
+		return sm3c3;
+	}
+	public void setSm3c3(String sm3c3) {
+		this.sm3c3 = sm3c3;
+	}
+	public String getSm3d3() {
+		return sm3d3;
+	}
+	public void setSm3d3(String sm3d3) {
+		this.sm3d3 = sm3d3;
+	}
+	public String getSm3g3() {
+		return sm3g3;
+	}
+	public void setSm3g3(String sm3g3) {
+		this.sm3g3 = sm3g3;
+	}
+	public String getSm3h3() {
+		return sm3h3;
+	}
+	public void setSm3h3(String sm3h3) {
+		this.sm3h3 = sm3h3;
+	}
+	
+	 public byte[] getData() {
+	        return this.data;
+	    }
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+}

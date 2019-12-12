@@ -1,0 +1,33 @@
+div {
+	width: 200px;
+	height: 100px;
+	background-color: grey;
+	margin: 150px 0;
+	text-align: center;
+}
+
+.div1 {
+	transform: translate(50%, -60px);
+	transition: all 0.5s linear 2s;
+}
+
+.div2{
+	transform: rotate(-70deg);
+}
+
+.div3 {
+
+	transform: scale(1.5);
+}
+
+.div4{
+	transform: skew(-20deg);
+}
+.div5{
+	transform-origin: right bottom;
+	transform: rotate(60deg) translate(50px) scale(1.15) ;
+}
+.div1:hover{
+	background-color: orangered;
+	height: 200px;
+}

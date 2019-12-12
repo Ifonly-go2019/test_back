@@ -1,0 +1,901 @@
+package SM3_stand;
+
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.GridBagLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+
+import javax.swing.ButtonGroup;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.JTextField;
+import javax.swing.border.TitledBorder;
+import javax.swing.event.EventListenerList;
+
+
+
+import com.riscure.signalanalysis.Module;
+import com.riscure.signalanalysis.Trace;
+
+
+
+import java.lang.Math;
+import java.math.BigInteger;
+import java.util.Vector;
+
+@SuppressWarnings("serial")
+public class SM3_Attack extends DifferentialAnalysis implements ActionListener,
+		KeyListener {
+	private static final long serialVersionUID = 1L;
+
+	public static final String SM3ROUND = "sm3round";
+	public static final String SM3STEP = "sm3step";
+	public static final String SM3X1 = "sm3x1";
+	public static final String SM3Y1 = "sm3y1";
+	public static final String SM3X2 = "sm3x2";
+	public static final String SM3D2 = "sm3d2";
+	public static final String SM3Y2 = "sm3y2";
+	public static final String SM3H2 = "sm3h2";
+	public static final String SM3C3 = "sm3c3";
+	public static final String SM3D3 = "sm3d3";
+	public static final String SM3G3 = "sm3g3";
+	public static final String SM3H3 = "sm3h3";
+
+	public static String sm3x1 = "";
+	public static String sm3y1 = "";
+	public static String sm3x2 = "";
+	public static String sm3d2 = "";
+	public static String sm3y2 = "";
+	public static String sm3h2 = "";
+	public static String sm3c3 = "";
+	public static String sm3d3 = "";
+	public static String sm3g3 = "";
+	public static String sm3h3 = "";
+
+	public static int[] abcdefgh = { 0x7380166f, 0x4914b2b9, 0x172442d7,
+			0xda8a0600, 0xa96f30bc, 0x163138aa, 0xe38dee4d, 0xb0fb0e4e };
+
+	public static int[] X = new int[68];
+	public static int H1, H2, H3, H4, H5, H6, H7, H8;
+	public static int[] Y = new int[64];
+
+	public static final int T1 = 0x79cc4519; // 0 to 15
+
+	public static final int T2 = 0x7a879d8a; // 16 to 63
+
+	// 摘要数据存储数组
+	public static int[] digestInt = new int[8];
+
+	JRadioButton round1Button, round2Button, round3Button;
+	JRadioButton step1Button, step2Button;
+	JPanel attackParaPanel, roundPanel, stepPanel;
+	JTextField X1TextField, Y1TextField, X2TextField, D2TextField, Y2TextField,
+			H2TextField, C3TextField, D3TextField, G3TextField, H3TextField;
+	public String strx1, stry1, strx2, strd2, stry2, strh2, strc3, strd3,
+			strg3, strh3;
+	protected EventListenerList listenerList = new EventListenerList();
+	public int round, step;
+
+	public void initModule() {
+		moduleTitle = "sm3_attack";
+		moduleDescription = "sm3_attack module attack sm3";
+		prefix = "sm3_attack";
+		moduleVersion = "1.5";
+		helpFile = "doc/manual/modulesMovingAverage.html";
+		max = 14;
+		titleSpace = 30; // space reserved for the trace title
+		selectWindow = false;
+		keys = 1; //
+		round = 0;
+		step = 0;
+		set(SM3ROUND, round = 0);
+		set(SM3STEP, step = 0);
+		set(SM3X1, sm3x1);
+		set(SM3Y1, sm3y1);
+		set(SM3X2, sm3x2);
+		set(SM3D2, sm3d2);
+		set(SM3Y2, sm3y2);
+		set(SM3H2, sm3h2);
+		set(SM3C3, sm3c3);
+		set(SM3D3, sm3d3);
+		set(SM3G3, sm3g3);
+		set(SM3H3, sm3h3);
+	}
+
+	public JPanel initDialog() {
+
+		JPanel centerPanel = new JPanel();
+		centerPanel.setLayout(new java.awt.BorderLayout());
+		centerPanel.setPreferredSize(new Dimension(500, 400));
+
+		attackParaPanel = new JPanel();
+		attackParaPanel.setBorder(new javax.swing.border.TitledBorder(
+				"set attack round and step："));
+		attackParaPanel.setLayout(new java.awt.GridLayout(1, 2));
+
+		roundPanel = new JPanel();
+		roundPanel.setBorder(new javax.swing.border.TitledBorder("rounds："));
+		roundPanel.setLayout(new java.awt.GridLayout(1, 3));
+		ButtonGroup roundGroup = new ButtonGroup();
+		round1Button = new JRadioButton("1");
+		round1Button.setSelected(true);
+		round1Button.addActionListener(this);
+		round1Button.setToolTipText("attack the first round");
+		roundGroup.add(round1Button);
+		roundPanel.add(round1Button);
+
+		round2Button = new JRadioButton("2");
+		round2Button.setToolTipText("attack the second round");
+		round2Button.setSelected(false);
+		round2Button.addActionListener(this);
+		roundGroup.add(round2Button);
+		roundPanel.add(round2Button);
+
+		round3Button = new JRadioButton("3");
+		round3Button.setToolTipText("attack the third round");
+		round3Button.setSelected(false);
+		round3Button.addActionListener(this);
+		roundGroup.add(round3Button);
+		roundPanel.add(round3Button);
+
+		stepPanel = new JPanel();
+		stepPanel
+				.setBorder(new javax.swing.border.TitledBorder("attack step："));
+		stepPanel.setLayout(new java.awt.GridLayout(1, 3));
+		ButtonGroup stepGroup = new ButtonGroup();
+		step1Button = new JRadioButton("1");
+		step1Button.setSelected(true);
+		step1Button.addActionListener(this);
+		step1Button.setToolTipText("attack the first step");
+		stepGroup.add(step1Button);
+		stepPanel.add(step1Button);
+
+		step2Button = new JRadioButton("2");
+		step2Button.setToolTipText("attack the second step");
+		step2Button.setSelected(false);
+		step2Button.addActionListener(this);
+		stepGroup.add(step2Button);
+		stepPanel.add(step2Button);
+
+		attackParaPanel.add(roundPanel);
+		attackParaPanel.add(stepPanel);
+
+		JPanel AttacktargetPanel = new JPanel();
+		AttacktargetPanel.setLayout(new java.awt.GridLayout(3, 1));
+		// //////////////////////////////////////////////////////////////////////round1
+		JPanel round1Panel = new JPanel();
+		round1Panel.setLayout(new java.awt.GridLayout(1, 2));
+		round1Panel.setBorder(new TitledBorder("attack the round1："));
+
+		JPanel step11Panel = new JPanel();
+		step11Panel.setLayout(new java.awt.GridLayout(1, 1));
+		step11Panel.setBorder(new TitledBorder("attack the first step："));
+
+		JPanel X1Panel = new JPanel();
+		X1Panel.setLayout(new BorderLayout());
+		X1Panel.setBorder(new TitledBorder("A^B^C+D+SS2："));
+		X1TextField = new JTextField(String.valueOf(strx1));
+		X1Panel.add(X1TextField, BorderLayout.CENTER);
+		step11Panel.add(X1Panel);
+
+		JPanel step21Panel = new JPanel();
+		step21Panel.setLayout(new java.awt.GridLayout(1, 1));
+		step21Panel.setBorder(new TitledBorder("attack the second step："));
+
+		JPanel Y1Panel = new JPanel();
+		Y1Panel.setLayout(new BorderLayout());
+		Y1Panel.setBorder(new TitledBorder("E^F^G+H+SS1："));
+		Y1TextField = new JTextField(String.valueOf(stry1));
+		Y1Panel.add(Y1TextField, BorderLayout.CENTER);
+		step21Panel.add(Y1Panel);
+		round1Panel.add(step11Panel);
+		round1Panel.add(step21Panel);
+		// /////////////////////////////////////////////////////////////////////////round2
+		JPanel round2Panel = new JPanel();
+		round2Panel.setLayout(new java.awt.GridLayout(1, 2));
+		round2Panel.setBorder(new TitledBorder("attack the round2："));
+
+		JPanel step12Panel = new JPanel();
+		step12Panel.setLayout(new java.awt.GridLayout(1, 2));
+		step12Panel.setBorder(new TitledBorder("attack the first step："));
+
+		JPanel X2Panel = new JPanel();
+		X2Panel.setLayout(new BorderLayout());
+		X2Panel.setBorder(new TitledBorder("B^C："));
+		X2TextField = new JTextField(String.valueOf(strx2));
+		X2Panel.add(X2TextField, BorderLayout.CENTER);
+
+		JPanel D2Panel = new JPanel();
+		D2Panel.setLayout(new BorderLayout());
+		D2Panel.setBorder(new TitledBorder("D："));
+		D2TextField = new JTextField(String.valueOf(strd2));
+		D2Panel.add(D2TextField, BorderLayout.CENTER);
+		step12Panel.add(X2Panel);
+		step12Panel.add(D2Panel);
+
+		JPanel step22Panel = new JPanel();
+		step22Panel.setLayout(new java.awt.GridLayout(1, 2));
+		step22Panel.setBorder(new TitledBorder("attack the second step："));
+
+		JPanel Y2Panel = new JPanel();
+		Y2Panel.setLayout(new BorderLayout());
+		Y2Panel.setBorder(new TitledBorder("F^G："));
+		Y2TextField = new JTextField(String.valueOf(stry2));
+		Y2Panel.add(Y2TextField, BorderLayout.CENTER);
+
+		JPanel H2Panel = new JPanel();
+		H2Panel.setLayout(new BorderLayout());
+		H2Panel.setBorder(new TitledBorder("H："));
+		H2TextField = new JTextField(String.valueOf(strh2));
+		H2Panel.add(H2TextField, BorderLayout.CENTER);
+		step22Panel.add(Y2Panel);
+		step22Panel.add(H2Panel);
+		round2Panel.add(step12Panel);
+		round2Panel.add(step22Panel);
+		// //////////////////////////////////////////////////////////////////round
+		// 3
+		JPanel round3Panel = new JPanel();
+		round3Panel.setLayout(new java.awt.GridLayout(1, 2));
+		round3Panel.setBorder(new TitledBorder("attack the round3："));
+
+		JPanel step13Panel = new JPanel();
+		step13Panel.setLayout(new java.awt.GridLayout(1, 2));
+		step13Panel.setBorder(new TitledBorder("attack the first step："));
+
+		JPanel C3Panel = new JPanel();
+		C3Panel.setLayout(new BorderLayout());
+		C3Panel.setBorder(new TitledBorder("C："));
+		C3TextField = new JTextField(String.valueOf(strc3));
+		C3Panel.add(C3TextField, BorderLayout.CENTER);
+		step13Panel.add(C3Panel);
+		JPanel D3Panel = new JPanel();
+		D3Panel.setLayout(new BorderLayout());
+		D3Panel.setBorder(new TitledBorder("D"));
+		D3TextField = new JTextField(String.valueOf(strd3));
+		D3Panel.add(D3TextField, BorderLayout.CENTER);
+		step13Panel.add(D3Panel);
+
+		JPanel step23Panel = new JPanel();
+		step23Panel.setLayout(new java.awt.GridLayout(1, 2));
+		step23Panel.setBorder(new TitledBorder("attack the second step："));
+		JPanel G3Panel = new JPanel();
+		G3Panel.setLayout(new BorderLayout());
+		G3Panel.setBorder(new TitledBorder("G："));
+		G3TextField = new JTextField(String.valueOf(strg3));
+		G3Panel.add(G3TextField, BorderLayout.CENTER);
+		step23Panel.add(G3Panel);
+
+		JPanel H3Panel = new JPanel();
+		H3Panel.setLayout(new BorderLayout());
+		H3Panel.setBorder(new TitledBorder("H："));
+		H3TextField = new JTextField(String.valueOf(strh3));
+		H3Panel.add(H3TextField, BorderLayout.CENTER);
+		step23Panel.add(H3Panel);
+
+		round3Panel.add(step13Panel);
+		round3Panel.add(step23Panel);
+
+		AttacktargetPanel.add(round1Panel);
+		AttacktargetPanel.add(round2Panel);
+		AttacktargetPanel.add(round3Panel);
+
+		centerPanel.add(attackParaPanel, BorderLayout.NORTH);
+		centerPanel.add(AttacktargetPanel, BorderLayout.CENTER);
+		X1TextField.setEnabled(true);
+		Y1TextField.setEnabled(false);
+		X2TextField.setEnabled(false);
+		D2TextField.setEnabled(false);
+		Y2TextField.setEnabled(false);
+		H2TextField.setEnabled(false);
+		C3TextField.setEnabled(false);
+		D3TextField.setEnabled(false);
+		G3TextField.setEnabled(false);
+		H3TextField.setEnabled(false);
+		return centerPanel;
+
+	}
+
+	public void setDialogValues() {
+		setInt(roundPanel, SM3ROUND);
+		setInt(stepPanel, SM3STEP);
+		// JTextField X1TextField, Y1TextField, X2TextField, D2TextField,
+		// Y2TextField,
+		// H2TextField, C3TextField, D3TextField, G3TextField, H3TextField;
+
+		set(SM3X1, sm3x1);
+		set(SM3Y1, sm3y1);
+		set(SM3X2, sm3x2);
+		set(SM3D2, sm3d2);
+		set(SM3Y2, sm3y2);
+		set(SM3H2, sm3h2);
+		set(SM3C3, sm3c3);
+		set(SM3D3, sm3d3);
+		set(SM3G3, sm3g3);
+		set(SM3H3, sm3h3);
+
+		setString(X1TextField, SM3X1);
+		setString(Y1TextField, SM3Y1);
+		setString(X2TextField, SM3X2);
+		setString(D2TextField, SM3D2);
+		setString(Y2TextField, SM3Y2);
+		setString(H2TextField, SM3H2);
+		setString(C3TextField, SM3C3);
+		setString(D3TextField, SM3D3);
+		setString(G3TextField, SM3G3);
+		setString(H3TextField, SM3H3);
+
+		updateEnabledPanels();
+	}
+
+	public void addActionListener(ActionListener l) {
+		listenerList.add(ActionListener.class, l);
+	}
+
+	public void getDialogValues() {
+
+		if (getInt(roundPanel, SM3ROUND) == 0) {
+			round = 0;
+		} else if (getInt(roundPanel, SM3ROUND) == 1) {
+			round = 1;
+		} else {
+			round = 2;
+		}
+		if (getInt(stepPanel, SM3STEP) == 0) {
+			step = 0;
+		} else {
+			step = 1;
+		}
+		sm3x1 = trim(X1TextField.getText()).toUpperCase();
+		sm3y1 = trim(Y1TextField.getText()).toUpperCase();
+		sm3x2 = trim(X2TextField.getText()).toUpperCase();
+		sm3d2 = trim(D2TextField.getText()).toUpperCase();
+
+		sm3y2 = trim(Y2TextField.getText()).toUpperCase();
+		sm3h2 = trim(H2TextField.getText()).toUpperCase();
+
+		sm3c3 = trim(C3TextField.getText()).toUpperCase();
+		sm3d3 = trim(D3TextField.getText()).toUpperCase();
+		sm3g3 = trim(G3TextField.getText()).toUpperCase();
+		sm3h3 = trim(H3TextField.getText()).toUpperCase();
+
+		candidates = dataLength = 65536;
+	}
+
+	public boolean initProcess() {
+		boolean result = super.initProcess();
+
+		return result;
+	}
+
+	public int analyze(Trace t) {
+		if (round == 1) {
+			if (sm3x1.equals("") || sm3y1.equals("")) {
+				err("***************************ERROR***************************");
+				err("ERROR: attack the second round, please set the first round.");
+				err("***********************************************************");
+				return NO_TRACE;
+			}
+		}
+		return super.analyze(t);
+	}
+
+	public float[] select(Trace t) {
+		float[] selected = new float[dataLength];
+		byte[] data = t.getData();//保存明文密文
+		if (data == null)
+			return null;
+
+		byte[] mdata = new byte[32];
+
+		System.arraycopy(data, 0, mdata, 0, 32);
+
+		System.arraycopy(abcdefgh, 0, digestInt, 0, abcdefgh.length);
+		// 格式化输入字节数组，补10及长度数据
+
+		byte[] tempdata = new byte[3];
+
+		tempdata[0] = 0x61;
+		tempdata[1] = 0x62;
+		tempdata[2] = 0x63;
+
+		byte[] newbyte = SM3_HASH.byteArrayFormatData(mdata);
+		// 获取数据摘要计算的数据单元个数11
+		int MCount = newbyte.length / 64;
+		// 循环对每个数据单元进行摘要计算
+		// 初始化
+		for (int i = 0; i < 68; i++) {
+			X[i] = 0;
+		}
+
+		H1 = 0x7380166f;
+		H2 = 0x4914b2b9;
+		H3 = 0x172442d7;
+		H4 = 0xda8a0600;
+		H5 = 0xa96f30bc;
+		H6 = 0x163138aa;
+		H7 = 0xe38dee4d;
+		H8 = 0xb0fb0e4e;
+
+		for (int i = 0; i < 64; i++) {
+			Y[i] = 0;
+		}
+		for (int pos = 0; pos < MCount; pos++)
+	    {
+	        for (int j = 0; j < 16; j++) 
+	        {
+	            X[j] = (int) SM3.byteArrayTolong(newbyte, (pos * 64) + (j * 4));
+	        }
+
+	  }
+		// for (int pos = 0; pos < MCount; pos++) {
+		// 将每个单元的数据转换成16个整型数据，并保存到tmpData的前16个数组元素中
+		//for (int j = 0; j < 16; j++) {
+			// X[j] = byteArrayToInt(newbyte, (pos * 64) + (j * 4));
+			//X[j] = byteArrayToInt(mdata, (0 * 64) + (j * 4));
+			
+			// X[j] = 0x61626364;
+		//}
+		// 摘要计算函数
+		processBlock(selected);
+		return selected;
+
+	}
+
+	public void processBlock(float[] selected) {
+
+		byte[] temptest = new byte[272];
+		for (int t = 16; t <= 67; t++) {
+			X[t] = SM3_HASH.P1((X[t - 16]) ^ X[t - 9]
+					^ ((X[t - 3] << 15) | (X[t - 3] >>> 17)))
+					^ ((X[t - 13] << 7) | (X[t - 13] >>> 25)) ^ X[t - 6];
+
+		}
+		for (int i = 0; i < X.length; i++) {
+			SM3_HASH.intToByteArray(X[i], temptest, i * 4);
+		}
+		// String temstr=byteArrayToHexString(temptest);
+
+		byte[] temptest1 = new byte[256];
+		for (int t = 0; t <= 63; t++) {
+			Y[t] = X[t] ^ X[t + 4];
+		}
+		for (int i = 0; i < Y.length; i++) {
+			SM3_HASH.intToByteArray(Y[i], temptest1, i * 4);
+		}
+		int a = H1;
+		int b = H2;
+		int c = H3;
+		int d = H4;
+		int e = H5;
+		int f = H6;
+		int g = H7;
+		int h = H8;
+		if (round == 0) { // first round
+			int ss1 = 0, ss2 = 0, tt1 = 0, tt2 = 0;
+			ss1 = ((a << 12) | (a >>> 20)) + e
+					+ ((T1 << 0) | (T1 >>> (32 - 0)));
+			ss1 = (ss1 << 7) | (ss1 >>> 25);
+			ss2 = ss1 ^ ((a << 12) | (a >>> 20));
+			int realx = SM3_HASH.FF1(a, b, c) + d + ss2;// 588B5DAB
+			int realy = SM3_HASH.GG1(e, f, g) + h + ss1;// 5F057B3B
+			if (step == 0) {
+				if (sm3x1.equals("")) {
+					for (int i = 0; i < 65536; i++) {
+						long TT1 = i + Y[0];
+						selected[i] = hw((TT1) & 0xff) + hw((TT1 >> 8) & 0xff);
+					}
+				} else {
+					int intsm3x1 = Integer.parseInt(sm3x1, 16);
+					for (int i = 0; i < 65536; i++) {
+						long TT1 = (i * 65536 + intsm3x1) + Y[0];
+						selected[i] = hw((TT1) & 0xff) + hw((TT1 >> 8) & 0xff)
+								+ hw((TT1 >> 16) & 0xff)
+								+ hw((TT1 >> 24) & 0xff);
+					}
+				}
+			} else {
+				if (sm3y1.equals("")) {
+					for (int i = 0; i < 65536; i++) {
+						long TT1 = i + X[0];
+						selected[i] = hw((TT1) & 0xff) + hw((TT1 >> 8) & 0xff);
+					}
+				} else {
+					int intsm3y1 = Integer.parseInt(sm3y1, 16);
+					for (int i = 0; i < 65536; i++) {
+						long TT1 = (i * 65536 + intsm3y1) + X[0];
+						selected[i] = hw((TT1) & 0xff) + hw((TT1 >> 8) & 0xff)
+								+ hw((TT1 >> 16) & 0xff)
+								+ hw((TT1 >> 24) & 0xff);
+					}
+				}
+			}
+
+		} else if (round == 1) {
+			int x1 = Integer.parseInt(sm3x1, 16);
+			int y1 = Integer.parseInt(sm3y1, 16);
+
+			int round1TT1 = x1 + Y[0];
+			int round1TT2 = y1 + X[0];
+			a = round1TT1;
+			e = SM3_HASH.P0(round1TT2);
+
+			int ss1 = 0, ss2 = 0, tt1 = 0, tt2 = 0;
+			ss1 = ((a << 12) | (a >>> 20)) + e
+					+ ((T1 << 1) | (T1 >>> (32 - 1)));
+			ss1 = (ss1 << 7) | (ss1 >>> 25);
+			ss2 = ss1 ^ ((a << 12) | (a >>> 20));
+
+			if (step == 0) { // 5AE564FD 172442d7
+				int len = sm3x2.length();
+				if (len % 2 != 0) {
+					len += 1;
+				}
+				for (int H = 0; H < 256; H++) {
+					long HH = (H << sm3x2.length() * 4)
+							+ ((sm3x2.length() == 0) ? 0 : Integer.parseInt(
+									sm3x2, 16));
+					for (int L = 0; L < 256; L++) {
+						long LL = (L << sm3d2.length() * 4)
+								+ ((sm3x2.length() == 0) ? 0 : Integer
+										.parseInt(sm3d2, 16));
+
+						int TT11 = (int) (a ^ (int) HH) + (int) LL + ss2
+								+ (int) Y[1];
+
+						if (len == 0) {
+							selected[H * 256 + L] = hw((TT11) & 0xFF);
+						} else if (len == 2) {
+							selected[H * 256 + L] = hw((TT11) & 0xFF)
+									+ hw((TT11 >> 8) & 0xFF);
+						} else if (len == 4) {
+							selected[H * 256 + L] = hw((TT11) & 0xFF)
+									+ hw((TT11 >> 8) & 0xFF)
+									+ hw((TT11 >> 16) & 0xFF);
+						} else {
+							selected[H * 256 + L] = hw((TT11) & 0xFF)
+									+ hw((TT11 >> 8) & 0xFF)
+									+ hw((TT11 >> 16) & 0xFF)
+									+ hw((TT11 >> 24) & 0xFF);
+						}
+					}
+				}
+			} else {
+				int len = sm3y2.length();
+				if (len % 2 != 0) {
+					len += 1;
+				}
+				int realfg = (int) (f ^ g);
+				for (int H = 0; H < 256; H++) { // 6C3F8135 E38DEE4D
+					long HH = (H << sm3y2.length() * 4)
+							+ ((sm3y2.length() == 0) ? 0 : Integer.parseInt(
+									sm3y2, 16));
+					for (int L = 0; L < 256; L++) {
+						long LL = (L << sm3h2.length() * 4)
+								+ ((sm3h2.length() == 0) ? 0 : Integer
+										.parseInt(sm3h2, 16));
+
+						int TT11 = (int) (e ^ (int) HH) + (int) LL + ss1
+								+ (int) X[1];
+
+						if (len == 0) {
+							selected[H * 256 + L] = hw((TT11) & 0xFF);
+						} else if (len == 2) {
+							selected[H * 256 + L] = hw((TT11) & 0xFF)
+									+ hw((TT11 >> 8) & 0xFF);
+						} else if (len == 4) {
+							selected[H * 256 + L] = hw((TT11) & 0xFF)
+									+ hw((TT11 >> 8) & 0xFF)
+									+ hw((TT11 >> 16) & 0xFF);
+						} else {
+							selected[H * 256 + L] = hw((TT11) & 0xFF)
+									+ hw((TT11 >> 8) & 0xFF)
+									+ hw((TT11 >> 16) & 0xFF)
+									+ hw((TT11 >> 24) & 0xFF);
+						}
+					}
+				}
+
+			}
+		} else {
+			long x1 = Long.parseLong(sm3x1, 16);
+			long y1 = Long.parseLong(sm3y1, 16);
+
+			long round1TT1 = x1 + Y[0];
+			long round1TT2 = y1 + X[0];
+			int a2 = (int) round1TT1;
+			int e2 = SM3_HASH.P0((int) round1TT2);
+
+			long x2 = Long.parseLong(sm3x2, 16);
+			long d2 = Long.parseLong(sm3d2, 16);
+			long y2 = Long.parseLong(sm3y2, 16);
+			long h2 = Long.parseLong(sm3h2, 16);
+
+			int ss1 = 0, ss2 = 0;
+			ss1 = ((a2 << 12) | (a2 >>> 20)) + e2
+					+ ((T1 << 1) | (T1 >>> (32 - 1)));
+			ss1 = (ss1 << 7) | (ss1 >>> 25);
+			ss2 = ss1 ^ ((a2 << 12) | (a2 >>> 20));
+
+			int round2TT1 = (int) (a2 ^ (int) x2) + (int) d2 + ss2 + (int) Y[1];
+			int round2TT2 = (int) (e2 ^ (int) y2) + (int) h2 + ss1 + (int) X[1];
+			int b3 = a2;
+			int a3 = round2TT1;
+			int f3 = e2;
+			int e3 = SM3_HASH.P0(round2TT2);
+
+			ss1 = ((a3 << 12) | (a3 >>> 20)) + e3
+					+ ((T1 << 2) | (T1 >>> (32 - 2))); // FFFFFFFFDBC00130
+			ss1 = (ss1 << 7) | (ss1 >>> 25);
+			ss2 = ss1 ^ ((a3 << 12) | (a3 >>> 20));// FFFFFFFFE3C9C328
+
+			if (step == 0) {
+				int len = sm3c3.length();
+				if (len % 2 != 0) {
+					len += 1;
+				}
+
+				for (int H = 0; H < 256; H++) {
+					long HH = (H << sm3c3.length() * 4)
+							+ ((sm3c3.length() == 0) ? 0 : Integer.parseInt(
+									sm3c3, 16));
+					for (int L = 0; L < 256; L++) {
+						long LL = (L << sm3d3.length() * 4)
+								+ ((sm3d3.length() == 0) ? 0 : Integer
+										.parseInt(sm3d3, 16));
+
+						int TT11 = (int) (a3 ^ b3 ^ (int) HH) + (int) LL + ss2 // 2CDEE7
+																				// 29657292
+								+ (int) Y[2];
+
+						if (len == 0) {
+							selected[H * 256 + L] = hw((TT11) & 0xFF);
+						} else if (len == 2) {
+							selected[H * 256 + L] = hw((TT11) & 0xFF)
+									+ hw((TT11 >> 8) & 0xFF);
+						} else if (len == 4) {
+							selected[H * 256 + L] = hw((TT11) & 0xFF)
+									+ hw((TT11 >> 8) & 0xFF)
+									+ hw((TT11 >> 16) & 0xFF);
+						} else {
+							selected[H * 256 + L] = hw((TT11) & 0xFF)
+									+ hw((TT11 >> 8) & 0xFF)
+									+ hw((TT11 >> 16) & 0xFF)
+									+ hw((TT11 >> 24) & 0xFF);
+						}
+					}
+				}
+			} else {
+				int len = sm3g3.length();
+				if (len % 2 != 0) {
+					len += 1;
+				}
+				int realfg = (int) (f ^ g);
+				for (int H = 0; H < 256; H++) { // 6C3F8135 E38DEE4D
+					long HH = (H << sm3g3.length() * 4)
+							+ ((sm3g3.length() == 0) ? 0 : Integer.parseInt(
+									sm3g3, 16));
+					for (int L = 0; L < 256; L++) {
+						long LL = (L << sm3h3.length() * 4)
+								+ ((sm3h3.length() == 0) ? 0 : Integer
+										.parseInt(sm3h3, 16));
+
+						int TT11 = (int) (e3 ^ f3 ^ (int) HH) + (int) LL + ss1 // FFFFFFFF85E54B79
+																				// FFFFFFFFC550B189
+								+ (int) X[2];
+
+						if (len == 0) {
+							selected[H * 256 + L] = hw((TT11) & 0xFF);
+						} else if (len == 2) {
+							selected[H * 256 + L] = hw((TT11) & 0xFF)
+									+ hw((TT11 >> 8) & 0xFF);
+						} else if (len == 4) {
+							selected[H * 256 + L] = hw((TT11) & 0xFF)
+									+ hw((TT11 >> 8) & 0xFF)
+									+ hw((TT11 >> 16) & 0xFF);
+						} else {
+							selected[H * 256 + L] = hw((TT11) & 0xFF)
+									+ hw((TT11 >> 8) & 0xFF)
+									+ hw((TT11 >> 16) & 0xFF)
+									+ hw((TT11 >> 24) & 0xFF);
+						}
+					}
+				}
+			}
+
+		}
+	}
+
+	BigInteger toUnsignedBigInteger(byte[] ba, int offset, int length) {
+		if (ba == null)
+			return BigInteger.ZERO;
+		byte[] in = new byte[length + 1];
+		System.arraycopy(ba, offset, in, 1, length);
+		return new BigInteger(in);
+	}
+
+	public static int hw(long i) {
+		int result = 0;
+		while (i > 0) {
+			if ((i & 1) != 0)
+				result++;
+			i >>>= 1;
+		}
+		return result;
+	}
+	public static int byteArrayToInt(byte[] bytedata, int i) {
+		int num = 0;
+		int temp;
+		temp = (0x000000ff & (bytedata[i + 3])) << 0;
+		num = num | temp;
+		temp = (0x000000ff & (bytedata[i + 2])) << 8;
+		num = num | temp;
+		temp = (0x000000ff & (bytedata[i + 1])) << 16;
+		num = num | temp;
+		temp = (0x000000ff & (bytedata[i])) << 24;
+		num = num | temp;
+		return num;
+
+	}
+	protected void updateEnabledPanels() {
+		// int temscanmodule = getInt(roundPanel, SCANMODULE);
+		int temround = getInt(roundPanel, SM3ROUND);
+		int temstep = getInt(stepPanel, SM3STEP);
+		round = temround;
+		step = temstep;
+		if (temround == 0 && temstep == 0) {// 1 1
+			X1TextField.setEnabled(true);
+			Y1TextField.setEnabled(false);
+			X2TextField.setEnabled(false);
+			D2TextField.setEnabled(false);
+			Y2TextField.setEnabled(false);
+			H2TextField.setEnabled(false);
+			C3TextField.setEnabled(false);
+			D3TextField.setEnabled(false);
+			G3TextField.setEnabled(false);
+			H3TextField.setEnabled(false);
+		} else if (temround == 0 && temstep == 1) {// 1 2
+			X1TextField.setEnabled(false);
+			Y1TextField.setEnabled(true);
+			X2TextField.setEnabled(false);
+			D2TextField.setEnabled(false);
+			Y2TextField.setEnabled(false);
+			H2TextField.setEnabled(false);
+			C3TextField.setEnabled(false);
+			D3TextField.setEnabled(false);
+			G3TextField.setEnabled(false);
+			H3TextField.setEnabled(false);
+		} else if (temround == 1 && temstep == 0) {// 2 1
+			X1TextField.setEnabled(false);
+			Y1TextField.setEnabled(false);
+			X2TextField.setEnabled(true);
+			D2TextField.setEnabled(true);
+			Y2TextField.setEnabled(false);
+			H2TextField.setEnabled(false);
+			C3TextField.setEnabled(false);
+			D3TextField.setEnabled(false);
+			G3TextField.setEnabled(false);
+			H3TextField.setEnabled(false);
+		} else if (temround == 1 && temstep == 1) {// 2 2
+			X1TextField.setEnabled(false);
+			Y1TextField.setEnabled(false);
+			X2TextField.setEnabled(false);
+			D2TextField.setEnabled(false);
+			Y2TextField.setEnabled(true);
+			H2TextField.setEnabled(true);
+			C3TextField.setEnabled(false);
+			D3TextField.setEnabled(false);
+			G3TextField.setEnabled(false);
+			H3TextField.setEnabled(false);
+		} else if (temround == 2 && temstep == 0) {// 3 1
+			X1TextField.setEnabled(false);
+			Y1TextField.setEnabled(false);
+			X2TextField.setEnabled(false);
+			D2TextField.setEnabled(false);
+			Y2TextField.setEnabled(false);
+			H2TextField.setEnabled(false);
+			C3TextField.setEnabled(true);
+			D3TextField.setEnabled(true);
+			G3TextField.setEnabled(false);
+			H3TextField.setEnabled(false);
+		} else {// 3 2
+			X1TextField.setEnabled(false);
+			Y1TextField.setEnabled(false);
+			X2TextField.setEnabled(false);
+			D2TextField.setEnabled(false);
+			Y2TextField.setEnabled(false);
+			H2TextField.setEnabled(false);
+			C3TextField.setEnabled(false);
+			D3TextField.setEnabled(false);
+			G3TextField.setEnabled(true);
+			H3TextField.setEnabled(true);
+		}
+
+	}
+
+	public void report(int key, Vector<float[]> best, int fragmentOffset,
+			int fragmentEnd) {
+		super.report(key, best, fragmentOffset, fragmentEnd);
+		int bestkey = (int) best.get(0)[0];
+
+		if (round == 0) {
+			if (step == 0) {
+				sm3x1 = Integer.toString(bestkey, 16) + sm3x1;
+				sm3x1 = sm3x1.toUpperCase();
+			} else {
+				sm3y1 = Integer.toString(bestkey, 16) + sm3y1;
+				sm3y1 = sm3x1.toUpperCase();
+			}
+		} else if (round == 1) {
+			if (step == 0) {
+				sm3x2 = Integer.toString(bestkey, 16).substring(0, 2) + sm3x2;
+				sm3x2 = sm3x2.toUpperCase();
+				sm3d2 = Integer.toString(bestkey, 16).substring(2, 4) + sm3d2;
+				sm3d2 = sm3d2.toUpperCase();
+			} else {
+				sm3y2 = Integer.toString(bestkey, 16).substring(0, 2) + sm3y2;
+				sm3y2 = sm3y2.toUpperCase();
+				sm3h2 = Integer.toString(bestkey, 16).substring(2, 4) + sm3h2;
+				sm3h2 = sm3h2.toUpperCase();
+			}
+		} else if (round == 2) {
+			if (step == 0) {
+				sm3c3 = Integer.toString(bestkey, 16).substring(0, 2) + sm3c3;
+				sm3c3 = sm3c3.toUpperCase();
+				sm3d3 = Integer.toString(bestkey, 16).substring(2, 4) + sm3d3;
+				sm3d3 = sm3d3.toUpperCase();
+			} else {
+				sm3g3 = Integer.toString(bestkey, 16).substring(0, 2) + sm3g3;
+				sm3g3 = sm3g3.toUpperCase();
+				sm3h3 = Integer.toString(bestkey, 16).substring(2, 4) + sm3h3;
+				sm3h3 = sm3h3.toUpperCase();
+			}
+		}
+	}
+
+	public void keyTyped(KeyEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void keyPressed(KeyEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void keyReleased(KeyEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+//	@Override
+//	public void keyTyped(KeyEvent e) {
+//		// TODO Auto-generated method stub
+//
+//	}
+//
+//	@Override
+//	public void keyPressed(KeyEvent e) {
+//		// TODO Auto-generated method stub
+//
+//	}
+//
+//	@Override
+//	public void keyReleased(KeyEvent e) {
+//		// TODO Auto-generated method stub
+//		actionPerformed(null);
+//	}
+//
+//	@Override
+//	public void actionPerformed(ActionEvent e) {
+//		// TODO Auto-generated method stub
+//		updateEnabledPanels();
+//	}
+}

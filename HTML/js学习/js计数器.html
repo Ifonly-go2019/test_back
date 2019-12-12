@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	<script>
+	  
+		 count=function(value){
+			var a=document.getElementById("first").value;
+			var b=document.getElementById("second").value;
+		    var c=value;
+		    a=parseInt(a);
+		    b=parseInt(b);
+			console.log(a);
+			console.log(b);
+			console.log(c);
+			 switch(c){
+			         case "+":
+			         document.getElementById("result").value=parseInt(a)+parseInt(b);
+			         break;
+			         case "-":
+			         document.getElementById("result").value=parseInt(a)-parseInt(b);
+			         break;
+			         case "*":
+			         document.getElementById("result").value=parseInt(a)*parseInt(b);
+			         break;
+			         case "/":
+			         document.getElementById("result").value=parseInt(a)/parseInt(b);
+			         break;
+			     }
+		}
+	</script>
+	
+	
+	
+	</head>
+	
+	
+	<body>
+		<h1>购物车简易计数器</h1>
+		<p>第一个数:<input type="text" id="first"></p>
+		
+		<p>第二个数:<input type="text" id="second"></p>
+		
+			
+		<div class="round" >
+			
+		
+		<input type="button" id="+" value="+" onclick = "count(this.value)" >
+		<input type="button" id="-" value="-" onclick = "count(this.id)">
+		<input type="button" id="*" value="*" onclick = "count(this.id)">
+		<input type="button" id="/" value="/" onclick = "count(this.id)">
+	    </div>
+		
+		<p>计算结果:<input type="text" id="result"></p>
+	</body>
+</html>

@@ -1,0 +1,87 @@
+package exp2.entities;
+public class student {
+  private String name;
+  private String id;
+  private int credit;
+  private int creditForGraduation;
+
+ 
+  
+  
+  
+  /** 构造方法  一种带参数 另一种不带参数*/ 
+  public student() {}
+  public student(int creditForGraduation) {
+ 	 this.creditForGraduation=creditForGraduation;
+ }
+
+  
+  
+  
+  public int getCreditForGraduation() {
+ 	return creditForGraduation;
+ }
+    public void setCreditForGraduation(int creditForGraduation) {
+ 	   if(creditForGraduation<20) {//判断输入的值 
+ 		   System.out.println("这位同学未获取毕业所需总学分");
+ 	   }
+ 	this.creditForGraduation = creditForGraduation;
+ }
+  
+ 
+    
+    
+    /** 方法区*/
+ public void setCredit(int Credit ) {
+	this.credit = Credit;
+ } 
+ public void setName(String Name) {
+	this.name=Name;
+}
+ public void setId(String Id) {
+	 this.id=Id;
+ }
+ 
+ public String getName() {
+	 return name;
+ }
+ public String getId() {
+	 return id;
+ }
+ public int getCredit() {
+	 return  credit;
+ }
+ 
+ private static void rate(int s) {
+		// TODO Auto-generated method stub
+		String x;
+		if(s>=6&&s<9) {
+			x="合格";
+			System.out.println(x);
+		}
+		else if(s>9) {
+			x="优";
+			System.out.println(x);
+		}
+		else {
+			x="不合格";
+			System.out.println(x);
+		}
+		
+	}
+
+ 
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        student st=new student();
+        st.setName("张三");
+        st.setId("001");
+        st.setCredit(10);
+        rate(st.credit);
+        st.setCreditForGraduation(10);
+       
+               
+	}
+
+}	

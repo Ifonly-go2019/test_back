@@ -1,0 +1,69 @@
+
+DROP TABLE student,courses,teacher,elogs
+
+USE test1;
+CREATE TABLE teacher(
+tNo CHAR(4) PRIMARY KEY,
+ tName VARCHAR(10)NOT NULL,
+ tGender CHAR(1)NOT NULL,
+ tAge TINYINT(3) UNSIGNED NOT NULL
+);
+CREATE TABLE student (
+ sNo CHAR(8) PRIMARY KEY,  
+ sPassword VARCHAR(12) NOT NULL,
+ sName VARCHAR(10)  NOT NULL,
+ sCard CHAR(18) NOT NULL,
+ sMobile CHAR(11) 
+);
+CREATE TABLE Courses(
+ cNo CHAR(5) PRIMARY KEY,
+ cName  VARCHAR(20) NOT NULL,
+ tID CHAR(4),
+ cDescription VARCHAR(100),
+ cCredit TINYINT (3)  UNSIGNED NOT NULL
+);
+CREATE TABLE ELogs(
+ elNO        BIGINT(20) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ sID CHAR(8) NOT NULL,
+ cID CHAR(5) NOT NULL,
+ elScore  FLOAT NOT NULL,
+ elDate DATETIME NOT NULL DEFAULT NOW()
+)
+ALTER  TABLE student ADD  (sMajor VARCHAR(20));
+INSERT INTO  student 
+VALUES('12345678','12378456','张三','230048','13808593571','计算机');
+INSERT INTO  student
+VALUES('87654321','12378456','李四','230048','13808593971','网络工程');
+INSERT INTO  student
+VALUES('20182101','12378456','王五','230048','13808987441','地质勘探');
+
+INSERT INTO teacher
+VALUES('0001','张老师','女',29);
+INSERT INTO teacher
+VALUES('0002','李老师','男',35);
+
+
+INSERT INTO courses
+VALUES('00001','计算机网络','0001','关于计算机网络的详情',3);
+INSERT INTO courses
+VALUES('00002','计算机原理','0002','关于计算机原理的详情',3);
+INSERT INTO courses
+VALUES('00003','Visual FoxPro','0003','.....',3);
+
+
+
+INSERT INTO isLearing (id,stuNumber, CORNUMBeR, CORGRADe,  choiceTimE)
+VALUES(NULL,'12345678',00001,85,'2018-01-24');
+INSERT INTO isLearing (id,stuNumber, CORNUMBeR, CORGRADe,  choiceTimE)
+VALUES(NULL,'87654321',00002,90,'2018-01-24')	
+
+
+
+
+INSERT INTO teacher
+VALUES(1000,'I’m','男',35);
+
+UPDATE student SET stuPassword='000000';
+UPDATE teacher SET teaAge=teaAge+1;
+
+
